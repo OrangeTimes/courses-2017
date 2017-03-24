@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework1", "Homework1", "{F375CBD5-100D-4AA8-9CDD-88415B5F1D76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "..\Solution1\ConsoleApplication1\ConsoleApplication1.csproj", "{3949B9FD-FAE6-485E-BD1A-CFF8C58D3C67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "..\Homework1\vstrut_ConsoleApplication1\ConsoleApplication1.csproj", "{3949B9FD-FAE6-485E-BD1A-CFF8C58D3C67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "..\Solution1\ConsoleApplication2\ConsoleApplication2.csproj", "{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "..\Homework1\vstrut_ConsoleApplication2\ConsoleApplication2.csproj", "{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
