@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork1", "HomeWork1", "{F65BDD9D-B632-4F65-A13A-7997C5308D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\..\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj", "{68859587-30DB-4D6C-9A4E-54099758EE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "..\..\ConsoleApp1\ConsoleApp2\ConsoleApp2.csproj", "{420BD3FC-0FF5-4AA4-8FC6-5FB04ADBF91F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +21,20 @@ Global
 		{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68859587-30DB-4D6C-9A4E-54099758EE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68859587-30DB-4D6C-9A4E-54099758EE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68859587-30DB-4D6C-9A4E-54099758EE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68859587-30DB-4D6C-9A4E-54099758EE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420BD3FC-0FF5-4AA4-8FC6-5FB04ADBF91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420BD3FC-0FF5-4AA4-8FC6-5FB04ADBF91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420BD3FC-0FF5-4AA4-8FC6-5FB04ADBF91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420BD3FC-0FF5-4AA4-8FC6-5FB04ADBF91F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68859587-30DB-4D6C-9A4E-54099758EE44} = {F65BDD9D-B632-4F65-A13A-7997C5308D73}
+		{420BD3FC-0FF5-4AA4-8FC6-5FB04ADBF91F} = {F65BDD9D-B632-4F65-A13A-7997C5308D73}
 	EndGlobalSection
 EndGlobal
