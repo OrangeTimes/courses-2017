@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication7\ChildProject.csproj">
+    <ProjectReference Include="..\ChildProject\ChildProject.csproj">
       <Project>{f1a62d94-c93b-4df1-ab8b-65016b69226c}</Project>
       <Name>ChildProject</Name>
     </ProjectReference>
