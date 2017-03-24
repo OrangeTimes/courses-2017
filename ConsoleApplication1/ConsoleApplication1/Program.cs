@@ -11,6 +11,7 @@ namespace ConsoleApplication1
 		static void Main(string[] args)
 		{
 			// NazarK
+            //ykram added some comment
 		}
 	}
 }
