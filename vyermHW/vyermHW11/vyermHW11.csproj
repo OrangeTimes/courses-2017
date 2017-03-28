@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B52F52C-06A9-4E84-9477-292A553183D7}</ProjectGuid>
+    <ProjectGuid>{E50D2970-4E49-4EAE-8F62-0C242BE886D3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>vyermHW1</RootNamespace>
-    <AssemblyName>vyermHW1</AssemblyName>
+    <RootNamespace>vyermHW11</RootNamespace>
+    <AssemblyName>vyermHW11</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,6 +51,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vyermHW1\vyermHW1.csproj">
+      <Project>{0b52f52c-06a9-4e84-9477-292a553183d7}</Project>
+      <Name>vyermHW1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
