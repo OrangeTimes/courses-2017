@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildProject", "NazarKSolut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpProject", "NazarKSolution\HW1\StartUpProject\StartUpProject.csproj", "{DB6B5513-9AAA-4B35-AC77-FB0D028613ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW2", "HW2", "{4CDEA9E7-E46F-4457-92F3-4D4D30A6E51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCarApplication", "NazarKSolution\HW2\ConsoleCarApplication\ConsoleCarApplication.csproj", "{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{DB6B5513-9AAA-4B35-AC77-FB0D028613ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB6B5513-9AAA-4B35-AC77-FB0D028613ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB6B5513-9AAA-4B35-AC77-FB0D028613ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F1A62D94-C93B-4DF1-AB8B-65016B69226C} = {B4CA5778-BD9C-4060-91AE-85815F253653}
 		{DB6B5513-9AAA-4B35-AC77-FB0D028613ED} = {B4CA5778-BD9C-4060-91AE-85815F253653}
+		{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE} = {4CDEA9E7-E46F-4457-92F3-4D4D30A6E51D}
 	EndGlobalSection
 EndGlobal
