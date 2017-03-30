@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyCustomAnotherProject;
+
 
 namespace ConsoleApplication1
 {
@@ -10,7 +12,10 @@ namespace ConsoleApplication1
 	{
 		static void Main(string[] args)
 		{
-			// vgolub
+			Console.WriteLine("What is your name?");
+			string myName = Console.ReadLine();
+			Console.Write("Username:" + myName);
+			Console.ReadKey();
 		}
 	}
 }
