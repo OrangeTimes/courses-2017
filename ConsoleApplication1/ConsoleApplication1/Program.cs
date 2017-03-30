@@ -10,8 +10,16 @@ namespace ConsoleApplicationRoman2
 	{
 		static void Main(string[] args)
 		{
-			// hello
+            // hello
             // ryaremko
+            Console.WriteLine("What is your name");
+            long MyName = Convert.ToUInt32();
+            string MyName = Console.ReadLine();
+            Console.Write("username" + MyName);
+            Console.ReadKey();
+            Console.Write(MyName);
+            
+
 
 		}
 	}
