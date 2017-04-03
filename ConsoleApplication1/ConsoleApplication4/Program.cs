@@ -21,13 +21,13 @@ namespace ConsoleApplication4
             Console.ReadKey();
             
 
-            /*
+            
             Console.WriteLine("What is your foken name?");
-            string myName = Console.ReadLine();
-            Console.Write("Username:" + myName); //concatination
+            string myName1 = Console.ReadLine();
+            Console.Write("Username:" + myName1); //concatination
             //Console.WriteLine(myName);
             Console.ReadKey();
-            */
+            
 
             /*
             Console.WriteLine("What is your foken name?");
