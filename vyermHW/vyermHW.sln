@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW1", "vyermHW1\vyermH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW11", "vyermHW11\vyermHW11.csproj", "{E50D2970-4E49-4EAE-8F62-0C242BE886D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW2_variables", "vyermHW2_variables\vyermHW2_variables.csproj", "{52D05DB1-865C-47ED-A72F-C2F73856079F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E50D2970-4E49-4EAE-8F62-0C242BE886D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E50D2970-4E49-4EAE-8F62-0C242BE886D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E50D2970-4E49-4EAE-8F62-0C242BE886D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
