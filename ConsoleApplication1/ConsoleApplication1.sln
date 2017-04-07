@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherProject", "AnotherProject\AnotherProject.csproj", "{0AC6181E-2784-4182-B2D0-1DAF7B73D540}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework", "Homework", "{1EC1F0FC-C95E-4BE1-827D-4B6404990B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork1", "HomeWork1\HomeWork1.csproj", "{C5811768-1EBA-473A-95F2-FF84D367F456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +21,19 @@ Global
 		{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDB34A8-CB33-4E37-A66C-87CCA3690B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC6181E-2784-4182-B2D0-1DAF7B73D540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC6181E-2784-4182-B2D0-1DAF7B73D540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC6181E-2784-4182-B2D0-1DAF7B73D540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC6181E-2784-4182-B2D0-1DAF7B73D540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5811768-1EBA-473A-95F2-FF84D367F456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5811768-1EBA-473A-95F2-FF84D367F456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5811768-1EBA-473A-95F2-FF84D367F456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5811768-1EBA-473A-95F2-FF84D367F456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{44FBB911-D324-45F1-AF70-6F7ECE88B10F} = {F65BDD9D-B632-4F65-A13A-7997C5308D73}
-		{CE8F9B46-5863-4F20-94B4-4C526EE1B995} = {F65BDD9D-B632-4F65-A13A-7997C5308D73}
-		{5A0B0115-B967-46E6-850E-72BF243BD2FA} = {0C248A5E-DD85-4731-A403-77072C61C6A7}
+		{C5811768-1EBA-473A-95F2-FF84D367F456} = {1EC1F0FC-C95E-4BE1-827D-4B6404990B38}
 	EndGlobalSection
 EndGlobal
