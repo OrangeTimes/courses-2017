@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework 2", "ConsoleApplication2\Homework 2.csproj", "{9F30FC34-A358-4E46-A27B-F592B073C1D3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework2", "Homework2", "{92614DF3-3796-4933-81F2-DDDAE4CFDE63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F30FC34-A358-4E46-A27B-F592B073C1D3} = {92614DF3-3796-4933-81F2-DDDAE4CFDE63}
 	EndGlobalSection
 EndGlobal
