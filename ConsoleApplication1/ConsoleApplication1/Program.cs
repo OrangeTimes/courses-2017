@@ -11,11 +11,17 @@ namespace ConsoleApplication1
 	class Program
 	{
 		static void Main(string[] args)
-		{
-			Console.WriteLine("What is your name?");
+        {
+            
+            Console.WriteLine("What is your name?");
 			string myName = Console.ReadLine();
 			Console.Write("Username:" + myName);
-			Console.ReadKey();
-		}
-	}
+            Console.WriteLine();
+            Console.WriteLine("What is your surname?");
+            string mySurName = Console.ReadLine();
+            Console.Write("Surname:" + mySurName);
+            Console.ReadKey();
+        }
+        
+    }
 }
