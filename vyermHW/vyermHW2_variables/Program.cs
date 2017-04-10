@@ -14,8 +14,9 @@ namespace vyermHW2_variables
             string carModel;
             int productionYear;
             decimal carPrice;
-
-            Console.WriteLine("Please enter information about your car below: \r\n Manufacturer");
+            
+            Console.WriteLine("Please enter information about your car below:");
+            Console.WriteLine("Manufacturer");
             carManufacturer = Console.ReadLine();
             Console.WriteLine("Provide model of your car:");
             carModel = Console.ReadLine();
@@ -24,7 +25,10 @@ namespace vyermHW2_variables
             Console.WriteLine("Provide price of your car:");
             carPrice = Decimal.Parse(Console.ReadLine());
             //Console.WriteLine("Verify that information you provided is correct:\nManufacturer: " + carManufacturer + ", Model: " + carModel + ", Year: " + productionYear + ", Price: " + carPrice);
-            Console.WriteLine("Verify that information you provided is correct: \r\n Manufacturer: {0}, Model: {1}, Year: {2}, Price: {3}", carManufacturer, carModel, productionYear, carPrice);
+            //Console.WriteLine("Verify that information you provided is correct: \r\n Manufacturer: {0}, Model: {1}, Year: {2}, Price: {3}", carManufacturer, carModel, productionYear, carPrice);
+            string carResult = $"Manufacturer: {carManufacturer}, Model: {carModel}, Year: {productionYear}, Price: {carPrice}";
+            Console.WriteLine("Verify that information you provided is correct:");
+            Console.WriteLine(carResult);
             Console.ReadLine();
         }
     }
