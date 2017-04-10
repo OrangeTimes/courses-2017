@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using MyCustomAnotherProject;
 
-
-namespace ConsoleApplication1
+namespace Practical01
 {
 	class Program
 	{
