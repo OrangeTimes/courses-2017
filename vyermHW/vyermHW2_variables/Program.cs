@@ -10,26 +10,31 @@ namespace vyermHW2_variables
     {
         static void Main(string[] args)
         {
-            string carManufacturer;
-            string carModel;
-            int productionYear;
-            decimal carPrice;
-            
+          
             Console.WriteLine("Please enter information about your car below:");
             Console.WriteLine("Manufacturer");
-            carManufacturer = Console.ReadLine();
+            string carManufacturer = Console.ReadLine();
             Console.WriteLine("Provide model of your car:");
-            carModel = Console.ReadLine();
+            string carModel = Console.ReadLine();
             Console.WriteLine("Provide year of production:");
-            productionYear = Convert.ToInt32(Console.ReadLine());
+            int productionYear = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Provide price of your car:");
-            carPrice = Decimal.Parse(Console.ReadLine());
-            //Console.WriteLine("Verify that information you provided is correct:\nManufacturer: " + carManufacturer + ", Model: " + carModel + ", Year: " + productionYear + ", Price: " + carPrice);
-            //Console.WriteLine("Verify that information you provided is correct: \r\n Manufacturer: {0}, Model: {1}, Year: {2}, Price: {3}", carManufacturer, carModel, productionYear, carPrice);
+            decimal carPrice = Decimal.Parse(Console.ReadLine());
+
+            // Variations of code. Option 1:
             string carResult = $"Manufacturer: {carManufacturer}, Model: {carModel}, Year: {productionYear}, Price: {carPrice}";
             Console.WriteLine("Verify that information you provided is correct:");
             Console.WriteLine(carResult);
-            Console.ReadLine();
+            Console.ReadKey();
+
+            // Variations of code. Option 2:
+            Console.WriteLine("Verify that information you provided is correct:\r\nManufacturer: {0}, Model: {1}, Year: {2}, Price: {3}", carManufacturer, carModel, productionYear, carPrice);
+            Console.ReadKey();
+
+            // Variations of code. Option 3:
+            Console.WriteLine("Verify that information you provided is correct:\r\nManufacturer: " + carManufacturer + ", Model: " + carModel + ", Year: " + productionYear + ", Price: " + carPrice);
+            Console.ReadKey();
+
         }
     }
 }

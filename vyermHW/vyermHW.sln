@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW11", "vyermHW11\vyer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW2_variables", "vyermHW2_variables\vyermHW2_variables.csproj", "{52D05DB1-865C-47ED-A72F-C2F73856079F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW3_calculations", "vyermHW3_calculations\vyermHW3_calculations.csproj", "{EC5CD65C-FD31-41AF-AF36-535577F97545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vyermHW3_countoper", "vyermHW3_countoper\vyermHW3_countoper.csproj", "{970AE47F-0303-41DA-A388-E2DB87E639E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52D05DB1-865C-47ED-A72F-C2F73856079F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5CD65C-FD31-41AF-AF36-535577F97545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5CD65C-FD31-41AF-AF36-535577F97545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5CD65C-FD31-41AF-AF36-535577F97545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5CD65C-FD31-41AF-AF36-535577F97545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970AE47F-0303-41DA-A388-E2DB87E639E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970AE47F-0303-41DA-A388-E2DB87E639E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970AE47F-0303-41DA-A388-E2DB87E639E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970AE47F-0303-41DA-A388-E2DB87E639E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
