@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Home
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "Homework1\vstrut_ConsoleApplication2\ConsoleApplication2.csproj", "{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework3", "Homework3", "{21D3FE55-687A-42EB-B1D3-49E013340F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3", "ConsoleApplication3\ConsoleApplication3.csproj", "{B55CA98E-4817-457C-BCBA-8CB50730C57F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication4", "ConsoleApplication4\ConsoleApplication4.csproj", "{F9594CEB-0F0C-4355-A55C-97533FF142A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +37,14 @@ Global
 		{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55CA98E-4817-457C-BCBA-8CB50730C57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55CA98E-4817-457C-BCBA-8CB50730C57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55CA98E-4817-457C-BCBA-8CB50730C57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55CA98E-4817-457C-BCBA-8CB50730C57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9594CEB-0F0C-4355-A55C-97533FF142A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9594CEB-0F0C-4355-A55C-97533FF142A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9594CEB-0F0C-4355-A55C-97533FF142A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9594CEB-0F0C-4355-A55C-97533FF142A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +53,7 @@ Global
 		{9F30FC34-A358-4E46-A27B-F592B073C1D3} = {92614DF3-3796-4933-81F2-DDDAE4CFDE63}
 		{3949B9FD-FAE6-485E-BD1A-CFF8C58D3C67} = {591B78D4-D640-4F4E-8ED4-9C64265DDD7E}
 		{70B6F3ED-1A3C-4330-ACCD-D9C2718194E3} = {591B78D4-D640-4F4E-8ED4-9C64265DDD7E}
+		{B55CA98E-4817-457C-BCBA-8CB50730C57F} = {21D3FE55-687A-42EB-B1D3-49E013340F26}
+		{F9594CEB-0F0C-4355-A55C-97533FF142A3} = {21D3FE55-687A-42EB-B1D3-49E013340F26}
 	EndGlobalSection
 EndGlobal

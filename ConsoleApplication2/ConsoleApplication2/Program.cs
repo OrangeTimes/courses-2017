@@ -17,8 +17,9 @@ namespace ConsoleApplication2
             Console.Write("Please specify the year of production: ");
             int carYearOfProduction = Convert.ToInt32(Console.ReadLine());
             Console.Write("Specify the maximum suitable price in dollars: ");
-            int carMaxPrice = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please confirm the following information is correct. You would like to buy " + carManufacturer + " " + carModel + ", of " + carYearOfProduction + " year of production, for " + carMaxPrice + "$.");
+            string carMaxPrice = Console.ReadLine();
+            Console.WriteLine("Please confirm the following information is correct. You would like to buy {0} {1}, of {2} year of production, for {3}$.", carManufacturer, carModel, carYearOfProduction, carMaxPrice);
+            Console.WriteLine($"Please confirm the following information is correct. You would like to buy {carManufacturer} {carModel}, of {carYearOfProduction} year of production, for {carMaxPrice}.");
             Console.ReadKey();
         }
     }
