@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW1", "HW1", "{B4CA5778-BD9C-4060-91AE-85815F253653}"
 EndProject
@@ -16,6 +16,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW3", "HW3", "{4224A94D-3052-4D68-B796-8E3CC310849C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationOperators", "NazarKSolution\HW3\ConsoleApplicationOperators\ConsoleApplicationOperators.csproj", "{ADD68065-50F3-4400-BCAC-787BA3F49B63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW4", "HW4", "{F47BA97E-9D2F-4A45-8356-708E190C47FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitwiseOperators", "NazarKSolution\HW4\BitwiseOperators\BitwiseOperators.csproj", "{CC9ABD13-A610-4B69-BC30-BC29C67C5A50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{ADD68065-50F3-4400-BCAC-787BA3F49B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADD68065-50F3-4400-BCAC-787BA3F49B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADD68065-50F3-4400-BCAC-787BA3F49B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9ABD13-A610-4B69-BC30-BC29C67C5A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9ABD13-A610-4B69-BC30-BC29C67C5A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9ABD13-A610-4B69-BC30-BC29C67C5A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9ABD13-A610-4B69-BC30-BC29C67C5A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +56,6 @@ Global
 		{DB6B5513-9AAA-4B35-AC77-FB0D028613ED} = {B4CA5778-BD9C-4060-91AE-85815F253653}
 		{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE} = {4CDEA9E7-E46F-4457-92F3-4D4D30A6E51D}
 		{ADD68065-50F3-4400-BCAC-787BA3F49B63} = {4224A94D-3052-4D68-B796-8E3CC310849C}
+		{CC9ABD13-A610-4B69-BC30-BC29C67C5A50} = {F47BA97E-9D2F-4A45-8356-708E190C47FB}
 	EndGlobalSection
 EndGlobal
