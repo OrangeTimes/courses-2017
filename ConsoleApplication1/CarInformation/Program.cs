@@ -15,6 +15,9 @@ namespace CarInformation
             Console.WriteLine(); // added this to display empty line for better visual presentation
             Console.WriteLine("Manufacturer:");
                 String Manufacturer = Console.ReadLine();
+            // todo: new code statment should be vertically aligned with previous statements. Here and below
+            // todo: Manufacturer --> manufacturer. Local variables names should be in camelCase. Here and below
+            // todo: according to most code convetions String --> string.
 
             Console.WriteLine("Model:");
                 String Model = Console.ReadLine();
