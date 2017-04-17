@@ -21,6 +21,11 @@ namespace ConsoleApplication4
             int resultOfDividing = value1 / value2;
             int remainingResult = value1 % value2;
             Console.WriteLine($"{value1} + {value2} = {resultOfAdding} \n {value1} - {value2} = {resultOfSubstracting} \n {value1} * {value2} = {resultOfMultiplying} \n {value1} / {value2} = {resultOfDividing} \n {value1} % {value2} = {remainingResult}");
+            // todo: it is not recommnded to have such huge sinle statements. Around 150 symbols is optimal. 
+            // The problem with long statemnets is that it is hard to see differences in code made during code review if you use side by side comparisson. 
+            // In this case it's better to use create 5 strings with result information for output and concatenate them
+            // Using multiple console statements here is not the best way if taking into account perfomance considerantion: since create 5 string and concatanete them is faster than 5 Console.WriteLines
+
             Console.ReadKey();
         }
     }
