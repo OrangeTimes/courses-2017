@@ -18,6 +18,7 @@ namespace HomeWork3_Part1
 
             Console.WriteLine("Here are the outcomes: a = {0}, b = {1}, c = {2}, d = {3}", a, b, c, d);
             Console.ReadLine();
+            // todo: line 13 is not needed
         }
     }
 }

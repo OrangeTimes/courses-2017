@@ -16,8 +16,10 @@ namespace HomeWork3_Part2
             int num2;
             int num3;
             int num4;
+            // todo: move declaration closer to assignment
 
             //Adding numbers typed by the user.
+            // todo: add whitespace after comment symbol and comment text. Same below
 
             Console.WriteLine("Let's do some adding:");
             a = Convert.ToInt32(Console.ReadLine());
@@ -25,6 +27,7 @@ namespace HomeWork3_Part2
             b = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
             num1 = a + b;
+            // todo: num1 is not good name for variable since it doesn't provide any context. Suggested names: sum, sumOfNumbers. Same below
             Console.WriteLine(a + " + " + b + " = " + "{0}", num1);
             Console.WriteLine("U got your numbers. Now press enter to go next");
             Console.ReadLine();
@@ -68,6 +71,7 @@ namespace HomeWork3_Part2
 
             //Displaying all nums
             Console.WriteLine("Your results from all previous equations: {0}, {1}, {2}, {3}", num1, num2, num3, num4);
+            // todo: here is a good example why num1, num2 ... are bad names. It's hard to understand difference between them. You need to scroll up to understanf their context.
             Console.ReadLine();
         }
     }

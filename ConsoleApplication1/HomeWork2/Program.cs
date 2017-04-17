@@ -10,17 +10,22 @@ namespace HomeWork2
     {
         static void Main(string[] args)
         {
-                //Car manufacturer input
+            //Car manufacturer input
+            // todo: text should be separated by whitespace in comment: like // comment
             Console.WriteLine("Manufacturer:");
             String CarMan = Console.ReadLine();
+            // todo: as a general code convetion rule use string instead String. This is identical, but most all code convetions use string instead
+            // todo: variables should be named using camelCase
             Console.Clear();
-                
-                //Car model input
+
+            //Car model input
+            // todo:comments should be aligned with next statement after them
             Console.WriteLine("Model:");
             String CarModel = Console.ReadLine();
             Console.Clear();
                 
                 //Car year input
+            // todo:comments should be aligned with next statement
             Console.WriteLine("Year:");
             String CarYear = Console.ReadLine();
             Console.Clear();
@@ -40,5 +45,5 @@ namespace HomeWork2
             Console.ReadKey();
         }
 
-    }
+    } // todo: line 46 is redundant
 }
