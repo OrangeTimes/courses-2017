@@ -5,32 +5,38 @@ namespace CarCatalog
     {
         static void Main(string[] args)
         {
-            string customerName, carManufacturer, carModel, finalAnswer;
+            // string customerName, carManufacturer, carModel, finalAnswer;
             // todo: this is a valid statement. But as general rule you should move declarations closer to assingment
-            int carManufacturingYear, carPrice;
-            decimal carCubicCapacity;
+            // int carManufacturingYear, carPrice;
+            // decimal carCubicCapacity;
+            // double carCubicCapacity;
             // todo: in general we use double to store such values
             Console.Write("Please enter your Name:\n");
-            customerName = Console.ReadLine();
+            string customerName = Console.ReadLine();
             // To increase code readability I would recommend to add empty lines after some logical code end. In this case after ReadLine();
+
             Console.Write($"{customerName}, please enter car manufacturer:\n");
-            carManufacturer = Console.ReadLine();
+            string carManufacturer = Console.ReadLine();
+
             Console.Write($"Enter model of {carManufacturer}:\n");
-            carModel = Console.ReadLine();
+            string carModel = Console.ReadLine();
+
             Console.Write($"Enter year of manufacturing for {carManufacturer} {carModel}:\n");
-            carManufacturingYear = Convert.ToInt32(Console.ReadLine());
+            int carManufacturingYear = Convert.ToInt32(Console.ReadLine());
+
             Console.Write($"Enter cubic capacity of {carManufacturer} {carModel}:\n");
-            carCubicCapacity = Convert.ToDecimal(Console.ReadLine());
+            double carCubicCapacity = Convert.ToDouble(Console.ReadLine());
+
             Console.Write($"Enter preferable price for {carManufacturer} {carModel} of {carManufacturingYear} year with {carCubicCapacity}L engine:\n");
-            carPrice = Convert.ToInt32(Console.ReadLine());
+            int carPrice = Convert.ToInt32(Console.ReadLine());
+
             Console.Write($"Do you really want {carManufacturer} {carModel} of {carManufacturingYear} year with {carCubicCapacity} engine for {carPrice}?\n");
-            finalAnswer = Console.ReadLine();
-            while (finalAnswer != "yes")
+            while (Console.ReadLine() != "yes")
             {
                 Console.WriteLine("О на маєш! You should confirm what you've entered by entering yes");
                 Console.ReadLine();
+                break;
                 //break;
-
             }
             Console.WriteLine("Great Success!");
             Console.ReadKey();

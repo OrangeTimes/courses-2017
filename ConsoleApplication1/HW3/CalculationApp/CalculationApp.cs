@@ -6,29 +6,28 @@ namespace CalculationApp
     {
         static void Main(string[] args)
         {
-            int UserNumberOne, UserNumberTwo;
-            // todo: local variable names are in camelCase
+            int userNumberOne, userNumberTwo;
+            // todo: local variable names are in camelCase - done
 
             Console.WriteLine("Enter first number:");
-            UserNumberOne = Convert.ToInt32(Console.ReadLine());
+            userNumberOne = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter second number:");
-            UserNumberTwo = Convert.ToInt32(Console.ReadLine());
+            userNumberTwo = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Sum first and second values: {UserNumberOne} + {UserNumberTwo} = {UserNumberOne + UserNumberTwo}");
-            Console.WriteLine($"Substruct first and second values: {UserNumberOne} - {UserNumberTwo} = {UserNumberOne - UserNumberTwo}");
-            Console.WriteLine($"Multiply first and second values: {UserNumberOne} * {UserNumberTwo} = {UserNumberOne * UserNumberTwo}");
-            Console.WriteLine($"Divide first and second values: {UserNumberOne} / {UserNumberTwo} = {UserNumberOne / UserNumberTwo}");
-            Console.WriteLine($"Show remainder of division for first and second values: {UserNumberOne} % {UserNumberTwo} = {UserNumberOne % UserNumberTwo}");
+            Console.WriteLine($"Sum first and second values: {userNumberOne} + {userNumberTwo} = {userNumberOne + userNumberTwo}");
+            Console.WriteLine($"Substruct first and second values: {userNumberOne} - {userNumberTwo} = {userNumberOne - userNumberTwo}");
+            Console.WriteLine($"Multiply first and second values: {userNumberOne} * {userNumberTwo} = {userNumberOne * userNumberTwo}");
+            Console.WriteLine($"Divide first and second values: {userNumberOne} / {userNumberTwo} = {userNumberOne / userNumberTwo}");
+            Console.WriteLine($"Show remainder of division for first and second values: {userNumberOne} % {userNumberTwo} = {userNumberOne % userNumberTwo}");
             Console.ReadKey();
             
             Console.WriteLine("Another representation:");
-            Console.WriteLine($"{UserNumberOne} + {UserNumberTwo} = {UserNumberOne + UserNumberTwo}");
-            Console.WriteLine($"{UserNumberOne} - {UserNumberTwo} = {UserNumberOne - UserNumberTwo}");
-            Console.WriteLine($"{UserNumberOne} * {UserNumberTwo} = {UserNumberOne * UserNumberTwo}");
-            Console.WriteLine($"{UserNumberOne} / {UserNumberTwo} = {UserNumberOne / UserNumberTwo}");
-            Console.WriteLine($"{UserNumberOne} % {UserNumberTwo} = {UserNumberOne % UserNumberTwo}");
+            Console.WriteLine($"{userNumberOne} + {userNumberTwo} = {userNumberOne + userNumberTwo}");
+            Console.WriteLine($"{userNumberOne} - {userNumberTwo} = {userNumberOne - userNumberTwo}");
+            Console.WriteLine($"{userNumberOne} * {userNumberTwo} = {userNumberOne * userNumberTwo}");
+            Console.WriteLine($"{userNumberOne} / {userNumberTwo} = {userNumberOne / userNumberTwo}");
+            Console.WriteLine($"{userNumberOne} % {userNumberTwo} = {userNumberOne % userNumberTwo}");
             Console.ReadKey();
-
         }
     }
 }
