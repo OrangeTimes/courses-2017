@@ -7,6 +7,7 @@ namespace CalculationApp
         static void Main(string[] args)
         {
             int UserNumberOne, UserNumberTwo;
+            // todo: local variable names are in camelCase
 
             Console.WriteLine("Enter first number:");
             UserNumberOne = Convert.ToInt32(Console.ReadLine());

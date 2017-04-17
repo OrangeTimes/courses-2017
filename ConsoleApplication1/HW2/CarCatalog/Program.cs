@@ -6,10 +6,13 @@ namespace CarCatalog
         static void Main(string[] args)
         {
             string customerName, carManufacturer, carModel, finalAnswer;
+            // todo: this is a valid statement. But as general rule you should move declarations closer to assingment
             int carManufacturingYear, carPrice;
             decimal carCubicCapacity;
+            // todo: in general we use double to store such values
             Console.Write("Please enter your Name:\n");
             customerName = Console.ReadLine();
+            // To increase code readability I would recommend to add empty lines after some logical code end. In this case after ReadLine();
             Console.Write($"{customerName}, please enter car manufacturer:\n");
             carManufacturer = Console.ReadLine();
             Console.Write($"Enter model of {carManufacturer}:\n");
