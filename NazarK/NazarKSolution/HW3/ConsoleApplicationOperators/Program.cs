@@ -17,6 +17,7 @@ namespace ConsoleApplicationOperators
 
             int firstNumber;
             int secondNumber;
+            // todo: This is a valid statement, but it is not recommnded to us it as a code convention rule. Move declarations as close to assignment as possible
             Console.Write("Please enter first number: ");
             firstNumber = Convert.ToInt32(Console.ReadLine());
             Console.Write("Please enter second number (bigger than 0): ");

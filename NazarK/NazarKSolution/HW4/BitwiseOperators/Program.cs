@@ -11,6 +11,7 @@ namespace BitwiseOperators
         static void Main(string[] args)
         {
             //Task 1
+            // todo text comment should have a whitespace between comment sign \\ and comment text. Except commented out code. Same below
             Console.Write("Please enter comma separated values for dividend and divisor: ");
             string[] parts = Console.ReadLine().Split(',');
             int dividend = Convert.ToInt32(parts[0]);
@@ -30,6 +31,7 @@ namespace BitwiseOperators
             //Optional - common
             int lightNumToCheck;
             bool isUserLightActive;
+            // todo: This is a valid statement, but it is not recommnded to us it as a code convention rule. Move declarations as close to assignment as possible
 
             //Optional - Variant1 - with bitwise shift
             roomLights = 0;
@@ -39,6 +41,9 @@ namespace BitwiseOperators
             Console.Write("Please enter which light you want to check: ");
             lightNumToCheck = Convert.ToInt32(Console.ReadLine());
             isUserLightActive = ((roomLights >> 5 - lightNumToCheck) & 1) == 1;
+            // as a coding practice it makes sense to split such not trivial expressions to multiple variables
+            // also try to avoid 'roomLights >> 5 - lightNumToCheck' it takes time for other developer to figure out what is the actual operator execution will be.
+            // It is often a potential place for defects. Use (roomLights >> (5 - lightNumToCheck)) to explicitly show your intent
             Console.WriteLine($"Current state of light: {isUserLightActive}\n");
 
             //Optional - Variant2 - with math power
@@ -49,6 +54,7 @@ namespace BitwiseOperators
             Console.Write("Please enter which light you want to check: ");
             lightNumToCheck = Convert.ToInt32(Console.ReadLine());
             isUserLightActive = (roomLights & (int)Math.Pow(2, 5 - lightNumToCheck)) == Math.Pow(2, 5 - lightNumToCheck);
+            // todo: move Math.Pow(2, 5 - lightNumToCheck) to a separate variable. it will simplify this expression a lot
             Console.WriteLine($"Current state of light: {isUserLightActive}\n");
         }
     }
