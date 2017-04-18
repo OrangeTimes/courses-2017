@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace ChildProject
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
+	class Program
+	{
+		static void Main(string[] args)
+		{
 
-        }
-    }
-    public class TestClass
-    {
-        public static JObject Test()
-        {
-            JObject obj = new JObject();
-            return obj;
-        }
-    }
+		}
+	}
+	public class TestClass
+	{
+		public static JObject Test()
+		{
+			JObject obj = new JObject();
+			return obj;
+		}
+	}
 }
