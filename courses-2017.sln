@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical02", "Practical02\Practical02.csproj", "{449A7B85-6E4E-47B9-98B2-7916EAA1A061}"
 EndProject
@@ -10,6 +10,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework", "Homework", "{3CEEC8C0-BD2E-4E5B-890A-8636A1E18CF2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical03", "Practical03\Practical03.csproj", "{FD0B7FC1-7BD2-4D73-BBB0-94E2C67FE5F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework1", "Homework1", "{8D23F7EA-15F8-4950-96AC-40C41F7469EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "Homework\HW1\ConsoleApp1\ConsoleApp1.csproj", "{62F1A4C0-B88E-405A-9A8B-5225D9F34753}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "Homework\HW1\ConsoleApp2\ConsoleApp2.csproj", "{1F992449-D98A-4EE6-8E0D-C0CE23607EE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework2", "Homework2", "{0F539C6E-B130-45EF-95E1-C35031EAD842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2", "Homework\HW2\ConsoleApp\HW2.csproj", "{F1F3D5AB-5007-4754-A3B5-E3881C00FAC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,8 +39,27 @@ Global
 		{FD0B7FC1-7BD2-4D73-BBB0-94E2C67FE5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD0B7FC1-7BD2-4D73-BBB0-94E2C67FE5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD0B7FC1-7BD2-4D73-BBB0-94E2C67FE5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F1A4C0-B88E-405A-9A8B-5225D9F34753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F1A4C0-B88E-405A-9A8B-5225D9F34753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F1A4C0-B88E-405A-9A8B-5225D9F34753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F1A4C0-B88E-405A-9A8B-5225D9F34753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F992449-D98A-4EE6-8E0D-C0CE23607EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F992449-D98A-4EE6-8E0D-C0CE23607EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F992449-D98A-4EE6-8E0D-C0CE23607EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F992449-D98A-4EE6-8E0D-C0CE23607EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F3D5AB-5007-4754-A3B5-E3881C00FAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F3D5AB-5007-4754-A3B5-E3881C00FAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F3D5AB-5007-4754-A3B5-E3881C00FAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F3D5AB-5007-4754-A3B5-E3881C00FAC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D23F7EA-15F8-4950-96AC-40C41F7469EF} = {3CEEC8C0-BD2E-4E5B-890A-8636A1E18CF2}
+		{62F1A4C0-B88E-405A-9A8B-5225D9F34753} = {8D23F7EA-15F8-4950-96AC-40C41F7469EF}
+		{1F992449-D98A-4EE6-8E0D-C0CE23607EE3} = {8D23F7EA-15F8-4950-96AC-40C41F7469EF}
+		{0F539C6E-B130-45EF-95E1-C35031EAD842} = {3CEEC8C0-BD2E-4E5B-890A-8636A1E18CF2}
+		{F1F3D5AB-5007-4754-A3B5-E3881C00FAC5} = {0F539C6E-B130-45EF-95E1-C35031EAD842}
 	EndGlobalSection
 EndGlobal
