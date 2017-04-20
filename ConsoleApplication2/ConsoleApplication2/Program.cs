@@ -12,8 +12,8 @@ namespace ConsoleApplication2
         {
             Console.WriteLine("Please specify the manufacturer of the car you'd like to buy:");
             string carManufacturer = Console.ReadLine();
-            // it is often a good practise to split your code into logical blocks separated by empty lines. In this case: after  each ReadLine()
-
+            
+            // adding empty lines according to comments
             Console.Write("Please select the model of the car: ");
             string carModel = Console.ReadLine();
 
