@@ -14,6 +14,9 @@ namespace Practical03
 			int y = 3;//0011
 			int z = x ^ y;//0100
 			bool isVisible = (!Check01() & Check02());
+			int value = 3;
+			var result = Math.Pow(2, value);
+
 		}
 
 		static bool Check01()
