@@ -18,13 +18,12 @@ namespace Homework4._2
             // Note: you can use next statement to convert int value to binary representation for output: stringbinaryForm = Convert.ToString(number, 2);
 
             int roomLights = 0;//00000
-
-
+            
             // to enable 1, 3, 5 light
             Console.WriteLine("Plase enter which lights you want to enable: ");
-            string userInput = Console.ReadLine();
+            string lightsToEnable = Console.ReadLine();
 
-            roomLights |= Convert.ToInt32(userInput, 2);
+            roomLights |= Convert.ToInt32(lightsToEnable, 2);
             Console.WriteLine($"Current state: {Convert.ToString(roomLights, 2)}");
             Console.ReadLine();
 
