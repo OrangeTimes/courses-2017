@@ -23,52 +23,52 @@ namespace ConsoleApp3
             //Console.ReadKey();
 
             //2.
-            char again = 'д';
-            while (again == 'д')
+            char again = 'y';
+            while (again == 'y')
             {
                 double a;
                 double b;
                 double total;
                 char oper;
 
-                Console.WriteLine("Enter :");
+                Console.WriteLine("Enter first digit:");
                 a = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("Введите оператор:");
+                Console.WriteLine("Enter operator:");
                 oper = Convert.ToChar(Console.ReadLine());
 
-                Console.WriteLine("Введите второе число:");
+                Console.WriteLine("Enter second digit:");
                 b = Convert.ToDouble(Console.ReadLine());
 
                 if (oper == '+')
                 {
                     total = a + b;
-                    Console.WriteLine("Сумма {0} {1} равно {2}.", a, b, total);
+                    Console.WriteLine("{0} + {1} = {2}.", a, b, total);
                 }
 
                 else if (oper == '-')
                 {
                     total = a - b;
-                    Console.WriteLine("Разность " + a + " и " + b + " равна " + total + ".");
+                    Console.WriteLine("{0} - {1} = {2}.", a, b, total);
                 }
 
                 else if (oper == '*')
                 {
                     total = a * b;
-                    Console.WriteLine("Умножение " + a + " на " + b + " равно " + total + ".");
+                    Console.WriteLine("{0} * {1} = {2}.", a, b, total);
                 }
 
                 else if (oper == '/')
                 {
                     total = a / b;
-                    Console.WriteLine("Деление " + a + " на " + b + " равно " + total + ".");
+                    Console.WriteLine("{0} / {1} = {2}.", a, b, total);
                 }
                 else
                 {
-                    Console.WriteLine("Неизвестный оператор.");
+                    Console.WriteLine("Unknown operator.");
                 }
                 Console.WriteLine();
-                Console.WriteLine("Вы хотите продолжить работу с калькулятором? (д/н)");
+                Console.WriteLine("Do you want to continue? (y/n)");
                 again = Convert.ToChar(Console.ReadLine());
             }
         }
