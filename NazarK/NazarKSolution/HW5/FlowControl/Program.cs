@@ -11,7 +11,7 @@ namespace FlowControl
 		static void Main(string[] args)
 		{
 			// Task 1
-			Console.WriteLine("Enter a number you want to evaluate: ");
+			Console.Write("Enter a number you want to evaluate: ");
 			int number = Convert.ToInt32(Console.ReadLine());
 
 			if (number % 2 == 0)
@@ -31,11 +31,11 @@ namespace FlowControl
 
 			// Task 3
 			bool isValidName = false;
-			string errorMessage = "User name is not valid.\nShould have more than 0 and less than 50 symbols.\n";
+			string errorMessage = "User name is not valid.\nShould have more than 0 and less than 50 symbols.";
 
 			while (!isValidName)
 			{
-				Console.Write("Enter a user name: ");
+				Console.Write("\nEnter a user name: ");
 				string name = Console.ReadLine();
 
 				if (name.Length > 0 && name.Length < 50)
