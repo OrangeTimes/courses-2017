@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B160C4D7-4A68-4BEC-8D47-B13A06921BC3}</ProjectGuid>
+    <ProjectGuid>{3C186370-D056-4029-BD1A-F3D015BEEC42}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HW3</RootNamespace>
-    <AssemblyName>HW3</AssemblyName>
+    <RootNamespace>HW3_2</RootNamespace>
+    <AssemblyName>HW3_2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="HW3_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
