@@ -28,23 +28,27 @@ namespace HW4_2
                     {
                         roomLights |= 1;
                         Console.WriteLine("You switched 1 light");
+                        Console.ReadKey();
                         break;
                     }
                 case 3:
                     {
                         roomLights |= 7;
                         Console.WriteLine("You switched 3 lights");
+                        Console.ReadKey();
                         break;
                     }
                 case 5:
                     {
                         roomLights |= 31;
                         Console.WriteLine("You switched 5 lights");
+                        Console.ReadKey();
                         break;
                     }
                 default:
                     {
                         Console.WriteLine("Not valid value, please select from 1 or 3 or 5");
+                        Console.ReadKey();
                         break;
                     }
             }
