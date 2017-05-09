@@ -11,15 +11,15 @@ namespace HW2
         static void Main(string[] args)
         {
             Console.WriteLine("Enter Manufacturer:");
-            String carManufacturer = Convert.ToString(Console.ReadLine());
+            string carManufacturer = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Enter Model:");
-            String carModel = Convert.ToString(Console.ReadLine());
+            string carModel = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Enter Year:");
             int carYear = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Price:");
-            Double carPrice = Convert.ToDouble(Console.ReadLine());
+            double carPrice = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter Color:");
-            String carColor = Convert.ToString(Console.ReadLine());
+            string carColor = Convert.ToString(Console.ReadLine());
             Console.WriteLine("You selected Manufacturer:{0}, Model:{1}, Year:{2}, Price:{3}$, Color:{4}.", carManufacturer, carModel, carYear, carPrice, carColor);
             Console.ReadKey();
         }
