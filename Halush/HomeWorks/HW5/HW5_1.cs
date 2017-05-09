@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW5
 {
-    class Program
+    class HW5_1
     {
         static void Main(string[] args)
         {
