@@ -13,24 +13,18 @@ namespace HW5_3
     {
         static void Main(string[] args)
         {
-            enterName:
             Console.WriteLine("Please enter your name:");
             string userName = Console.ReadLine();
             int nameLenght = userName.Length;           //Defining name's lenght
-            if (nameLenght > 50)
+            while (nameLenght > 50 || nameLenght < 1)   //Name's lenght validation
             {
                 Console.WriteLine("User name must have more then 0 and less then 51 characters.");
-                goto enterName;
+                Console.WriteLine("Please enter your name:");
+                userName = Console.ReadLine();
+                nameLenght = userName.Length;
             }
-            if (nameLenght < 1)
-            {
-                Console.WriteLine("User name must have more then 0 and less then 51 characters.");
-                goto enterName;
-            }
-            else {
-                Console.WriteLine("Welcome {0}", userName);
-                Console.ReadKey();
-            }
+            Console.WriteLine("Welcome {0}", userName);
+            Console.ReadKey();
         }
     }
 }
