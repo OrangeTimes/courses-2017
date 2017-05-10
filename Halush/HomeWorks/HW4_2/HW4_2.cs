@@ -22,7 +22,7 @@ namespace HW4_2
             int roomLights = 0;
             Console.WriteLine("Enter 1 or 3 or 5 to switch the light:");
             int userNumber = Convert.ToInt32(Console.ReadLine());
-            switch (userNumber)         //User selects how many lights to switch on
+            switch (userNumber)         //User selects which light to switch on
             {
                 case 1:
                     {
@@ -33,15 +33,15 @@ namespace HW4_2
                     }
                 case 3:
                     {
-                        roomLights |= 7;
-                        Console.WriteLine("You switched 3 lights");
+                        roomLights |= 4;
+                        Console.WriteLine("You switched 3 light");
                         Console.ReadKey();
                         break;
                     }
                 case 5:
                     {
-                        roomLights |= 31;
-                        Console.WriteLine("You switched 5 lights");
+                        roomLights |= 16;
+                        Console.WriteLine("You switched 5 light");
                         Console.ReadKey();
                         break;
                     }
@@ -52,9 +52,8 @@ namespace HW4_2
                         break;
                     }
             }
-
             int allLight = 31;
-            roomLights |= allLight;      //System switch all the light
+            roomLights |= allLight;      //System automatically switch all the lights
         }
     }
 }
