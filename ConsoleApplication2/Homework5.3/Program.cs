@@ -21,8 +21,7 @@ namespace Homework5._3
             {
                 Console.WriteLine("Please try again:");                
                 username = Console.ReadLine();
-                usernameLength = username.Length;
-                
+                usernameLength = username.Length;                
             }
             Console.WriteLine("Thank You!");
             Console.ReadLine();
