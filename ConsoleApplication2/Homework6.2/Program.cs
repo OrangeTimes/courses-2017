@@ -25,13 +25,17 @@ namespace Homework6._2
 
             Console.Write("Please enter value: ");
             decimal userValue = Convert.ToDecimal(Console.ReadLine());
+
             Console.Write("Please enter the desired value type: ");
             string desiredValueType = Console.ReadLine();
+
+            //perform casting to desired value type
             byte byteValue = (byte)userValue;
             short shortValue = (short)userValue;
             int integerValue = (int)userValue;
             long longValue = (long)userValue;
 
+            //print casted value
             switch (desiredValueType)
             {
                 case "byte":
