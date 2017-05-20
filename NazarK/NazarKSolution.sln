@@ -1,33 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW1", "HW1", "{B4CA5778-BD9C-4060-91AE-85815F253653}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW1 - Assemblies and references", "HW1 - Assemblies and references", "{B4CA5778-BD9C-4060-91AE-85815F253653}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildProject", "NazarKSolution\HW1\ChildProject\ChildProject.csproj", "{F1A62D94-C93B-4DF1-AB8B-65016B69226C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpProject", "NazarKSolution\HW1\StartUpProject\StartUpProject.csproj", "{DB6B5513-9AAA-4B35-AC77-FB0D028613ED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW2", "HW2", "{4CDEA9E7-E46F-4457-92F3-4D4D30A6E51D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW2 - Variables", "HW2 - Variables", "{4CDEA9E7-E46F-4457-92F3-4D4D30A6E51D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCarApplication", "NazarKSolution\HW2\ConsoleCarApplication\ConsoleCarApplication.csproj", "{FC7A97A2-54EF-4FA9-B5E6-D3046AFCD4CE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW3", "HW3", "{4224A94D-3052-4D68-B796-8E3CC310849C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW3 - Operators", "HW3 - Operators", "{4224A94D-3052-4D68-B796-8E3CC310849C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationOperators", "NazarKSolution\HW3\ConsoleApplicationOperators\ConsoleApplicationOperators.csproj", "{ADD68065-50F3-4400-BCAC-787BA3F49B63}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW4", "HW4", "{F47BA97E-9D2F-4A45-8356-708E190C47FB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW4 - BitwiseOperators", "HW4 - BitwiseOperators", "{F47BA97E-9D2F-4A45-8356-708E190C47FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitwiseOperators", "NazarKSolution\HW4\BitwiseOperators\BitwiseOperators.csproj", "{CC9ABD13-A610-4B69-BC30-BC29C67C5A50}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW5", "HW5", "{36A80101-06D3-4135-AC37-053809CFB4C8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW5 - FlowControl", "HW5 - FlowControl", "{36A80101-06D3-4135-AC37-053809CFB4C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowControl", "NazarKSolution\HW5\FlowControl\FlowControl.csproj", "{A2265FC6-DC00-40AF-8268-87DAEDFB6579}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW6", "HW6", "{7333A372-5B4F-4A31-B65F-8ED80DC4B0C1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW6 - Casting", "HW6 - Casting", "{7333A372-5B4F-4A31-B65F-8ED80DC4B0C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "NazarKSolution\HW6\Casting\Casting.csproj", "{63189C65-2BEE-4441-A2EE-D507E717296C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW7 - Enums and Arrays", "HW7 - Enums and Arrays", "{7235E2E7-61D5-49CB-BEFD-D76AF9374616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumsAndArrays", "NazarKSolution\HW7\EnumsAndArrays\EnumsAndArrays.csproj", "{3B6884C6-A35D-4556-A8EB-1138DFD105C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{63189C65-2BEE-4441-A2EE-D507E717296C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63189C65-2BEE-4441-A2EE-D507E717296C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63189C65-2BEE-4441-A2EE-D507E717296C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B6884C6-A35D-4556-A8EB-1138DFD105C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6884C6-A35D-4556-A8EB-1138DFD105C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6884C6-A35D-4556-A8EB-1138DFD105C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6884C6-A35D-4556-A8EB-1138DFD105C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +83,6 @@ Global
 		{CC9ABD13-A610-4B69-BC30-BC29C67C5A50} = {F47BA97E-9D2F-4A45-8356-708E190C47FB}
 		{A2265FC6-DC00-40AF-8268-87DAEDFB6579} = {36A80101-06D3-4135-AC37-053809CFB4C8}
 		{63189C65-2BEE-4441-A2EE-D507E717296C} = {7333A372-5B4F-4A31-B65F-8ED80DC4B0C1}
+		{3B6884C6-A35D-4556-A8EB-1138DFD105C2} = {7235E2E7-61D5-49CB-BEFD-D76AF9374616}
 	EndGlobalSection
 EndGlobal
