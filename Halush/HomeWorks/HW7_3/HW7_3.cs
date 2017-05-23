@@ -16,6 +16,12 @@ namespace HW7_3
     {
         static void Main(string[] args)
         {
+            string a = "Hello World!";
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine("{0}", a[i]);
+            }
+            Console.ReadKey();
         }
     }
 }

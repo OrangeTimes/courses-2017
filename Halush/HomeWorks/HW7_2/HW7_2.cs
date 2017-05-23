@@ -15,7 +15,7 @@ namespace HW7_2
     {
         static void Main(string[] args)
         {
-            int[] arrayOfNumbers = {1,2,10,4,5};
+            int[] arrayOfNumbers = {1,2,10,4,5,78,5,16,32,-7};
             Console.WriteLine("Maximum value in this array is {0}", arrayOfNumbers.Max());
             Console.WriteLine("Minimum value in this array is {0}", arrayOfNumbers.Min());
             Console.ReadKey();
