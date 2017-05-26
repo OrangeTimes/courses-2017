@@ -19,6 +19,7 @@ namespace JaggedAndMultiArrays_2
 				new int[]{11, 12, 13, -14, -15, -16}
 			};
 
+			// printing all elements in reversed order
 			for (int i = jaggedArray.Length - 1; i >= 0; i--)
 			{
 				for (int j = jaggedArray[i].Length - 1; j >= 0; j--)
