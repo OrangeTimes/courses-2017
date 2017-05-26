@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3B6884C6-A35D-4556-A8EB-1138DFD105C2}</ProjectGuid>
+    <ProjectGuid>{0F8D80D6-810B-4D9B-A887-809D3FD575BE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EnumsAndArrays</RootNamespace>
-    <AssemblyName>EnumsAndArrays</AssemblyName>
+    <RootNamespace>JaggedAndMultiArrays_2</RootNamespace>
+    <AssemblyName>JaggedAndMultiArrays_2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

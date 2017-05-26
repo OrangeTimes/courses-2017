@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2265FC6-DC00-40AF-8268-87DAEDFB6579}</ProjectGuid>
+    <ProjectGuid>{99485A1A-D0E3-4060-9E6A-F937C3D0AAB7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FlowControl</RootNamespace>
-    <AssemblyName>FlowControl</AssemblyName>
+    <RootNamespace>EnumsAndArrays_2</RootNamespace>
+    <AssemblyName>EnumsAndArrays_2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
