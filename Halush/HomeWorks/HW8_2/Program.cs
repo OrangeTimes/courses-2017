@@ -22,25 +22,28 @@ namespace HW8_2
                 for (int j = dimension2; j >= 0; j--)          //Iterate through the second dimension in reverse order
                 {
                     Console.WriteLine(multiArray[i, j]);
-                    Console.ReadKey();
+
                 }
             }
+            Console.ReadKey();
 
-            /*      Jagged array
-            
+
+            // Jagger array
+            /*
             int[][] jaggedArray = {
                 new int[] {1,2,3,4},
                 new int[] {5,6,7},
                 new int[] {8,9,10,11}
             };
-            for (int i = jaggedArray.Length - 1; i >= 0; i--)
+            for (int i = jaggedArray.Length -1; i >= 0; i--)
             {
-                for (int j = jaggedArray[i].Length - 1; j >= 0; j--)
+
+                for (int j = jaggedArray[i].Length -1; j >= 0; j--)
                 {
                     Console.WriteLine(jaggedArray[i][j]);
-                    Console.ReadKey();
                 }
             }
+            Console.ReadKey();
             */
         }
     }
