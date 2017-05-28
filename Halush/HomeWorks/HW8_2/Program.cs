@@ -26,7 +26,7 @@ namespace HW8_2
                 }
             }
 
-            /*      Jagger array
+            /*      Jagged array
             
             int[][] jaggedArray = {
                 new int[] {1,2,3,4},
