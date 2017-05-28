@@ -29,6 +29,7 @@ namespace Homework6._2
             Console.Write("Please enter the desired value type: ");
             string desiredValueType = Console.ReadLine();
 
+			// todo it's better to do this in switch cases
             //perform casting to desired value type
             byte byteValue = (byte)userValue;
             short shortValue = (short)userValue;

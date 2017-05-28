@@ -17,7 +17,7 @@ namespace Homework6._1
 
             // perform casting to find out if the value entered by user is real and print result
             if (userValue == (int)userValue)
-                {
+                { // todo check formatting
                 Console.WriteLine("This is real number.");
             }
             else
