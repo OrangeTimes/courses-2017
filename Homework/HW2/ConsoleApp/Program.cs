@@ -10,6 +10,8 @@ namespace ConsoleApp8
     {
         static void Main(string[] args)
         {
+			// todo variable names should be in camelCase
+			// move variables closer to intialization
             string Manufacturer;
             string Model;
             string year;
