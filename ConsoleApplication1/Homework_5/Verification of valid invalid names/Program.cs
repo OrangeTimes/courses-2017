@@ -11,7 +11,7 @@ namespace Homework_5_Part_3
 			Console.WriteLine("Please type the username: ");
 			string typedName = Console.ReadLine();
 
-			int length = typedName.Length;
+			int length = typedName.Length; // todo you can skip this variable and use typedName only
 
 			while (length == 0 || length > 50)
 			{
@@ -19,6 +19,7 @@ namespace Homework_5_Part_3
 				typedName = Console.ReadLine();
 				length = typedName.Length;
 			}
+			//todo align next 2 statmenet with other code in vertical line 
 				Console.WriteLine("Thank you!");
 				Console.ReadLine();
 		}

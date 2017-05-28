@@ -12,6 +12,8 @@ namespace ConsoleCarApplication
 		{
 			string carBrand, carModel, gearboxType;
 			int productionYear, carPrice, maxSpeed;
+			// todo move variable declaration closer to assignment 
+			// carManufacturer variable is missing 
 
 			Console.WriteLine("Please type the car brand:");
 			carBrand = Console.ReadLine();

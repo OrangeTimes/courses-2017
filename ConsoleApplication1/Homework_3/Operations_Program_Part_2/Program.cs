@@ -20,7 +20,7 @@ namespace Operations_Program_Part_2
 			operation = Convert.ToChar(Console.ReadLine());
 			Console.Write("Input second number: ");
 			y = Convert.ToInt32(Console.ReadLine());
-
+			// todo it's better to use swithc in this case
 			if (operation == '+')
 				Console.WriteLine("{0} + {1} = {2}", x, y, x + y);
 			else if (operation == '-')

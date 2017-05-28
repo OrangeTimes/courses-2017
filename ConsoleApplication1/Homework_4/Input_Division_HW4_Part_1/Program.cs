@@ -14,6 +14,8 @@ namespace Homework_4_Part_1
 			Console.WriteLine("Input second number:");
 			int input2 = Convert.ToInt32(Console.ReadLine());
 			bool isDivisible = false;
+
+			// todo it's better to move this code to isDivisible
 			if (input1 % input2 == 0)
 			{
 				isDivisible = true;
