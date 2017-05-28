@@ -14,6 +14,7 @@ namespace HW8_2
     {
         static void Main(string[] args)
         {             //Multidimensional array
+			// todo comments should be aligned with other code vertically. Put commnets in empty line as a rule of thumb
             int[,] multiArray = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
             int dimension1 = multiArray.GetLength(0) - 1;      //Get the first dimension lenght 
             int dimension2 = multiArray.GetLength(1) - 1;      //Get the second dimension lenght
@@ -21,7 +22,7 @@ namespace HW8_2
             {
                 for (int j = dimension2; j >= 0; j--)          //Iterate through the second dimension in reverse order
                 {
-                    Console.WriteLine(multiArray[i, j]);
+                    Console.WriteLine(multiArray[i, j]); // todo redundant space below
 
                 }
             }

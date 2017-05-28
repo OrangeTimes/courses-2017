@@ -15,7 +15,9 @@ namespace HW5_3
         {
             Console.WriteLine("Please enter your name:");
             string userName = Console.ReadLine();
+			// todo: no reason to declare this as a separate variable
             int nameLenght = userName.Length;           //Defining name's lenght
+
             while (nameLenght > 50 || nameLenght < 1)   //Name's lenght validation
             {
                 Console.WriteLine("User name must have more then 0 and less then 51 characters.");

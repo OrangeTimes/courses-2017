@@ -15,6 +15,7 @@ namespace HW6_1
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter your number:");
+			
             string userValue = Console.ReadLine();
             bool isValueCorrect = Double.TryParse(userValue, out double convertedValue); //Verify that user's value can be successfully converted
             while (isValueCorrect == false)                                              //Until user's value is incorrect ask to enter the value again
@@ -24,6 +25,7 @@ namespace HW6_1
                 userValue = Console.ReadLine();
                 isValueCorrect = Double.TryParse(userValue, out convertedValue);
             }
+			// next code block declaration is redundant {}
             {                                                                            //When user entered a correct value determine if it is a whole or a real by containing a ","
                 if (userValue.IndexOf(",") >= 0)
                 {

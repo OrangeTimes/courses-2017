@@ -29,9 +29,10 @@ namespace HW6_2
             Console.WriteLine("Please enter your number:");
             string userValue = Console.ReadLine();
             bool isValueProper = Double.TryParse(userValue, out double convertToDouble);     //Verify that user's value can be successfully converted
-            while (isValueProper == false)                                                   //Until user's value is incorrect ask him to enter a value again
+			// todo: isValueProper == false) is redundant here you can use isValueProper
+			while (isValueProper == false)                                                   //Until user's value is incorrect ask him to enter a value again
             {
-                Console.WriteLine("Please enter correct value:");
+				Console.WriteLine("Please enter correct value:");
                 userValue = Console.ReadLine();
                 isValueProper = Double.TryParse(userValue, out convertToDouble);
             }                                                                                //If user enetered a correct value ask him for a type he wants to get

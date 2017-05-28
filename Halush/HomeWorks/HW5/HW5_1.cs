@@ -16,6 +16,10 @@ namespace HW5
         {
             Console.WriteLine("Enter your number:");
             int userNumber = Convert.ToInt32(Console.ReadLine());
+			// todo: use next formatting. Curly brace should begin from new line
+			// {
+			//
+			// }
             if (userNumber % 2 != 0){
                 Console.WriteLine("Entered number {0} is odd", userNumber);
                 Console.ReadKey();
