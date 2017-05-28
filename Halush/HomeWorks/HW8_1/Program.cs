@@ -15,11 +15,12 @@ namespace HW8_1
         static void Main(string[] args)
         {
 			// todo it is recommnded to aa space in array declaration like {1, 2, 3},
-			int[][] jaggedArray = {                  //Jagged array declarationa dn initialization
-               new int[] {1,2,3},
-               new int[] {4,5},
-               new int[] {6,7,8,9,10},
-               new int[] {11,12}
+            //Halush Oleh: fixed
+			int[][] jaggedArray = {                                  //Jagged array declarationa and initialization
+               new int[] {1, 2, 3},
+               new int[] {4, 5},
+               new int[] {6, 7, 8, 9, 10},
+               new int[] {11, 12}
             };
 		
             double sumOfElements = 0;

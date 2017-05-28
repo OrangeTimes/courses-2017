@@ -20,11 +20,14 @@ namespace HW5
 			// {
 			//
 			// }
-            if (userNumber % 2 != 0){
+            //Halush Oleh: fixed
+            if (userNumber % 2 != 0)
+            {
                 Console.WriteLine("Entered number {0} is odd", userNumber);
                 Console.ReadKey();
             }
-            else {
+            else
+            {
                 Console.WriteLine("Entered number {0} is even", userNumber);
                 Console.ReadKey();
             }

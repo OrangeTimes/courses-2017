@@ -26,7 +26,8 @@ namespace HW6_1
                 isValueCorrect = Double.TryParse(userValue, out convertedValue);
             }
 			// next code block declaration is redundant {}
-            {                                                                            //When user entered a correct value determine if it is a whole or a real by containing a ","
+            //Halush Oleh: fixed
+                                                                                        //When user entered a correct value determine if it is a whole or a real by containing a ","
                 if (userValue.IndexOf(",") >= 0)
                 {
                     Console.WriteLine("Your number {0} is real", convertedValue);
@@ -35,7 +36,6 @@ namespace HW6_1
                 {
                     Console.WriteLine("Your number {0} is whole", convertedValue);
                 }
-            }
             Console.ReadKey();
         }
     }
