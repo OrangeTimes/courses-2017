@@ -28,7 +28,8 @@ namespace HW7_1
             Console.WriteLine("Currently we have next delivery methods: ByAir, BySea, ByCar, PostToPost, PostToHome.");
             Console.WriteLine("What delivery method would you like to get info about?:");
             string userInput = Console.ReadLine();
-            var deliveryInfo = (PostDelivery)Enum.Parse(typeof(PostDelivery), userInput, true); //Parse a user's input to get a value from enum despite user entered a numeric value or verbal value
+            // Parse a user's input to get a value from enum despite user entered a numeric value or verbal value
+            var deliveryInfo = (PostDelivery)Enum.Parse(typeof(PostDelivery), userInput, true); 
             switch (deliveryInfo)
             {
                 case PostDelivery.ByAir:

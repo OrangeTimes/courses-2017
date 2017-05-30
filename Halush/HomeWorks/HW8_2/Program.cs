@@ -15,8 +15,8 @@ namespace HW8_2
         static void Main(string[] args)
         {
             // todo comments should be aligned with other code vertically. Put commnets in empty line as a rule of thumb
-            //Halush Oleh: fixed
-            //Multidimensional array
+            // Halush Oleh: fixed
+            // Multidimensional array
             int[,] multiArray = 
             {
                 { 1, 2, 3, 4 }, 
@@ -24,13 +24,17 @@ namespace HW8_2
                 { 9, 10, 11, 12 }, 
                 { 13, 14, 15, 16 }
             };
-            int dimension1 = multiArray.GetLength(0) - 1;      //Get the first dimension lenght 
-            int dimension2 = multiArray.GetLength(1) - 1;      //Get the second dimension lenght
-            for (int i = dimension1; i >= 0; i--)              //Iterate through the first dimension in reverse order
+            // Get the first dimension lenght 
+            int dimension1 = multiArray.GetLength(0) - 1;
+            // Get the second dimension lenght
+            int dimension2 = multiArray.GetLength(1) - 1;
+            // Iterate through the first dimension in reverse order
+            for (int i = dimension1; i >= 0; i--)
             {
-                for (int j = dimension2; j >= 0; j--)          //Iterate through the second dimension in reverse order
+                // Iterate through the first dimension in reverse order
+                for (int j = dimension2; j >= 0; j--)         
                 {
-                    Console.WriteLine(multiArray[i, j]);       // todo redundant space below //Halush Oleh: fixed
+                    Console.WriteLine(multiArray[i, j]);       // todo redundant space below // Halush Oleh: fixed
                 }
             }
             Console.ReadKey();

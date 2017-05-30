@@ -18,7 +18,7 @@ namespace HW7_3
         {
             string a = "Hello World!";
             // todo: it's better to use foreach loop here from code readability perspective
-            //Halush Oleh: fixed
+            // Halush Oleh: fixed
             foreach (char b in a)
             {
                 Console.WriteLine(b);

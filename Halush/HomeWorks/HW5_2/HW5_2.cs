@@ -13,7 +13,7 @@ namespace HW5_2
         static void Main(string[] args)
         {
 			// todo no sense to declare a outside of scope. As general rule such variable is historically named i not a
-            //Halush Oleh: fixed
+            // Halush Oleh: fixed
             for (int i = -1;  i >= -100; i--)
             {
                 Console.WriteLine(i);

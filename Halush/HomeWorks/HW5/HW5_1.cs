@@ -20,7 +20,7 @@ namespace HW5
 			// {
 			//
 			// }
-            //Halush Oleh: fixed
+            // Halush Oleh: fixed
             if (userNumber % 2 != 0)
             {
                 Console.WriteLine("Entered number {0} is odd", userNumber);

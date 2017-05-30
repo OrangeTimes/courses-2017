@@ -28,17 +28,22 @@ namespace HW6_2
         {
             Console.WriteLine("Please enter your number:");
             string userValue = Console.ReadLine();
-            bool isValueProper = Double.TryParse(userValue, out double convertToDouble);     //Verify that user's value can be successfully converted
+            // Verify that user's value can be successfully converted
+            bool isValueProper = Int64.TryParse(userValue, out Int64 convertToDouble);
             // todo: isValueProper == false) is redundant here you can use isValueProper
-            while (isValueProper == false)                                                   //Until user's value is incorrect ask him to enter a value again
+            // Halush Oleh: changed (isValueProper == false) to (!isValueProper)
+            // Until user's value is incorrect ask him to enter a value again
+            while (!isValueProper)                                                   
             {
                 Console.WriteLine("Please enter correct value:");
                 userValue = Console.ReadLine();
-                isValueProper = Double.TryParse(userValue, out convertToDouble);
-            }                                                                                //If user enetered a correct value ask him for a type he wants to get
+                isValueProper = Int64.TryParse(userValue, out convertToDouble);
+            }
+            // If user enetered a correct value ask him for a type he wants to get
             Console.WriteLine("What is your target type? Please enter type within byte, short, integer, long:");
             string targetType = Console.ReadLine();
-            switch (targetType)                                                              //List of types user can choose 
+            switch (targetType)
+            // List of types user can choose 
             {
                 case "byte":
                     {

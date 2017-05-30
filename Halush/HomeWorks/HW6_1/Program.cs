@@ -17,18 +17,20 @@ namespace HW6_1
             Console.WriteLine("Please enter your number:");
 			
             string userValue = Console.ReadLine();
-            bool isValueCorrect = Double.TryParse(userValue, out double convertedValue); //Verify that user's value can be successfully converted
-            while (isValueCorrect == false)                                              //Until user's value is incorrect ask to enter the value again
+            // Verify that user's value can be successfully converted
+            bool isValueCorrect = Double.TryParse(userValue, out double convertedValue);
+            // Until user's value is incorrect ask to enter the value again
+            while (!isValueCorrect)                                              
             {
                 Console.WriteLine("You entered an incorrect value.");
                 Console.WriteLine("Please enter your number:");
                 userValue = Console.ReadLine();
                 isValueCorrect = Double.TryParse(userValue, out convertedValue);
             }
-			// next code block declaration is redundant {}
-            //Halush Oleh: fixed
-                                                                                        //When user entered a correct value determine if it is a whole or a real by containing a ","
-                if (userValue.IndexOf(",") >= 0)
+            // next code block declaration is redundant {}
+            // Halush Oleh: fixed
+            // When user entered a correct value determine if it is a whole or a real by containing a ","                                                                
+            if (userValue.IndexOf(",") >= 0)
                 {
                     Console.WriteLine("Your number {0} is real", convertedValue);
                 }

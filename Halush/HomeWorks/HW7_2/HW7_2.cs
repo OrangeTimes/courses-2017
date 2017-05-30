@@ -16,7 +16,7 @@ namespace HW7_2
         static void Main(string[] args)
         {
 			// todo add space between values in array {1, 2, 3}
-            //Halush Oleh: fixed
+            // Halush Oleh: fixed
 			int[] arrayOfNumbers = {1, 2, 10, 4, 5, 78, 5, 16, 32, -7};
             Console.WriteLine("Maximum value in this array is {0}", arrayOfNumbers.Max());
             Console.WriteLine("Minimum value in this array is {0}", arrayOfNumbers.Min());
