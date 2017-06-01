@@ -12,9 +12,9 @@ namespace RoomLights
         {
             // int roomLights = 0; // 0000 - lights off
 
-            // to enable light # 1, 3, 5 enter 0001, 0011, 0101
+            // to enable light # 1, 3, 5 enter 0001, 0011, 0101 - ?
 
-            int roomLights = 0; //00000
+            int roomLights = 0; // 0000
             Console.WriteLine("Enter # of light you want to enable: ");
             int LightNumber = Convert.ToInt32(Console.ReadLine(), 2);
 
