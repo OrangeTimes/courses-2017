@@ -13,12 +13,12 @@ namespace ConsoleApplicationRoman2
             // hello
             // ryaremko
             Console.WriteLine("What is your name");
-            long MyName = Convert.ToUInt32();
-            string MyName = Console.ReadLine();
+            long MyName = Convert.ToUInt32(Console.ReadLine());
             // you solution doesn't compile because of errors. You shouldn't submit code to repository in non compilable state
+            // Roman: corrected this 
+            // Note: This wasn't in scope of any HW, just was practicing ...
             Console.Write("username" + MyName);
             Console.ReadKey();
-            Console.Write(MyName);
             
 
 
