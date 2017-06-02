@@ -7,8 +7,9 @@ namespace Homework_5_Part_1
 	{
 		static void Main(string[] args)
 
-			// Write a program to print out result if number entered by user is odd or even.If entered number is odd program should print: 
-			// “Entered number %number% is odd” or “Entered number %number% is even” otherwise.
+		// todo as a rule of thumb put comment over the method declaration (static void Main(string[] args)) and not between method declaration and method body
+		// Write a program to print out result if number entered by user is odd or even.If entered number is odd program should print: 
+		// “Entered number %number% is odd” or “Entered number %number% is even” otherwise.
 		{
 			Console.WriteLine("Input the number you would like to check: ");
 			int enteredNumber = Convert.ToInt32(Console.ReadLine());
