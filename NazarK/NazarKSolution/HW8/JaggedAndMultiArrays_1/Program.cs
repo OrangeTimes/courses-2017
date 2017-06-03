@@ -20,20 +20,38 @@ namespace JaggedAndMultiArrays_1
 			};
 
 			// sum and count of all elements in array
+			int sum = GetSumOfElements(jaggedArray);
+			int count = GetCountOfElements(jaggedArray);
+
+			// get average of numbers in array
+			int average = sum / count;
+			Console.WriteLine($"Average of all items in jagged array is: {average}");
+		}
+
+		public static int GetSumOfElements(int[][] jaggedArray)
+		{
 			int sum = 0;
-			int count = 0;
 			for (int i = 0; i < jaggedArray.Length; i++)
 			{
 				for (int j = 0; j < jaggedArray[i].Length; j++)
 				{
 					sum += jaggedArray[i][j];
+				}
+			}
+			return sum;
+		}
+
+		public static int GetCountOfElements(int[][] jaggedArray)
+		{
+			int count = 0;
+			for (int i = 0; i < jaggedArray.Length; i++)
+			{
+				for (int j = 0; j < jaggedArray[i].Length; j++)
+				{
 					count++;
 				}
 			}
-
-			// get average
-			int average = sum / count;
-			Console.WriteLine($"Average of all items in jagged array is: {average}");
+			return count;
 		}
 	}
 }

@@ -11,8 +11,15 @@ namespace EnumsAndArrays_3
 		static void Main(string[] args)
 		{
 			// predefined string
-			string predefinedString = "HelloWorld";
+			string predefinedString = "HelloWorld!";
 
+			PrintAsCharArray(predefinedString);
+
+			PrintCharsUsingIndex(predefinedString);
+		}
+
+		public static void PrintAsCharArray(string predefinedString)
+		{
 			// split string to parts
 			char[] parts = predefinedString.ToCharArray();
 
@@ -20,6 +27,15 @@ namespace EnumsAndArrays_3
 			foreach (char character in parts)
 			{
 				Console.WriteLine(character);
+			}
+		}
+
+		public static void PrintCharsUsingIndex(string predefinedString)
+		{
+			// print string parts vertically
+			for (int i = 0; i < predefinedString.Length; i++)
+			{
+				Console.WriteLine(predefinedString[i]);
 			}
 		}
 	}

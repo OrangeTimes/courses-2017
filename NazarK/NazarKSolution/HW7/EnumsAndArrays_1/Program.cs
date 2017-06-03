@@ -21,12 +21,16 @@ namespace EnumsAndArrays_1
 		{
 			Console.Write("Please enter number of delivery method that you chose (from 1 to 5): ");
 
-			// get user input
-			string input = Console.ReadLine();
+			// Get delivery method
+			PostalDeliveryMethod userDeliveryMethod = GetDeliveryMethod(Console.ReadLine());
+			Console.WriteLine($"You chose: {userDeliveryMethod}");
+		}
 
+		public static PostalDeliveryMethod GetDeliveryMethod(string input)
+		{
 			// cast user input to enum
 			PostalDeliveryMethod userDeliveryMethod = (PostalDeliveryMethod)Convert.ToInt32(input);
-			Console.WriteLine($"You chose: {userDeliveryMethod}");
+			return userDeliveryMethod;
 		}
 	}
 }

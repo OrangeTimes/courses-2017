@@ -20,6 +20,11 @@ namespace JaggedAndMultiArrays_2
 			};
 
 			// printing all elements in reversed order
+			PrintReversedArray(jaggedArray);
+		}
+
+		public static void PrintReversedArray(int[][] jaggedArray)
+		{
 			for (int i = jaggedArray.Length - 1; i >= 0; i--)
 			{
 				for (int j = jaggedArray[i].Length - 1; j >= 0; j--)

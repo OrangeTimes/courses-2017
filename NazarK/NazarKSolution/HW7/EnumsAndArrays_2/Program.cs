@@ -14,17 +14,16 @@ namespace EnumsAndArrays_2
 			int[] predefinedArray = new int[] { 26, 47, 8, 23, -69, 0, 82, 16, -7 };
 
 			// find max value
-			int max = predefinedArray[0];
-			foreach (int number in predefinedArray)
-			{
-				if (number > max)
-				{
-					max = number;
-				}
-			}
+			int max = GetMaxValue(predefinedArray);
 			Console.WriteLine($"Maximum number is: {max}");
 
 			// find min value
+			int min  = GetMinValue(predefinedArray);
+			Console.WriteLine($"Minimum number is: {min}");
+		}
+
+		public static int GetMinValue(int[] predefinedArray)
+		{
 			int min = predefinedArray[0];
 			foreach (int number in predefinedArray)
 			{
@@ -33,7 +32,20 @@ namespace EnumsAndArrays_2
 					min = number;
 				}
 			}
-			Console.WriteLine($"Minimum number is: {min}");
+			return min;
+		}
+
+		public static int  GetMaxValue(int[] predefinedArray)
+		{
+			int max = predefinedArray[0];
+			foreach (int number in predefinedArray)
+			{
+				if (number > max)
+				{
+					max = number;
+				}
+			}
+			return max;
 		}
 	}
 }

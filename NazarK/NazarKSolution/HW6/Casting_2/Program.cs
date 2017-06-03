@@ -10,13 +10,18 @@ namespace Casting_2
 	{
 		static void Main(string[] args)
 		{
+			// get user input
 			Console.Write("Please enter a number that you want to convert: ");
 			string inputToConvert = Console.ReadLine();
-
 			Console.Write("Please enter which type you want to convert to: ");
 			string typeToConvertTo = Console.ReadLine();
 
 			// Convert to supported type and write the result or write error
+			ConvertTo(inputToConvert, typeToConvertTo);
+		}
+
+		public static void ConvertTo(string inputToConvert, string typeToConvertTo)
+		{
 			switch (typeToConvertTo)
 			{
 				case "byte":
@@ -32,7 +37,7 @@ namespace Casting_2
 					Console.WriteLine($"{Convert.ToInt64(inputToConvert)}");
 					break;
 				default:
-					Console.WriteLine($"Unsupported target type");
+					Console.WriteLine($"Error: Unsupported target type");
 					break;
 			}
 		}

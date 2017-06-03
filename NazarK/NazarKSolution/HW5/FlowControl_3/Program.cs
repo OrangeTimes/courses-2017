@@ -10,23 +10,37 @@ namespace FlowControl_3
 	{
 		static void Main(string[] args)
 		{
-			bool isValidName = false;
-			string errorMessage = "User name is not valid.\nShould have more than 0 and less than 50 symbols.\n";
+			Console.Write("Enter a user name: ");
 
-			while (!isValidName)
+			// ask user for input until it's valid
+			string validUserName = GetValidUserName();
+			Console.WriteLine($"User name is: {validUserName}");
+		}
+
+		public enum UserName
+		{
+			Valid,
+			Invalid
+		}
+
+		private static string GetValidUserName()
+		{
+			string name = "";
+			UserName userName = UserName.Invalid;
+			while (userName == UserName.Invalid)
 			{
-				Console.Write("Enter a user name: ");
-				string name = Console.ReadLine();
+				name = Console.ReadLine();
 
 				if (name.Length > 0 && name.Length < 50)
 				{
-					isValidName = true;
+					userName = UserName.Valid;
 				}
 				else
 				{
-					Console.WriteLine(errorMessage);
+					Console.Write("Name should have more than 0 and less than 50 symbols.\nPlease enter another user name: ");
 				}
 			}
+			return name;
 		}
 	}
 }

@@ -10,9 +10,16 @@ namespace Casting_1
 	{
 		static void Main(string[] args)
 		{
-			Console.Write("Please enter a number that you want to evaluate: ");
-			double input = Convert.ToDouble(Console.ReadLine());
+			// get user input
+			Console.Write("Enter a number that you want to evaluate: ");
+			double inputNum = Convert.ToDouble(Console.ReadLine());
 
+			// evaluate an input
+			GetTypeOfNum(inputNum);
+		}
+
+		public static void GetTypeOfNum(double input)
+		{
 			// if number is as zero than it is both whole and real
 			if (input == 0)
 			{
