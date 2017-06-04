@@ -20,15 +20,27 @@ namespace JaggedAndMultiArrays_1
 			};
 
 			// sum and count of all elements in array
-			int sum = GetSumOfElements(jaggedArray);
-			int count = GetCountOfElements(jaggedArray);
+			int sum = GetSumOfElementsUsingForLoop(jaggedArray);
+			int count = GetCountOfElementsUsingForLoop(jaggedArray);
 
-			// get average of numbers in array
+			// get average of numbers in array using For Loop
+			GetAverage(sum, count);
+
+			// sum and count of all elements in array
+			sum = GetSumOfElementsUsingForEachLoop(jaggedArray);
+			count = GetCountOfElementsUsingForEachLoop(jaggedArray);
+
+			// get average of numbers in array using For Each Loop
+			GetAverage(sum, count);
+		}
+
+		private static void GetAverage(int sum, int count)
+		{
 			int average = sum / count;
 			Console.WriteLine($"Average of all items in jagged array is: {average}");
 		}
 
-		public static int GetSumOfElements(int[][] jaggedArray)
+		public static int GetSumOfElementsUsingForLoop(int[][] jaggedArray)
 		{
 			int sum = 0;
 			for (int i = 0; i < jaggedArray.Length; i++)
@@ -41,12 +53,38 @@ namespace JaggedAndMultiArrays_1
 			return sum;
 		}
 
-		public static int GetCountOfElements(int[][] jaggedArray)
+		public static int GetSumOfElementsUsingForEachLoop(int[][] jaggedArray)
+		{
+			int sum = 0;
+			foreach (int[] array in jaggedArray)
+			{
+				foreach (int number in array)
+				{
+					sum += number;
+				}
+			}
+			return sum;
+		}
+
+		public static int GetCountOfElementsUsingForLoop(int[][] jaggedArray)
 		{
 			int count = 0;
 			for (int i = 0; i < jaggedArray.Length; i++)
 			{
 				for (int j = 0; j < jaggedArray[i].Length; j++)
+				{
+					count++;
+				}
+			}
+			return count;
+		}
+
+		public static int GetCountOfElementsUsingForEachLoop(int[][] jaggedArray)
+		{
+			int count = 0;
+			foreach (int[] array in jaggedArray)
+			{
+				foreach (int number in array)
 				{
 					count++;
 				}
