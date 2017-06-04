@@ -25,21 +25,24 @@ namespace FlowControl_3
 
 		private static string GetValidUserName()
 		{
-			string name = "";
-			UserName userName = UserName.Invalid;
-			while (userName == UserName.Invalid)
+			string name;
+			UserName userName;
+			do
 			{
+				// get user input
 				name = Console.ReadLine();
 
+				// check if username is valid
 				if (name.Length > 0 && name.Length < 50)
 				{
 					userName = UserName.Valid;
 				}
 				else
 				{
+					userName = UserName.Invalid;
 					Console.Write("Name should have more than 0 and less than 50 symbols.\nPlease enter another user name: ");
 				}
-			}
+			} while (userName == UserName.Invalid);
 			return name;
 		}
 	}
