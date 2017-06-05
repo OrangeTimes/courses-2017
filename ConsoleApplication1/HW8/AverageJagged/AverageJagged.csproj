@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2600DB6D-6D41-4ADA-A466-1EFA7BF526D3}</ProjectGuid>
+    <ProjectGuid>{F2046028-6B19-4D86-A9C3-7718418B957D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PostalDeliveryApp</RootNamespace>
-    <AssemblyName>PostalDeliveryApp</AssemblyName>
+    <RootNamespace>AverageJagged</RootNamespace>
+    <AssemblyName>AverageJagged</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PostalDeliveryApp.cs" />
-    <Compile Include="PostalDeliveryMethods.cs" />
+    <Compile Include="AverageJagged.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace PostalDeliveryApp
 {
-    class PostalDeliveryApp
+    partial class PostalDeliveryApp
     {
+
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter preffered delivery method: ");
+            PostalDeliveryMethods userValue = (PostalDeliveryMethods)Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine($"You've selected {userValue} method");
+            Console.ReadKey();
         }
     }
 }
