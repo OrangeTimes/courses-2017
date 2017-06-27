@@ -13,7 +13,6 @@ namespace Operations_Program_Part_1
 		    // 29 % 7 = 4(remainder of 29 / 7 = 1)
 
 		System.Console.WriteLine(15 + -4 * 6 / 11);
-			// todo check formatting. Also system is redundant in System.Console.WriteLine
 			//15 - (24/11)= 15 - 2 = 13
 			System.Console.WriteLine(2 + 10 / 6 * 1 - 7 % 2);
 			//2 + (10/6) - remainder of (7/2) = 2 + 1 - 1 = 3 - 1 = 2
