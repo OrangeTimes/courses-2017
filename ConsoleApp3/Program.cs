@@ -39,8 +39,9 @@ namespace ConsoleApp3
 
                 Console.WriteLine("Enter second digit:");
                 b = Convert.ToDouble(Console.ReadLine());
-
-                if (oper == '+')
+				// todo it's better to use switch case here
+				// todo this complexity is not nesessary since users enter just 2 numbers
+				if (oper == '+')
                 {
                     total = a + b;
                     Console.WriteLine("{0} + {1} = {2}.", a, b, total);
