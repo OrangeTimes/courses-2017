@@ -10,20 +10,27 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your number");
-            string enteredByUser = Console.ReadLine();
-            int number = Convert.ToInt32(enteredByUser);
-            if (number % 2 == 0)
+            //1st task
+            //Console.WriteLine("Enter your number");
+            //string enteredByUser = Console.ReadLine();
+            //int number = Convert.ToInt32(enteredByUser);
+            //if (number % 2 == 0)
+            //{
+            //    Console.WriteLine("Entered number is even");
+            //    Console.ReadKey();
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Entered number is odd");
+            //    Console.ReadKey();
+            //}
+
+            //2nd task
+
+            for (int i = -1; i >= -100; i--)
             {
-                Console.WriteLine("Entered number is even");
-                Console.ReadKey();
+                    Console.WriteLine("{0}", i);
             }
-            else
-            {
-                Console.WriteLine("Entered number is odd");
-                Console.ReadKey();
-            }
-            
 
 
 
