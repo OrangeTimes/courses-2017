@@ -22,6 +22,14 @@ namespace ConsoleApp4
             //Console.ReadKey();
 
             //2
+            int roomLights = 0; //00000
+            int lightSwitch = 21; //10101
+            int result = roomLights | lightSwitch;
+
+            string binaryForm = Convert.ToString(result, 2);
+
+            Console.WriteLine(binaryForm);
+            Console.ReadKey();
 
         }
     }
