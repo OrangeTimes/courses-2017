@@ -12,8 +12,6 @@ namespace vyermHW3_countoper
         {
             // first is multiplying, then adding
             Console.WriteLine("Result 1: -1 + 3 * 5 = {0}", -1 + 3 * 5);
-            // todo: add whitespace beetween comment sign // and text comment - DONE
-            // In general it is reccomended to place coment before statement, since having long statement is not good practice. - DONE
             // added values in brackets, divided by 7 - results in 4, and remainder is 1. result is the remainder
             Console.WriteLine("Result 2: (24 + 5) % 7 = {0}", (24 + 5) % 7);
             // first multiplying and dividing > results in -2 (we count only even number, without decimals); finally we add 15 to -2

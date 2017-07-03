@@ -19,7 +19,6 @@ namespace vyermHW2_variables
             int productionYear = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Provide price of your car:");
             double carPrice = Convert.ToDouble(Console.ReadLine());
-            // todo: Here it would be better to use double instead. We don't use decimal in most case - DONE
 
             // Variations of code. Option 1:
             string carResult = $"Manufacturer: {carManufacturer}, Model: {carModel}, Year: {productionYear}, Price: {carPrice}";
@@ -35,6 +34,5 @@ namespace vyermHW2_variables
             Console.WriteLine("Verify that information you provided is correct:\r\nManufacturer: " + carManufacturer + ", Model: " + carModel + ", Year: " + productionYear + ", Price: " + carPrice);
             Console.ReadKey();
         }
-        // todo: empty line in line 38 and line 13 - DONE.
     }
 }
