@@ -16,14 +16,17 @@ namespace Homework8._1
             int sumOfElements = 0;
             int numberOfElements = 0;
 
-            for (int i = 0; i < myJaggedArray[i].Length; i++)
+            for (int i = 0; i < myJaggedArray.Length; i++)
             {
-                for (int j = 0; j < myJaggedArray[j].Length; j++])
+                for (int j = 0; j < myJaggedArray[i].Length; j++)
                 {
                     sumOfElements += myJaggedArray[i][j];
                     numberOfElements++;
                 }
             }
+            int averageValue = sumOfElements / numberOfElements;
+            Console.WriteLine($"average value  = {averageValue}");
+            Console.ReadLine();
 
 
         }
