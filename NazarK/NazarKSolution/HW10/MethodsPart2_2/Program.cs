@@ -9,7 +9,7 @@ namespace MethodsPart2_2
 	class Program
 	{
 		// Write a program which manages books amount.
-		// You will need init it with starting amount of books.
+		// You will need initialize it with starting amount of books.
 		// And write 2 methods which can increase and decrease this amount.
 		// (use ref or out to implement this functionality)
 

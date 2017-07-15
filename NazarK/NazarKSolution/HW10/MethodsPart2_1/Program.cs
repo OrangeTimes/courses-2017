@@ -10,7 +10,7 @@ namespace MethodsPart2_1
 	{
 		// Write a C# program which supports calculation of sum for 2 doubles,
 		// 2 integers, any number of integers and doubles passed in as
-		// a parameters (Hint: use params to support multiple arguments)
+		// a parameters (Hint: use parameters to support multiple arguments)
 		static void Main(string[] args)
 		{
 			Console.Write("Sum of 5, 10 results in: ");

@@ -22,10 +22,10 @@ namespace MethodsPart2_3
 			Console.Write("Enter the desired file name: ");
 			string fileName = Console.ReadLine();
 
-			Console.Write("Enter the desired file extention(optional): ");
+			Console.Write("Enter the desired file extension(optional): ");
 			string fileExtention = Console.ReadLine();
 
-			// Create file with user extention or with default if it was not specified
+			// Create file with user extension or with default if it was not specified
 			if (fileExtention.Length == 0)
 			{
 				WriteUserInputToFile(userText, fileName);
