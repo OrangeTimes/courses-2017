@@ -69,6 +69,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging_1", "NazarKSoluti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging_2", "NazarKSolution\HW11\Debugging_2\Debugging_2.csproj", "{F1E07FF2-1327-41F7-9446-B14CE2B650E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 12 - Exception Handling", "HW 12 - Exception Handling", "{39FA4D6C-2F39-45A6-8DB1-EC4EAF6E127D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handling_1", "NazarKSolution\HW12\Exception Handling_1\Exception Handling_1.csproj", "{AC26F0F9-16E0-4D94-9155-111DBB5D39FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handling_2", "NazarKSolution\HW12\Exception Handling_2\Exception Handling_2.csproj", "{C61E95A0-3CA0-46EB-9116-28B5132F215D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +173,14 @@ Global
 		{F1E07FF2-1327-41F7-9446-B14CE2B650E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1E07FF2-1327-41F7-9446-B14CE2B650E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1E07FF2-1327-41F7-9446-B14CE2B650E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC26F0F9-16E0-4D94-9155-111DBB5D39FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC26F0F9-16E0-4D94-9155-111DBB5D39FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC26F0F9-16E0-4D94-9155-111DBB5D39FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC26F0F9-16E0-4D94-9155-111DBB5D39FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61E95A0-3CA0-46EB-9116-28B5132F215D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61E95A0-3CA0-46EB-9116-28B5132F215D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61E95A0-3CA0-46EB-9116-28B5132F215D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61E95A0-3CA0-46EB-9116-28B5132F215D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,5 +209,7 @@ Global
 		{CA5D7658-9E5D-40B3-9A35-0FEA9D297296} = {6CF15E8D-3FC9-4AA9-9B28-9240FCD23EAE}
 		{B8B4E089-622F-4F2A-828B-A92C20B396F2} = {5788A8B5-3691-48B0-9FCE-44AE11CA64E1}
 		{F1E07FF2-1327-41F7-9446-B14CE2B650E8} = {5788A8B5-3691-48B0-9FCE-44AE11CA64E1}
+		{AC26F0F9-16E0-4D94-9155-111DBB5D39FA} = {39FA4D6C-2F39-45A6-8DB1-EC4EAF6E127D}
+		{C61E95A0-3CA0-46EB-9116-28B5132F215D} = {39FA4D6C-2F39-45A6-8DB1-EC4EAF6E127D}
 	EndGlobalSection
 EndGlobal
