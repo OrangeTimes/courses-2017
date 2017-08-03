@@ -12,7 +12,7 @@ namespace Exception_Handling_2
 		static void Main(string[] args)
 		{
 			// correct file path and name
-			WriteAllTextToConsole("Hello World.txt");
+			WriteAllTextToConsole(GetProjectPath() + "Hello World.txt");
 
 			// 1 path is null
 			WriteAllTextToConsole(null);
@@ -30,21 +30,36 @@ namespace Exception_Handling_2
 			WriteAllTextToConsole("fake.txt");
 
 			// 6 Access Denied because file is actually a folder
-			WriteAllTextToConsole("FakeFolder");
+			WriteAllTextToConsole(GetProjectPath() + "FakeFolder");
 
 			// 7 Access Denied because file is being used by another program
 			// adding 2 more statements to open and close stream, and True to not to overwrite a file
-			StreamWriter writer = new StreamWriter("Hello World.txt", true);
-			WriteAllTextToConsole("Hello World.txt");
+			StreamWriter writer = new StreamWriter(GetProjectPath() + "Hello World.txt", true);
+			WriteAllTextToConsole(GetProjectPath() + "Hello World.txt");
 			writer.Close();
 
 			// 8 Added invisible character to file name so that it will fail
 			WriteAllTextToConsole(@"‪C:\Test.txt");
 
-			// 9 Causes any calling code for any PermissionSet that is not a subset of the current PermissionSet to fail
+			// 9 Causes any calling code for any PermissionSet that is not a subset of the current PermissionSet to fail. Next line after PermitOnly should fail
 			PermissionSet perms = new PermissionSet(null);
+			// get parent path before read because it will fail too early as next line after PermitOnly should fail
+			string parentPath = GetProjectPath();
 			perms.PermitOnly();
-			WriteAllTextToConsole("Hello World.txt");
+			WriteAllTextToConsole(parentPath + "Hello World.txt");
+		}
+
+		// adding header for exception messages
+		public const string exceptionHeadingMessage = "\n\nFailed to read file on exception: \n";
+
+		public static string GetProjectPath()
+		{
+			// find path to file in project folder 
+			// get current folder
+			string path = Environment.CurrentDirectory.ToString();
+			// get path to grandfolder and add slashes
+			string projectPath = Directory.GetParent(Directory.GetParent(path).ToString()) + "\\";
+			return projectPath;
 		}
 
 		static void WriteAllTextToConsole(string path)
@@ -56,39 +71,39 @@ namespace Exception_Handling_2
 
 			catch (ArgumentNullException e)
 			{
-				Console.WriteLine("\nCatch 1: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (ArgumentException e)
 			{
-				Console.WriteLine("\nCatch 2: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (PathTooLongException e)
 			{
-				Console.WriteLine("\nCatch 3: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (DirectoryNotFoundException e)
 			{
-				Console.WriteLine("\nCatch 4: " + "Check if folder exists. " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + "Check if folder exists. " + e.Message);
 			}
 			catch (FileNotFoundException e)
 			{
-				Console.WriteLine("\nCatch 5: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (UnauthorizedAccessException e)
 			{
-				Console.WriteLine("\nCatch 6: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (IOException e)
 			{
-				Console.WriteLine("\nCatch 7: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (NotSupportedException e)
 			{
-				Console.WriteLine("\nCatch 8: " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + e.Message);
 			}
 			catch (SecurityException e)
 			{
-				Console.WriteLine("\nCatch 9: " + "You have no permission to read from this file. " + e.Message);
+				Console.WriteLine(exceptionHeadingMessage + "You have no permission to read from this file. " + e.Message);
 			}
 		}
 	}
