@@ -17,10 +17,10 @@ namespace ConsoleApplication1
     }
         public class TestClass
         {
-        public static JObject Test()
-        {
-            JObject obj = new JObject();
-            return obj;
+            public static JObject Test()
+            {
+                JObject obj = new JObject();
+                return obj;
+            }
         }
-        }
-    }
+ }

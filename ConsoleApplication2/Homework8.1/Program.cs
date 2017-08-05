@@ -11,8 +11,16 @@ namespace Homework8._1
         static void Main(string[] args)
         {
             // Write a C# program to get average value of elements in jagged integer array
-            int[][] myJaggedArray = { new int[] {1, 7, 8, 99, 23},
+            int[][] myJaggedArray = { new int[] {1, 7, 8, 99, 23, 69},
                                       new int[] {4, 6, 8} };
+            
+            int result = GetAverageValueFromArray(myJaggedArray);
+            Console.WriteLine($"average value  = {result}");
+            Console.ReadLine();
+        }
+
+        static int GetAverageValueFromArray(int[][] myJaggedArray)
+        {
             int sumOfElements = 0;
             int numberOfElements = 0;
 
@@ -25,10 +33,7 @@ namespace Homework8._1
                 }
             }
             int averageValue = sumOfElements / numberOfElements;
-            Console.WriteLine($"average value  = {averageValue}");
-            Console.ReadLine();
-
-
+            return averageValue;
         }
     }
 }

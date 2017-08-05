@@ -14,6 +14,10 @@ namespace Homework_7._2
 
             int[] myArray = new int[] { 2, 17, 25, 32, 65, 43, 12, 7 };
             
+            //Simple solution:
+            Console.WriteLine($"Minimum value is {myArray.Min()}; \r\n maximum value is {myArray.Max()}.");
+            Console.ReadLine();
+
             // Complicated solution:
             //int minValue = myArray[0];
             //foreach (int i in myArray)
@@ -33,10 +37,6 @@ namespace Homework_7._2
             //}
             //Console.WriteLine($"Minimum value is {minValue}; \r\n maximum value is {maxValue}.");
             //Console.ReadLine();
-
-            //Simple solution:
-            Console.WriteLine($"Minimum value is {myArray.Min()}; \r\n maximum value is {myArray.Max()}.");
-            Console.ReadLine();
         }
     }
 }

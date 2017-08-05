@@ -15,13 +15,18 @@ namespace Homework5._3
 
             Console.Write("Type in username: ");
             string username = Console.ReadLine();
-            int usernameLength = username.Length;
+            
+            CheckUsername(username);
+        }
 
+        static void CheckUsername(string username)
+        {
+            int usernameLength = username.Length;
             while (usernameLength == 0 || usernameLength > 50)
             {
-                Console.WriteLine("Please try again:");                
+                Console.WriteLine("Please try again:");
                 username = Console.ReadLine();
-                usernameLength = username.Length;                
+                usernameLength = username.Length;
             }
             Console.WriteLine("Thank You!");
             Console.ReadLine();

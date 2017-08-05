@@ -15,6 +15,11 @@ namespace Homework7._3
             // predefined string
             string myString = "humbabra";
 
+            WriteStringInConsole(myString);
+        }
+
+        static void WriteStringInConsole(string myString)
+        {
             //convert string to char array
             char[] myStringArray = myString.ToCharArray();
 

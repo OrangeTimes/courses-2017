@@ -10,22 +10,42 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please specify the manufacturer of the car you'd like to buy:");
-            string carManufacturer = Console.ReadLine();
-            
-            // adding empty lines according to comments
-            Console.Write("Please select the model of the car: ");
-            string carModel = Console.ReadLine();
+            //declare string array and call method to get info about car in string array
+            string[] carInfoStrings = new string[4];
+            string[] carInfo = GetInfoAboutCar(carInfoStrings);
 
-            Console.Write("Please specify the year of production: ");
-            int carYearOfProduction = Convert.ToInt32(Console.ReadLine());
+            //call method to get confirmation message and print it
+            string result = ConfirmInfoAboutCar(carInfo);
+            Console.WriteLine(result);
+            Console.ReadLine();
+        }
 
-            Console.Write("Specify the maximum suitable price in dollars: ");
-            string carMaxPrice = Console.ReadLine();
+        // method to get all rquired information about car and put it into string array
+        static string[] GetInfoAboutCar (string[] carInfoStrings)
+        {
+            for (int i = 0; i < 1; i++)
+            {
+                Console.WriteLine("Please specify the manufacturer of the car you'd like to buy:");
+                carInfoStrings[0] = Console.ReadLine();
 
-            Console.WriteLine("Please confirm the following information is correct. You would like to buy {0} {1}, of {2} year of production, for {3}$.", carManufacturer, carModel, carYearOfProduction, carMaxPrice);
-            Console.WriteLine($"Please confirm the following information is correct. You would like to buy {carManufacturer} {carModel}, of {carYearOfProduction} year of production, for {carMaxPrice}.");
-            Console.ReadKey();
+                Console.Write("Please select the model of the car: ");
+               carInfoStrings[1] = Console.ReadLine();
+
+                Console.Write("Please specify the year of production: ");
+                carInfoStrings[2] = Console.ReadLine();
+
+                Console.Write("Specify the maximum suitable price in dollars: ");
+                carInfoStrings[3] = Console.ReadLine();
+            }   
+
+        return carInfoStrings;
+    }
+
+        //method to print confirmation message about car using string array with car info
+        static string ConfirmInfoAboutCar(string[] carInfoStrings)
+        {
+            string confirmationMessage = $"Please confirm: You'd like to buy {carInfoStrings[0]} {carInfoStrings[1]}, year: {carInfoStrings[2]}, for {carInfoStrings[3]}.";
+            return confirmationMessage;
         }
     }
 }

@@ -29,33 +29,35 @@ namespace Homework6._2
             Console.Write("Please enter the desired value type: ");
             string desiredValueType = Console.ReadLine();
 
-			// todo it's better to do this in switch cases
-            //perform casting to desired value type
-            byte byteValue = (byte)userValue;
-            short shortValue = (short)userValue;
-            int integerValue = (int)userValue;
-            long longValue = (long)userValue;
+            CastToDesiredType(userValue, desiredValueType);
+        }
 
-            //print casted value
+        static void CastToDesiredType(decimal userValue, string desiredValueType)
+        {
+            
             switch (desiredValueType)
             {
                 case "byte":
                     {
+                        byte byteValue = (byte)userValue;
                         Console.WriteLine($"{byteValue}");
                         break;
                     }
                 case "short":
                     {
+                        short shortValue = (short)userValue;
                         Console.WriteLine($"{shortValue}");
                         break;
                     }
                 case "integer":
                     {
+                        int integerValue = (int)userValue;
                         Console.WriteLine($"{integerValue}");
                         break;
                     }
                 case "long":
                     {
+                        long longValue = (long)userValue;
                         Console.WriteLine($"{longValue}");
                         break;
                     }
@@ -66,7 +68,6 @@ namespace Homework6._2
                     }
             }
             Console.ReadLine();
-
         }
     }
 }

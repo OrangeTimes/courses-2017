@@ -12,19 +12,28 @@ namespace Homework6._1
         {
             // 1. Write a program to get a double value from user. Determine if that number is whole or real number by outputting corresponding message (use casting).
 
+            //get value from user
             Console.Write("Please enter value: ");
             double userValue = Convert.ToDouble(Console.ReadLine());
 
-            // perform casting to find out if the value entered by user is real and print result
-            if (userValue == (int)userValue)
-                { // todo check formatting
-                Console.WriteLine("This is real number.");
+            //call method to check if value is real or decimal and print result
+            string result = CheckValue(userValue);
+            Console.WriteLine(result);
+            Console.ReadLine();
+        }
+
+        static string CheckValue(double userInput)
+        {
+            string messageResult;
+            if (userInput == (int)userInput)
+            {
+               messageResult = "This is real number.";
             }
             else
             {
-                Console.WriteLine("This is decimal number.");
+                messageResult = "This is decimal number.";
             }
-            Console.ReadLine();
+            return messageResult;
         }
     }
 }

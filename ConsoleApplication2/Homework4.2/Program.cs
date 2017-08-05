@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Homework4._2
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // Exercise 2: You have 5 lights in room.Lights are controlled by microprocessor.
             // Current state of lights is: 00000, where each slot corresponds to light state and is stored in int variable called roomLights;
@@ -17,13 +17,15 @@ namespace Homework4._2
             // To enable change you need to update value of roomLights variable.
             // Note: you can use next statement to convert int value to binary representation for output: stringbinaryForm = Convert.ToString(number, 2);
 
-            int roomLights = 0;//00000
-            
+            int roomLights = 0; //00000
+
             // to enable 1, 3, 5 light
             Console.WriteLine("Plase enter which lights you want to enable: ");
-            string lightsToEnable = Console.ReadLine();
+            //string lightsToEnable = Console.ReadLine();
+            int lightsToEnable = Convert.ToInt32(Console.ReadLine(), 2);
 
-            roomLights |= Convert.ToInt32(lightsToEnable, 2);
+            roomLights |= lightsToEnable;
+            //roomLights |= Convert.ToInt32(lightsToEnable, 2);
             Console.WriteLine($"Current state: {Convert.ToString(roomLights, 2)}");
             Console.ReadLine();
 
