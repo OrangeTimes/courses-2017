@@ -10,7 +10,7 @@ namespace Homework10._3
 {
     class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
             // 3.Create a program which can write user input to a file. 
             //If user didn’t specify extension.txt extension should be used.
