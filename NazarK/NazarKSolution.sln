@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 01 - Assemblies and references", "HW 01 - Assemblies and references", "{B4CA5778-BD9C-4060-91AE-85815F253653}"
 EndProject
@@ -80,6 +80,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs and classes_1", "NazarKSolution\HW13\Structs and classes_1\Structs and classes_1.csproj", "{27058087-6BF9-4BBD-BF64-7944BB54F1E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs and classes_2", "NazarKSolution\HW13\Structs and classes_2\Structs and classes_2.csproj", "{5CB48B21-66CC-41E4-AD53-77D54AF97172}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 14 - Class constructors", "HW 14 - Class constructors", "{ACDC40B6-517D-4E4D-83F4-EB5ACD71B324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class constructors_1", "NazarKSolution\HW14\Class constructors_1\Class constructors_1.csproj", "{51DE3227-7ACA-4CCD-8D09-B36613194812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class constructors_2", "NazarKSolution\HW14\Class constructors_2\Class constructors_2.csproj", "{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +201,14 @@ Global
 		{5CB48B21-66CC-41E4-AD53-77D54AF97172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB48B21-66CC-41E4-AD53-77D54AF97172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB48B21-66CC-41E4-AD53-77D54AF97172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DE3227-7ACA-4CCD-8D09-B36613194812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DE3227-7ACA-4CCD-8D09-B36613194812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DE3227-7ACA-4CCD-8D09-B36613194812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DE3227-7ACA-4CCD-8D09-B36613194812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -227,5 +241,7 @@ Global
 		{C61E95A0-3CA0-46EB-9116-28B5132F215D} = {39FA4D6C-2F39-45A6-8DB1-EC4EAF6E127D}
 		{27058087-6BF9-4BBD-BF64-7944BB54F1E5} = {CD75F859-68DD-4E5B-8EC8-2B60ED9827C8}
 		{5CB48B21-66CC-41E4-AD53-77D54AF97172} = {CD75F859-68DD-4E5B-8EC8-2B60ED9827C8}
+		{51DE3227-7ACA-4CCD-8D09-B36613194812} = {ACDC40B6-517D-4E4D-83F4-EB5ACD71B324}
+		{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433} = {ACDC40B6-517D-4E4D-83F4-EB5ACD71B324}
 	EndGlobalSection
 EndGlobal
