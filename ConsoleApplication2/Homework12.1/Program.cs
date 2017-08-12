@@ -14,30 +14,31 @@ namespace Homework12._1
             // Parse and show corresponding error to user.
             // Try to recover from this exception by asking user for valid input one more time
 
+            // ask for user input
             Console.Write("Please enter value: ");
             string userInput = Console.ReadLine();
 
-            bool stringIsValid;
+            // declare and initiate bool variable
+            bool stringIsValid = false;
 
-            do
+            // chek if input is a valid double using loop
+            while (stringIsValid == false)
             {
                 stringIsValid = CheckIfValid(userInput);
 
-                if (stringIsValid == true)
-                {
-                    Console.WriteLine("Thanks");
-                    Console.ReadLine();
-                }
-                else
+                //if input is invalid ask for input again
+                if (stringIsValid == false)
                 {
                     Console.Write("Please enter value again: ");
                     userInput = Console.ReadLine();
-                    stringIsValid = CheckIfValid(userInput);
                 }
-
-            } while (stringIsValid == false);
-
-
+            //if input is valid - print 'Thanks'
+            }
+            if (stringIsValid == true)
+            {
+                Console.WriteLine("Thanks");
+                Console.ReadLine();
+            }
         }
 
         static bool CheckIfValid(string userInput)
@@ -46,26 +47,23 @@ namespace Homework12._1
             {
                 if (userInput == "")
                 {
-                    throw new System.ArgumentException("Response is required.");
+                    throw new ArgumentException("Response is required.");
                 }
                 Convert.ToDouble(userInput);
             }
-            catch (System.ArgumentException responseRequiredException)
+            catch (ArgumentException responseRequiredException)
             {
                 Console.WriteLine(responseRequiredException.ToString());
-                Console.ReadLine();
                 return false;
             }
-            catch (System.FormatException invalidFormatException)
+            catch (FormatException invalidFormatException)
             {
                 Console.WriteLine(invalidFormatException.ToString());
-                Console.ReadLine();
                 return false;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-                Console.ReadLine();
                 return false;
             }
             return true;
