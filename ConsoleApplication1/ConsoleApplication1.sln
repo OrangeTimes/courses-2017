@@ -45,6 +45,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Max min value in array_Part
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_as_a_char_array_Part_3", "Homework_7\String_as_a_char_array_Part_3\String_as_a_char_array_Part_3.csproj", "{886F4900-99B3-41B9-8012-22EC05642693}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums delivery method_Part_1", "Homework_7\Enums delivery method_Part_1\Enums delivery method_Part_1.csproj", "{F32732E0-BA6B-4755-9B1E-D12BBC26A0FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework_8_NZirchak", "Homework_8_NZirchak", "{2EAF12DC-A371-45BF-A8ED-1C05A0845E1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average value in jagged integer array_Part_1", "Homework_8\Average value in jagged integer array_Part_1\Average value in jagged integer array_Part_1.csproj", "{8A79CFEB-00CD-44ED-BD2A-9ECF74F6EA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Values in jagged or multidimensional array_Part_2", "Homework_8\Values in jagged or multidimensional array_Part_2\Values in jagged or multidimensional array_Part_2.csproj", "{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework_10_NZirchak", "Homework_10_NZirchak", "{B592B78D-E614-47DF-AA61-0532FC073492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_Sum_of_multiple_params", "Homework_10\Methods_Sum_of_multiple_params\Methods_Sum_of_multiple_params.csproj", "{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_Part2_Books_amount_manage", "Homework_10\Methods_Books_amount_manage\Methods_Part2_Books_amount_manage.csproj", "{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +121,26 @@ Global
 		{886F4900-99B3-41B9-8012-22EC05642693}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{886F4900-99B3-41B9-8012-22EC05642693}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{886F4900-99B3-41B9-8012-22EC05642693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32732E0-BA6B-4755-9B1E-D12BBC26A0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32732E0-BA6B-4755-9B1E-D12BBC26A0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32732E0-BA6B-4755-9B1E-D12BBC26A0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32732E0-BA6B-4755-9B1E-D12BBC26A0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A79CFEB-00CD-44ED-BD2A-9ECF74F6EA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A79CFEB-00CD-44ED-BD2A-9ECF74F6EA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A79CFEB-00CD-44ED-BD2A-9ECF74F6EA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A79CFEB-00CD-44ED-BD2A-9ECF74F6EA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,5 +160,10 @@ Global
 		{DBEE0B4A-AA77-4E58-8AC8-83C273E8F2B1} = {55F0BED0-E455-478E-A68F-1E2DF9BB2544}
 		{07D673F5-70C3-4BF0-A379-9317FE6E972D} = {399DB8E7-6326-4C0E-BE07-0D7E883CFA76}
 		{886F4900-99B3-41B9-8012-22EC05642693} = {399DB8E7-6326-4C0E-BE07-0D7E883CFA76}
+		{F32732E0-BA6B-4755-9B1E-D12BBC26A0FD} = {399DB8E7-6326-4C0E-BE07-0D7E883CFA76}
+		{8A79CFEB-00CD-44ED-BD2A-9ECF74F6EA95} = {2EAF12DC-A371-45BF-A8ED-1C05A0845E1C}
+		{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D} = {2EAF12DC-A371-45BF-A8ED-1C05A0845E1C}
+		{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D} = {B592B78D-E614-47DF-AA61-0532FC073492}
+		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3} = {B592B78D-E614-47DF-AA61-0532FC073492}
 	EndGlobalSection
 EndGlobal
