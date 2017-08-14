@@ -17,7 +17,7 @@ namespace HW10_2
         //This method increase the amount of books on user's value
         static int IncreaseAmountOfBooks( ref int a)
         {
-            Console.WriteLine("Please enter an number you want to increase the amount of books:");
+            Console.WriteLine("Please enter a number you want to increase the amount of books:");
             string usersInput =  Console.ReadLine();
             bool IsUsersInputANumber = Int32.TryParse(usersInput, out int usersNumber);
             while (!IsUsersInputANumber)
@@ -34,7 +34,7 @@ namespace HW10_2
         //This method decrease the amount of books on user's value
         static int DecreaseAmountOfBooks(ref int a)
         {
-            Console.WriteLine("Please enter an number you want to decrease the amount of books:");
+            Console.WriteLine("Please enter a number you want to decrease the amount of books:");
             string usersInput = Console.ReadLine();
             bool isUsersInputANumber = Int32.TryParse(usersInput, out int usersNumber);
             while (!isUsersInputANumber)
