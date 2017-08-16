@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Homework14._2
 {
-    class House
+    public class House
     {
+        public Door myDoor;
+        public Window myWindow;
+        public Wall myWall;
+
+        public House(Wall myWall, int numberOfWalls, Window myWindow, int numberOfWindows, Door myDoor)
+        {
+            this.myWall = myWall;
+            this.myWindow = myWindow;
+            this.myDoor = myDoor;
+
+        }
     }
 }

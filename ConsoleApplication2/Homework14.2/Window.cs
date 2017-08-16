@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Homework14._2
 {
-    class Window
+    public class Window
     {
+        public string windowType;
+        public int windowGlassThickness;
+
+        public Window(string windowType, int windowGlassThickness)
+        {
+            this.windowType = windowType;
+            this.windowGlassThickness = windowGlassThickness;
+        }
     }
 }
