@@ -14,12 +14,13 @@ namespace Class_constructors_2
 		// and create house based on them.
 		static void Main(string[] args)
 		{
-			// create list of walls for house
-			List<Wall> walls = new List<Wall>();
-			walls.Add(new Wall(4, 5, 6));
-			walls.Add(new Wall(4, 5, 6));
-			walls.Add(new Wall(4, 5, 6));
-			walls.Add(new Wall(4, 5, 6));
+			// create array of walls for house
+			Wall[] walls = new Wall[] {
+				new Wall(4, 4, 6),
+				new Wall(5, 5, 7),
+				new Wall(4, 4, 6),
+				new Wall(5, 5, 7)
+			};
 
 			// assemble all parts into house
 			House myCustomHouse = new House

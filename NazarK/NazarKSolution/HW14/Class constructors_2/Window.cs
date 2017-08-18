@@ -11,6 +11,7 @@ namespace Class_constructors_2
 		public int width;
 		public int height;
 		public int glassThickness;
+
 		public Window(int width, int height, int glassThickness)
 		{
 			this.width = width;

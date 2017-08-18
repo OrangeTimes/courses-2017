@@ -11,6 +11,7 @@ namespace Class_constructors_2
 		public int width;
 		public int height;
 		public int tiling;
+
 		public Roof(int width, int height, int tiling)
 		{
 			this.width = width;

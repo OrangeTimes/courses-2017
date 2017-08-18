@@ -11,6 +11,7 @@ namespace Class_constructors_2
 		public int width;
 		public int height;
 		public int woodThickness;
+
 		public Door(int width, int height, int woodThickness)
 		{
 			this.width = width;

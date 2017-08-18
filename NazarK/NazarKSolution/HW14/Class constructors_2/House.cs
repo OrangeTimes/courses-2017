@@ -9,11 +9,11 @@ namespace Class_constructors_2
 	class House
 	{
 		public Roof roof;
-		public List<Wall> walls;
+		public Wall[] walls;
 		public Window window;
 		public Door door;
 
-		public House(Roof roof, List<Wall> walls, Window window, Door door)
+		public House(Roof roof, Wall[] walls, Window window, Door door)
 		{
 			this.roof = roof;
 			this.walls = walls;

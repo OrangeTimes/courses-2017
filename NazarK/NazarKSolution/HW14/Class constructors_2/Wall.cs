@@ -11,6 +11,7 @@ namespace Class_constructors_2
 		public int width;
 		public int height;
 		public int brickThickness;
+
 		public Wall(int width, int height, int brickThickness)
 		{
 			this.width = width;

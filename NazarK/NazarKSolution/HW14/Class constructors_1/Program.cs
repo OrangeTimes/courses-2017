@@ -10,12 +10,12 @@ namespace Class_constructors_1
 		// (Hint: you can use a separate method in your class for that). 
 		static void Main(string[] args)
 		{
-			// Create 3 cars using consrtuctor with 3 fields
+			// Create 3 Cars using constructor with 3 fields
 			Car rollsRoycePhantop = new Car("Rolls Royce", 2017, 1000000.01);
 			Car BMWX6= new Car("BMW X6", 2016, 900000.02);
 			Car ferrariLaFerrari = new Car("Ferrari", 2015, 3000000.03);
 
-			// Print values to console
+			// Print Cars to console
 			Console.WriteLine(rollsRoycePhantop.ToString());
 			Console.WriteLine(BMWX6.ToString());
 			Console.WriteLine(ferrariLaFerrari.ToString());

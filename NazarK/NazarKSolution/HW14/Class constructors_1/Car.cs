@@ -14,7 +14,7 @@
 			this.price = price;
 		}
 
-		// Override ToString to print values
+		// Override ToString to print fields
 		public override string ToString()
 		{
 			return ($"Manufacturer: {manufacturer}, Year of manufacture: {yearOfManufacture}, Price: {price}.");
