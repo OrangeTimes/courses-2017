@@ -10,14 +10,13 @@ namespace Homework14._2
     {
         public Door myDoor;
         public Window myWindow;
-        public Wall myWall;
+        public List <Wall> myWalls;
 
-        public House(Wall myWall, int numberOfWalls, Window myWindow, int numberOfWindows, Door myDoor)
+        public House(List <Wall> myWalls, Window myWindow, Door myDoor)
         {
-            this.myWall = myWall;
+            this.myWalls = myWalls;
             this.myWindow = myWindow;
-            this.myDoor = myDoor;
-
+            this.myDoor = myDoor;     
         }
     }
 }
