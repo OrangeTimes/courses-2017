@@ -14,33 +14,34 @@ namespace CarInformation
             Console.WriteLine("Please provide some info about your car");
             Console.WriteLine(); // added this to display empty line for better visual presentation
             Console.WriteLine("Manufacturer:");
-                String Manufacturer = Console.ReadLine();
-            // todo: new code statment should be vertically aligned with previous statements. Here and below
-            // todo: Manufacturer --> manufacturer. Local variables names should be in camelCase. Here and below
-            // todo: according to most code convetions String --> string.
+            string manufacturer = Console.ReadLine();
+
+            // todo: new code statment should be vertically aligned with previous statements. Here and below       // DONE
+            // todo: Manufacturer --> manufacturer. Local variables names should be in camelCase. Here and below   // DONE
+            // todo: according to most code convetions String --> string.                                          // DONE
 
             Console.WriteLine("Model:");
-                String Model = Console.ReadLine();
+            string model = Console.ReadLine();
 
             Console.WriteLine("Year:");
-                int Year = Convert.ToInt32(Console.ReadLine());  // however, this will throw an exception when alphabetical charecters are input here
+            int year = Convert.ToInt32(Console.ReadLine());  // however, this will throw an exception when alphabetical charecters are input here
 
             Console.WriteLine("Price (in US dollars):");
-                double Price = Convert.ToDouble(Console.ReadLine());  // again, this will throw an exception when alphabetical charecters are input here
+            double price = Convert.ToDouble(Console.ReadLine());  // again, this will throw an exception when alphabetical charecters are input here
 
             Console.WriteLine("Color:");
-                String Color = Console.ReadLine();
+            string color = Console.ReadLine();
 
             Console.WriteLine("Fuel consumption (liters per 100 km):");
-                int FuelConsumption = Convert.ToInt32(Console.ReadLine()); // will throw an exception when alphabetical charecters are input here
+            int fuelConsumption = Convert.ToInt32(Console.ReadLine()); // will throw an exception when alphabetical charecters are input here
 
             Console.WriteLine();
 
-            Console.WriteLine("Manufacturer: " + Manufacturer + ", " + "Model: " + Model + ", " + "Year: " + Year + ", " + "Price (in US dollars): " + Price + ", " +
-                "Color: " + Color + ", " + "Fuel consumption (liters per 100 km): " + FuelConsumption);
+            Console.WriteLine("Manufacturer: " + manufacturer + ", " + "Model: " + model + ", " + "Year: " + year + ", " + "Price (in US dollars): " + price + ", " +
+                "Color: " + color + ", " + "Fuel consumption (liters per 100 km): " + fuelConsumption);
             Console.ReadLine();
 
-
         }
+
     }
 }
