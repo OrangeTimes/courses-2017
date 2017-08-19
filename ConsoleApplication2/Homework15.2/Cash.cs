@@ -10,15 +10,16 @@ namespace Homework15._2
     {
         private double cashSum;
         private double salary;
+
         // private constructor
-        private Cash(double salary, double cashSum)
+        private Cash(double cashSum, double salary)
         {
             cashSum += salary;
         }
         // static method that creates new object of a class
-        public static Cash Create (double salary, double cashSum)
+        public static Cash Create (double cashSum, double salary)
         {
-            return new Cash(salary, cashSum);
+            return new Cash(cashSum, salary);
         }
     }
 }
