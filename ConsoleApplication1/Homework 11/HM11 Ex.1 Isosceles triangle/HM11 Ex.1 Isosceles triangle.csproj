@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0962A75E-0944-402B-A082-2D03CE13B986}</ProjectGuid>
+    <ProjectGuid>{219F57A1-E4DB-4B3E-A58D-2BADC3B7DA79}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication3</RootNamespace>
-    <AssemblyName>ConsoleApplication3</AssemblyName>
+    <RootNamespace>HM11_Ex._1_Isosceles_triangle</RootNamespace>
+    <AssemblyName>HM11 Ex.1 Isosceles triangle</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

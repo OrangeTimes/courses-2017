@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ConsoleApplication3")]
+[assembly: AssemblyTitle("HM11 Ex.2 Selling books")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ConsoleApplication3")]
+[assembly: AssemblyProduct("HM11 Ex.2 Selling books")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0962a75e-0944-402b-a082-2d03ce13b986")]
+[assembly: Guid("f19c91e2-a0a3-4f74-aebb-d02094f039d9")]
 
 // Version information for an assembly consists of the following four values:
 //
