@@ -25,7 +25,7 @@ namespace HW11_2
             int bestProfit = 0; 
             for (int i = 0; i < bookPricesWithinWeek.Length; i++)
             {
-                    for (int j = 6; j >= i; j--)
+                    for (int j = bookPricesWithinWeek.Length - 1; j >= i; j--)
                     {
                         if (bookPricesWithinWeek[i] < bookPricesWithinWeek[j])
                         {
@@ -43,7 +43,7 @@ namespace HW11_2
         }
         static void Main(string[] args)
         {
-            int[] startPrices = new int[7] {5, 15, 2, 7, 12, 9, 10};
+            int[] startPrices = new int[] {1,5,10,2,11,12,13,5,20};
             Console.WriteLine(GetBestProfit(startPrices));
             Console.ReadKey();
         }
