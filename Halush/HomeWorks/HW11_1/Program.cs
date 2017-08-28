@@ -47,7 +47,6 @@ namespace HW11_1
                 Console.WriteLine("");
             }
             Console.ReadKey();
-
         }
     }
 }
