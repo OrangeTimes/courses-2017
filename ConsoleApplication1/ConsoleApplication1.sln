@@ -59,6 +59,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_Sum_of_multiple_par
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_Part2_Books_amount_manage", "Homework_10\Methods_Books_amount_manage\Methods_Part2_Books_amount_manage.csproj", "{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework_11_NZirchak", "Homework_11_NZirchak", "{4FBCB592-442D-4C99-A145-01383408EE0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creating isosceles triangle in Console_Part_1", "Homework_11\Creating isosceles triangle in Console_Part_1\Creating isosceles triangle in Console_Part_1.csproj", "{C2DA18F0-E7AF-4C4E-B41B-05041F1391B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using_optional_method_parameters_Part_3", "Homework_10\Using_optional_method_parameters_Part_3\Using_optional_method_parameters_Part_3.csproj", "{2E210F0D-1C6E-4D33-A5B8-5E963165F1B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +147,14 @@ Global
 		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DA18F0-E7AF-4C4E-B41B-05041F1391B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DA18F0-E7AF-4C4E-B41B-05041F1391B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DA18F0-E7AF-4C4E-B41B-05041F1391B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DA18F0-E7AF-4C4E-B41B-05041F1391B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E210F0D-1C6E-4D33-A5B8-5E963165F1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E210F0D-1C6E-4D33-A5B8-5E963165F1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E210F0D-1C6E-4D33-A5B8-5E963165F1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E210F0D-1C6E-4D33-A5B8-5E963165F1B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,5 +179,7 @@ Global
 		{E1A154DD-0D2A-484A-AC34-EAFC3C5F277D} = {2EAF12DC-A371-45BF-A8ED-1C05A0845E1C}
 		{7EAD06AD-7BD6-4A9D-B59F-B527F78A445D} = {B592B78D-E614-47DF-AA61-0532FC073492}
 		{E8F3797B-FC7D-4565-97D7-B9AF9B4218A3} = {B592B78D-E614-47DF-AA61-0532FC073492}
+		{C2DA18F0-E7AF-4C4E-B41B-05041F1391B1} = {4FBCB592-442D-4C99-A145-01383408EE0A}
+		{2E210F0D-1C6E-4D33-A5B8-5E963165F1B1} = {B592B78D-E614-47DF-AA61-0532FC073492}
 	EndGlobalSection
 EndGlobal

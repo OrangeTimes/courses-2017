@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Creating_isosceles_triangle_in_Console_Part_1
+{
+	class Program
+	{
+		// Write a program to create isosceles triangle in console by specifying its height
+		// a.Value of height should be passed as command line parameter
+		// Example for height of 4:
+		//       *    
+		//      ***   
+		//     *****  
+		//    ******* 
+		static void Main(string[] args)
+		{
+			int input = 0;
+			try
+			{
+				Console.Write("Enter number: ");
+				input = Convert.ToInt32(Console.ReadLine());
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+			}
+			Draw_Isosceles_Triangle(input);
+		}
+		public static void Draw_Isosceles_Triangle(int num)
+		{
+			// Run all over the triangle
+
+			for (int i = 0; i < num; i++)
+			{
+				for (int j = num - i; j > 0; j--)
+					Console.Write(" ");
+				// Draw asterisks and one space to get an isosceles triangle
+				for (int j = 0; j <= i; j++)
+					Console.Write("*" + " ");
+				Console.WriteLine();
+			}
+			Console.ReadKey();
+		}
+	}
+}
