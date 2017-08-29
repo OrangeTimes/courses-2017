@@ -29,7 +29,7 @@ namespace HW11_2
                     //Iterate from a last day
                     for (int j = bookPricesWithinWeek.Length - 1; j > i; j--)
                     {
-                        //Storing the lowest and the highest prices
+                        //Storing the lowest and the highest prices and a profit I can get
                         if (bookPricesWithinWeek[i] < bookPricesWithinWeek[j])
                         {
                             startPrice = bookPricesWithinWeek[i];
