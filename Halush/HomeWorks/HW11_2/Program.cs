@@ -22,16 +22,20 @@ namespace HW11_2
             int startPrice = 0;
             int endPrice = 0;
             int startProfit = 0;
-            int bestProfit = 0; 
+            int bestProfit = 0;
+            //Iterate from a first day
             for (int i = 0; i < bookPricesWithinWeek.Length; i++)
             {
+                    //Iterate from a last day
                     for (int j = bookPricesWithinWeek.Length - 1; j > i; j--)
                     {
+                        //Storing the lowest and the highest prices
                         if (bookPricesWithinWeek[i] < bookPricesWithinWeek[j])
                         {
                             startPrice = bookPricesWithinWeek[i];
                             endPrice = bookPricesWithinWeek[j];
                             startProfit = endPrice - startPrice;
+                                //Storing best profit I can get
                                 if (bestProfit < startProfit)
                                 {
                                     bestProfit = startProfit;
@@ -43,7 +47,7 @@ namespace HW11_2
         }
         static void Main(string[] args)
         {
-            int[] startPrices = new int[] {1,5,10,2,11,12,13,5,20};
+            int[] startPrices = new int[] {9, 5, 10, 2, 11, 12, 13};
             Console.WriteLine(GetBestProfit(startPrices));
             Console.ReadKey();
         }
