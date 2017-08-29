@@ -25,7 +25,7 @@ namespace HW11_2
             int bestProfit = 0; 
             for (int i = 0; i < bookPricesWithinWeek.Length; i++)
             {
-                    for (int j = bookPricesWithinWeek.Length - 1; j >= i; j--)
+                    for (int j = bookPricesWithinWeek.Length - 1; j > i; j--)
                     {
                         if (bookPricesWithinWeek[i] < bookPricesWithinWeek[j])
                         {
