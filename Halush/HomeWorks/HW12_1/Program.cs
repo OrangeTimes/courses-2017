@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 Write a program to check if a string is a valid number (double) using Double.Parse and show corresponding error to user.
 Try to recover from this exception by asking user for valid input one more time
 */
+
 namespace HW12_1
 {
     class Program
