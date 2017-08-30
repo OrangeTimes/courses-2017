@@ -10,7 +10,7 @@ namespace Exception_Handling_1
 		static void Main(string[] args)
 		{
 			// Ask user for input until it's valid
-			bool isValidDouble;
+			bool isValidDouble = false;
 			do
 			{
 				// Ask for a string 
@@ -18,40 +18,31 @@ namespace Exception_Handling_1
 				string userInput = Console.ReadLine();
 
 				// Check if it as a valid Double
-				isValidDouble = MyCustomTryParse(userInput);
+				try
+				{
+					// Try to parse string to Double
+					Double.Parse(userInput);
+					isValidDouble = true;
+				}
+				// catch all kinds of exceptions and return false because it's not convertible
+				catch (ArgumentNullException e)
+				{
+					Console.WriteLine(MyFancyErrorMessage(e));
+				}
+				catch (FormatException e)
+				{
+					Console.WriteLine(MyFancyErrorMessage(e));
+				}
+				catch (OverflowException e)
+				{
+					Console.WriteLine(MyFancyErrorMessage(e));
+				}
 
 				// Form and print the message based on if string was Double or not
 				string validationMessage = isValidDouble ? "Input is a valid Double" : "Input is NOT a valid Double, try again.\n";
 				Console.WriteLine(validationMessage);
 			}
 			while (!isValidDouble);
-		}
-
-		static bool MyCustomTryParse(string input)
-		{
-			try
-			{
-				// Try to parse string to Double
-				Double.Parse(input);
-			}
-			// catch all kinds of exceptions and return false because it's not convertible
-			catch (ArgumentNullException e)
-			{
-				Console.WriteLine(MyFancyErrorMessage(e));
-				return false;
-			}
-			catch (FormatException e)
-			{
-				Console.WriteLine(MyFancyErrorMessage(e));
-				return false;
-			}
-			catch (OverflowException e)
-			{
-				Console.WriteLine(MyFancyErrorMessage(e));
-				return false;
-			}
-			// return true if there was no exceptions which means that it is convertible
-			return true;
 		}
 
 		static string MyFancyErrorMessage(Exception e)
