@@ -13,7 +13,7 @@ namespace Practical16
 			Vehicle myCar = new Car();
 			myCar.Drive();
 			myCar.Stop();
-			}
+			
 		}
 	}
 
@@ -66,4 +66,5 @@ namespace Practical16
 			Console.WriteLine($"Stopping {name} from a child class");
 		}
 	}
+}
 
