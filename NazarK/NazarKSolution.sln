@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 01 - Assemblies and references", "HW 01 - Assemblies and references", "{B4CA5778-BD9C-4060-91AE-85815F253653}"
 EndProject
@@ -92,6 +92,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static context_1", "NazarKSolution\HW15\Static context_1\Static context_1.csproj", "{5FACB975-CF8A-4AC5-97EC-1E7CE432D577}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static context_2", "NazarKSolution\HW15\Static context_2\Static context_2.csproj", "{107210C8-45B7-40E4-8DF1-32BCF9796B71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 16 - Inheritance", "HW 16 - Inheritance", "{EB512C04-CDF6-40C8-98C3-6B939F41EE54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance_1", "NazarKSolution\HW16\Inheritance_1\Inheritance_1.csproj", "{74DA4057-3626-468C-875A-1A484305C23F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +227,10 @@ Global
 		{107210C8-45B7-40E4-8DF1-32BCF9796B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{107210C8-45B7-40E4-8DF1-32BCF9796B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{107210C8-45B7-40E4-8DF1-32BCF9796B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DA4057-3626-468C-875A-1A484305C23F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DA4057-3626-468C-875A-1A484305C23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DA4057-3626-468C-875A-1A484305C23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DA4057-3626-468C-875A-1A484305C23F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -259,5 +267,9 @@ Global
 		{4E3B16A5-0B3F-4C46-AC6A-3B8914A1D433} = {ACDC40B6-517D-4E4D-83F4-EB5ACD71B324}
 		{5FACB975-CF8A-4AC5-97EC-1E7CE432D577} = {CE4098A8-3EB6-4CB1-8768-6AC7AD5DB15B}
 		{107210C8-45B7-40E4-8DF1-32BCF9796B71} = {CE4098A8-3EB6-4CB1-8768-6AC7AD5DB15B}
+		{74DA4057-3626-468C-875A-1A484305C23F} = {EB512C04-CDF6-40C8-98C3-6B939F41EE54}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4FBD04F-8D26-459D-8313-77B1DDEFCDF6}
 	EndGlobalSection
 EndGlobal
