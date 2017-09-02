@@ -34,7 +34,10 @@ namespace Inheritance_1
 			}
 
 			// print some instruction to user
-			Console.WriteLine("\nPress W key to accelerate and S key on keyboard to Brake.\nPress I to show car status and F to get some fuel.");
+			Console.WriteLine(
+				@"\nPress W key to accelerate and S key on keyboard to Brake.
+				\nPress I to show car status and F to get some fuel."
+			);
 
 			// ride a car while there is a fuel
 			while (userCar.HasFuel())
