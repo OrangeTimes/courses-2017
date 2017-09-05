@@ -53,7 +53,7 @@ namespace testing
 
     public class Door
     {
-        public string material = "oak";
+        public string material;
         public int height;
         public int thickness;
         public int width;
