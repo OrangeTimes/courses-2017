@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
-Write a program that will create a car with few different options (manufacturer, year of manufacture, price those are mandatory).
-Create 3 different cars and output it values to console (Hint: you can use a separate method in your class for that).
+Write a program to create Customer object from console input and calculate discount based on customer age: below 30 –10%, 30 and below 50 – 20%, 50 and above  - 30%;
 */
 
 namespace HW13_2
@@ -14,9 +13,8 @@ namespace HW13_2
     public class Customer
     {
         public int age;
-        public int discount;
 
-        public int GetDiscount(int age)
+        public int GetDiscount()
         {
             int discount = 0;
             if (age < 30)
@@ -35,9 +33,8 @@ namespace HW13_2
         {
             Customer myCustomer = new Customer();
             Console.WriteLine("Please enter your age to get the discount:");
-            int userAge = Convert.ToInt32(Console.ReadLine());
-            myCustomer.discount = myCustomer.GetDiscount(userAge);
-            Console.WriteLine("Congratulations! You dicount is {0}%", myCustomer.discount);
+            myCustomer.age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Congratulations! You dicount is {0}%", myCustomer.GetDiscount());
             Console.ReadKey();
         }
     }

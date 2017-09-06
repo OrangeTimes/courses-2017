@@ -13,12 +13,7 @@ namespace HW14_1
 {
     public class Car
     {
-        public string manufacturer;
-        public int year;
-        public int price;
-        public string color;
-
-        public void CreateCar()
+        public Car()
         {
             Console.WriteLine("Please prodide a manufacturer of your car:");
             this.manufacturer = Console.ReadLine();
@@ -29,6 +24,10 @@ namespace HW14_1
             Console.WriteLine("Please prodide a color of your car:");
             this.color = (Console.ReadLine());
         }
+        public string manufacturer;
+        public int year;
+        public int price;
+        public string color;
     }
 
     class Program
@@ -37,11 +36,8 @@ namespace HW14_1
         {
             Console.WriteLine("Hello dear customer. Today we are going to create a car of your dream.");
             Car firstCar = new Car();
-            firstCar.CreateCar();
             Car secondCar = new Car();
-            secondCar.CreateCar();
             Car thirdCar = new Car();
-            thirdCar.CreateCar();
             Console.WriteLine("Congratulations! You just created 3 new cars.");
             Console.WriteLine("Your first car was created with following conditions:");
             Console.WriteLine("Manufacturer: {0}; Year: {1}; Price: {2}; Color: {3}.", firstCar.manufacturer, firstCar.year, firstCar.price, firstCar.color);
