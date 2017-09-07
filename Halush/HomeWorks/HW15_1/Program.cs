@@ -9,7 +9,7 @@ Write a class that will do basic math operation. Make sure the class is static
 */
 namespace HW15_1
 {
-    static class Oleg
+    static class MathOperations
     {
         static public int a = 25;
         static public int b = 5;
@@ -49,16 +49,16 @@ namespace HW15_1
             switch (usersInput)
             {
                 case "+":
-                    Oleg.Addition();
+                    MathOperations.Addition();
                     break;
                 case "-":
-                    Oleg.Subtraction();
+                    MathOperations.Subtraction();
                     break;
                 case "/":
-                    Oleg.Division();
+                    MathOperations.Division();
                     break;
                 case "*":
-                    Oleg.Multiplication();
+                    MathOperations.Multiplication();
                     break;
                 default:
                     Console.WriteLine("You have entered an incorrect value. Please try again.");

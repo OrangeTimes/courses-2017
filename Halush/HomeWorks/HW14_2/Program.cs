@@ -32,8 +32,6 @@ namespace HW14_2
         public FrontWall myFrontWall;
         public BackWall myBackWall;
 
-
-
         public void CreateHouse()
         {
 
