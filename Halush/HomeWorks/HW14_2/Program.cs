@@ -13,6 +13,14 @@ namespace HW14_2
 {
     public class House
     {
+        public Door myDoor;
+        public Window myWindow;
+        public Roof myRoof;
+        public LeftSideWall myLeftWall;
+        public RightSideWall myRightWall;
+        public FrontWall myFrontWall;
+        public BackWall myBackWall;
+
         public House()
         {
             myDoor = new Door();
@@ -23,148 +31,107 @@ namespace HW14_2
             myFrontWall = new FrontWall();
             myBackWall = new BackWall();
         }
-
-        public Door myDoor;
-        public Window myWindow;
-        public Roof myRoof;
-        public LeftSideWall myLeftWall;
-        public RightSideWall myRightWall;
-        public FrontWall myFrontWall;
-        public BackWall myBackWall;
-
-        public void CreateHouse()
-        {
-
-            myDoor.material = "oak";
-            myDoor.height = 200;
-            myDoor.thickness = 3;
-            myDoor.width = 80;
-            myWindow.width = 100;
-            myWindow.height = 130;
-            myWindow.thickness = 1;
-            myWindow.trasparency = 80;
-            myRoof.material = "steel";
-            myRoof.area = 100;
-            myLeftWall.material = "concrete";
-            myLeftWall.thickness = 20;
-            myLeftWall.height = 250;
-            myLeftWall.width = 800;
-            myRightWall.material = "concrete";
-            myRightWall.thickness = 20;
-            myRightWall.height = 250;
-            myRightWall.width = 800;
-            myFrontWall.material = "concrete";
-            myFrontWall.thickness = 20;
-            myFrontWall.height = 250;
-            myFrontWall.width = 500;
-            myBackWall.material = "concrete";
-            myBackWall.thickness = 20;
-            myBackWall.height = 250;
-            myBackWall.width = 500;
-        }
     }
 
     public class Door
     {
-        public string material;
-        public int height;
-        public int thickness;
-        public int width;
+        public string Material;
+        public int Height;
+        public int Thickness;
+        public int Width;
 
         public void Show()
         {
             Console.WriteLine("Door parameters are:");
-            Console.WriteLine("Material: " + material);
-            Console.WriteLine("height: " + height);
-            Console.WriteLine("thickness: " + thickness);
-            Console.WriteLine("width: " + width);
+            Console.WriteLine("Material: " + Material);
+            Console.WriteLine("height: " + Height);
+            Console.WriteLine("thickness: " + Thickness);
+            Console.WriteLine("width: " + Width);
         }
     }
 
     public class Window
     {
-        public int width;
-        public int height;
-        public int thickness;
-        public int trasparency;
+        public int Width;
+        public int Height;
+        public int Thickness;
+        public int Trasparency;
 
         public void Show()
         {
             Console.WriteLine("Window parameters are:");
-            Console.WriteLine("width: " + width);
-            Console.WriteLine("height: " + height);
-            Console.WriteLine("thickness: " + thickness);
-            Console.WriteLine("trasparency: " + trasparency);
+            Console.WriteLine("width: " + Width);
+            Console.WriteLine("height: " + Height);
+            Console.WriteLine("thickness: " + Thickness);
+            Console.WriteLine("trasparency: " + Trasparency);
         }
     }
 
     public class Roof
     {
-        public string material;
-        public int area;
+        public string Material;
+        public int Area;
 
         public void Show()
         {
             Console.WriteLine("Roof parameters are:");
-            Console.WriteLine("material: " + material);
-            Console.WriteLine("area: " + area);
+            Console.WriteLine("material: " + Material);
+            Console.WriteLine("area: " + Area);
         }
     }
 
-    public class Wall
+    public abstract class Wall
     {
-        public string material;
-        public int thickness;
-        public int height;
-        public int width;
+        public string Material;
+        public int Thickness;
+        public int Height;
+        public int Width;
+
+        public abstract string GetWallName();
+
+        public void Show()
+        {
+            Console.WriteLine(GetWallName() + " wall parameters are:");
+            Console.WriteLine("material: " + Material);
+            Console.WriteLine("thickness: " + Thickness);
+            Console.WriteLine("height: " + Height);
+            Console.WriteLine("width: " + Width);
+        }
     }
 
     public class LeftSideWall : Wall
     {
-        public void Show()
+        public override string GetWallName()
         {
-            Console.WriteLine("Left wall parameters are:");
-            Console.WriteLine("material: " + material);
-            Console.WriteLine("thickness: " + thickness);
-            Console.WriteLine("height: " + height);
-            Console.WriteLine("width: " + width);
+            return "Left";
         }
     }
 
     public class RightSideWall : Wall
     {
-        public void Show()
+        public override string GetWallName()
         {
-            Console.WriteLine("Right wall parameters are:");
-            Console.WriteLine("material: " + material);
-            Console.WriteLine("thickness: " + thickness);
-            Console.WriteLine("height: " + height);
-            Console.WriteLine("width: " + width);
+            return "Right";
         }
+
     }
 
     public class FrontWall : Wall
     {
-        public void Show()
+        public override string GetWallName()
         {
-            Console.WriteLine("Front wall parameters are:");
-            Console.WriteLine("material: " + material);
-            Console.WriteLine("thickness: " + thickness);
-            Console.WriteLine("height: " + height);
-            Console.WriteLine("width: " + width);
+            return "Front";
         }
+
     }
 
     public class BackWall : Wall
     {
-        public void Show()
+        public override string GetWallName()
         {
-            Console.WriteLine("Back wall parameters are:");
-            Console.WriteLine("material: " + material);
-            Console.WriteLine("thickness: " + thickness);
-            Console.WriteLine("height: " + height);
-            Console.WriteLine("width: " + width);
+            return "Back";
         }
+
     }
 
     class Program
@@ -172,15 +139,6 @@ namespace HW14_2
         public static void Main()
         {
             House myHouse = new House();
-            myHouse.CreateHouse();
-            myHouse.myDoor.Show();
-            myHouse.myWindow.Show();
-            myHouse.myRoof.Show();
-            myHouse.myLeftWall.Show();
-            myHouse.myRightWall.Show();
-            myHouse.myFrontWall.Show();
-            myHouse.myBackWall.Show();
-            Console.ReadKey();
         }
     }
 }
