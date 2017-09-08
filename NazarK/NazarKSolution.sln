@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 01 - Assemblies and references", "HW 01 - Assemblies and references", "{B4CA5778-BD9C-4060-91AE-85815F253653}"
 EndProject
@@ -100,6 +100,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 17 - Interfaces", "HW 17 - Interfaces", "{76007CBD-212F-452F-8168-B9E6D9268743}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces_1", "NazarKSolution\HW17\Interfaces_1\Interfaces_1.csproj", "{701D22AB-4D1F-488C-A86D-0C89349ECC9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 18 - Abstract classes", "HW 18 - Abstract classes", "{711406CA-8851-4A6C-9CA6-9E6D23DBE70D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract_classes_1", "NazarKSolution\HW18\Abstract_classes_1\Abstract_classes_1.csproj", "{6B2DB39A-609D-452D-9932-02842ACD2344}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -239,6 +243,10 @@ Global
 		{701D22AB-4D1F-488C-A86D-0C89349ECC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{701D22AB-4D1F-488C-A86D-0C89349ECC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{701D22AB-4D1F-488C-A86D-0C89349ECC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2DB39A-609D-452D-9932-02842ACD2344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2DB39A-609D-452D-9932-02842ACD2344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2DB39A-609D-452D-9932-02842ACD2344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2DB39A-609D-452D-9932-02842ACD2344}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -277,6 +285,7 @@ Global
 		{107210C8-45B7-40E4-8DF1-32BCF9796B71} = {CE4098A8-3EB6-4CB1-8768-6AC7AD5DB15B}
 		{74DA4057-3626-468C-875A-1A484305C23F} = {EB512C04-CDF6-40C8-98C3-6B939F41EE54}
 		{701D22AB-4D1F-488C-A86D-0C89349ECC9F} = {76007CBD-212F-452F-8168-B9E6D9268743}
+		{6B2DB39A-609D-452D-9932-02842ACD2344} = {711406CA-8851-4A6C-9CA6-9E6D23DBE70D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4FBD04F-8D26-459D-8313-77B1DDEFCDF6}
