@@ -116,17 +116,17 @@ namespace HW16
         {
             Console.WriteLine("Please choose your car:");
             Console.WriteLine("Press 1 for SUV. Press 2 for truck. Press 3 for bus.");
-            bool usersCar = Int32.TryParse(Console.ReadLine(), out int input);
-            while (!usersCar)
+            bool isUserInputValid = Int32.TryParse(Console.ReadLine(), out int usersInput);
+            while (!isUserInputValid)
             {
                 Console.WriteLine("You have entered an incorrect value. Please try again.");
                 Console.WriteLine("Press 1 for SUV. Press 2 for truck. Press 3 for bus.");
-                usersCar = Int32.TryParse(Console.ReadLine(), out input);
+                isUserInputValid = Int32.TryParse(Console.ReadLine(), out usersInput);
             }
 
             Car newCar;
 
-            switch (input)
+            switch (usersInput)
             {
                 case 1:
                     {
