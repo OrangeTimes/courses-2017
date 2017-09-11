@@ -47,9 +47,7 @@ namespace HW17
                 isReceiverOn = true;
             }
             else
-            {
                 Console.WriteLine("Your receiver is already turned on.");
-            }
             return isReceiverOn;
         }
 
@@ -58,54 +56,54 @@ namespace HW17
             if (isReceiverOn == true)
             {
                 Console.WriteLine("{0} is turned off.", type);
-                isReceiverOn = true;
+                isReceiverOn = false;
             }
             else
-            {
                 Console.WriteLine("Your receiver is already turned off.");
-            }
             return isReceiverOn;
         }
 
         public int VolumeUp()
         {
-            if (isReceiverOn == true & IsReceiverPlaying == true)
+            if (isReceiverOn == true)
             {
-                if (volumePercent >= 0 & volumePercent < 100)
+                if (IsReceiverPlaying == true)
                 {
-                    volumePercent += 10;
-                    Console.WriteLine("Volume is increased. It is {0} percent.", volumePercent);
+                    if (volumePercent >= 0 & volumePercent < 100)
+                    {
+                        volumePercent += 10;
+                        Console.WriteLine("Volume is increased. It is {0} percent.", volumePercent);
+                    }
+                    else
+                        Console.WriteLine("Current volume percent is {0}. You can't make it louder.", volumePercent);
                 }
                 else
-                {
-                    Console.WriteLine("Current volume percent is {0}. You can't make it louder.", volumePercent);
-                }
+                    Console.WriteLine("Your receiver is not playing yet.");
             }
             else
-            {
-                Console.WriteLine("Your receiver is not turned on or not playing yet.");
-            }
+                Console.WriteLine("Your receiver is not turned on yet.");
             return volumePercent;
         }
 
         public int VolumeDown()
         {
-            if (isReceiverOn == true & IsReceiverPlaying == true)
+            if (isReceiverOn == true)
             {
-                if (volumePercent > 0)
+                if (IsReceiverPlaying == true)
                 {
-                    volumePercent -= 10;
-                    Console.WriteLine("Volume is decreased. It is {0} percent.", volumePercent);
+                    if (volumePercent > 0)
+                    {
+                        volumePercent -= 10;
+                        Console.WriteLine("Volume is decreased. It is {0} percent.", volumePercent);
+                    }
+                    else
+                        Console.WriteLine("Current volume percent is {0}. You can't make it quieter.", volumePercent);
                 }
                 else
-                {
-                    Console.WriteLine("Current volume percent is {0}. You can't make it quieter.", volumePercent);
-                }
+                    Console.WriteLine("Your receiver is not playing yet");
             }
             else
-            {
-                Console.WriteLine("Your receiver is not turned on or not playing yet.");
-            }
+                Console.WriteLine("Your receiver is not turned on yet.");
             return volumePercent;
         }
 
@@ -115,18 +113,14 @@ namespace HW17
             {
                 if (IsReceiverPlaying == false)
                 {
-                    Console.WriteLine("You have clicked Play.");
+                    Console.WriteLine("Play.");
                     IsReceiverPlaying = true;
                 }
                 else
-                {
                     Console.WriteLine("Your receiver is already playing.");
-                }
             }
             else
-            {
                 Console.WriteLine("Your receiver is not turned on yet.");
-            }
             return IsReceiverPlaying;
         }
 
@@ -136,18 +130,14 @@ namespace HW17
             {
                 if (IsReceiverPlaying == true)
                 {
-                    Console.WriteLine("You have clicked Stop.");
+                    Console.WriteLine("Stop.");
                     IsReceiverPlaying = false;
                 }
                 else
-                {
                     Console.WriteLine("Your receiver is not playing already.");
-                }
             }
             else
-            {
                 Console.WriteLine("Your receiver is not turned on yet.");
-            }
             return IsReceiverPlaying;
         }
     }
@@ -189,7 +179,7 @@ namespace HW17
             Console.WriteLine("Please choose your receiver:");
             Console.WriteLine("Press 1 for RV. Press 2 for BluRay. Press 3 for Stereo.");
             bool isUserInputValid = Int32.TryParse(Console.ReadLine(), out int usersInput);
-            while (!isUserInputValid)
+            while (!isUserInputValid & (usersInput != 1 | usersInput != 2 | usersInput != 3))
             {
                 Console.WriteLine("You have entered an incorrect value. Please try again.");
                 Console.WriteLine("Press 1 for RV. Press 2 for BluRay. Press 3 for Stereo.");
