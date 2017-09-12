@@ -100,7 +100,7 @@ namespace HW17
                         Console.WriteLine("Current volume percent is {0}. You can't make it quieter.", volumePercent);
                 }
                 else
-                    Console.WriteLine("Your receiver is not playing yet");
+                    Console.WriteLine("Your receiver is not playing yet.");
             }
             else
                 Console.WriteLine("Your receiver is not turned on yet.");
@@ -179,7 +179,7 @@ namespace HW17
             Console.WriteLine("Please choose your receiver:");
             Console.WriteLine("Press 1 for RV. Press 2 for BluRay. Press 3 for Stereo.");
             bool isUserInputValid = Int32.TryParse(Console.ReadLine(), out int usersInput);
-            while (!isUserInputValid & (usersInput != 1 | usersInput != 2 | usersInput != 3))
+            while (!isUserInputValid || (usersInput !=1 && usersInput != 2 && usersInput != 3))
             {
                 Console.WriteLine("You have entered an incorrect value. Please try again.");
                 Console.WriteLine("Press 1 for RV. Press 2 for BluRay. Press 3 for Stereo.");
@@ -193,21 +193,21 @@ namespace HW17
                 case 1:
                     {
                         newReceiver = new TV();
-                        Console.WriteLine("You are using a {0} receiver", newReceiver.type);
+                        Console.WriteLine("You are using a {0} receiver.", newReceiver.type);
                         Instruction();
                         break;
                     }
                 case 2:
                     {
                         newReceiver = new BluRay();
-                        Console.WriteLine("You are using a {0} receiver", newReceiver.type);
+                        Console.WriteLine("You are using a {0} receiver.", newReceiver.type);
                         Instruction();
                         break;
                     }
                 case 3:
                     {
                         newReceiver = new Stereo();
-                        Console.WriteLine("You are using a {0} receiver", newReceiver.type);
+                        Console.WriteLine("You are using a {0} receiver.", newReceiver.type);
                         Instruction();
                         break;
                     }
