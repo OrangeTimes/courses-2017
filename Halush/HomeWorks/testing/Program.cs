@@ -22,7 +22,7 @@ int value = random.Next(0
 
 namespace testing
 {
-    enum CardType
+    enum CardTypes
     {
         Spades,
         Hearts,
@@ -49,7 +49,7 @@ namespace testing
 
     public class StandardCard
     {
-        CardType cardType;
+        CardTypes cardType;
         Cards card;
     }
 
@@ -58,27 +58,25 @@ namespace testing
         public StandardCard standardCard;
         public abstract void GetRandomCard();
         public abstract void GetAmountOfCards();
-        
     }
 
     public class StandardCardDeck : CardDeck
     {
-
         public override void GetRandomCard()
         {
             Random random = new Random();
-            int amountOfTypes = Enum.GetNames(typeof(CardType)).Length;
+            int amountOfTypes = Enum.GetNames(typeof(CardTypes)).Length;
             int amountOfCards = Enum.GetNames(typeof(Cards)).Length;
             int randomNumberOfType = random.Next(0, amountOfTypes);
             int randomNumberOfCard = random.Next(0, amountOfCards);
-            string type = Convert.ToString((CardType)randomNumberOfType);
+            string type = Convert.ToString((CardTypes)randomNumberOfType);
             string card = Convert.ToString((Cards)randomNumberOfCard);
             Console.WriteLine("Your card is {0} of {1}", type, card);
         }
 
         public override void GetAmountOfCards()
         {
-            int amountOfCards = Enum.GetNames(typeof(CardType)).Length * Enum.GetNames(typeof(Cards)).Length;
+            int amountOfCards = Enum.GetNames(typeof(CardTypes)).Length * Enum.GetNames(typeof(Cards)).Length;
             Console.WriteLine(amountOfCards);
         }
     }
