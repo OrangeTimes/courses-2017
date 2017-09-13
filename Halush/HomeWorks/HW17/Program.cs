@@ -19,10 +19,10 @@ namespace HW17
     {
         bool PowerOn();
         bool PowerOff();
-        int VolumeUp();
-        int VolumeDown();
         bool Play();
         bool Stop();
+        int VolumeUp();
+        int VolumeDown();
     }
 
     public class Receiver : IRemote
@@ -38,7 +38,7 @@ namespace HW17
             volumePercent = 0;
         }
 
-
+        //This method verifies whether the receiver is not turned on yet and if it's not - turns it on
         public bool PowerOn()
         {
             if (isReceiverOn == false)
@@ -50,7 +50,7 @@ namespace HW17
                 Console.WriteLine("Your receiver is already turned on.");
             return isReceiverOn;
         }
-
+        //This method verifies whether the receiver is not turned off yet and if it's not - turns it off
         public bool PowerOff()
         {
             if (isReceiverOn == true)
@@ -62,7 +62,41 @@ namespace HW17
                 Console.WriteLine("Your receiver is already turned off.");
             return isReceiverOn;
         }
-
+        //This method verifies whether the receiver is not turned on or playing already and if it's not - it doesn't allow to make it playing 
+        public bool Play()
+        {
+            if (isReceiverOn == true)
+            {
+                if (IsReceiverPlaying == false)
+                {
+                    Console.WriteLine("Play.");
+                    IsReceiverPlaying = true;
+                }
+                else
+                    Console.WriteLine("Your receiver is already playing.");
+            }
+            else
+                Console.WriteLine("Your receiver is not turned on yet.");
+            return IsReceiverPlaying;
+        }
+        //This method verifies whether the receiver is not turned off or stopped already and if it's not - it doesn't allow to stop it
+        public bool Stop()
+        {
+            if (isReceiverOn == true)
+            {
+                if (IsReceiverPlaying == true)
+                {
+                    Console.WriteLine("Stop.");
+                    IsReceiverPlaying = false;
+                }
+                else
+                    Console.WriteLine("Your receiver is not playing already.");
+            }
+            else
+                Console.WriteLine("Your receiver is not turned on yet.");
+            return IsReceiverPlaying;
+        }
+        //This method verifies whether receiver is turned on and playing and if it's not - it doesn't allow to manage the the volume
         public int VolumeUp()
         {
             if (isReceiverOn == true)
@@ -84,7 +118,7 @@ namespace HW17
                 Console.WriteLine("Your receiver is not turned on yet.");
             return volumePercent;
         }
-
+        //This method verifies whether receiver is turned on and playing and if it's not - it doesn't allow to manage the the volume
         public int VolumeDown()
         {
             if (isReceiverOn == true)
@@ -107,39 +141,7 @@ namespace HW17
             return volumePercent;
         }
 
-        public bool Play()
-        {
-            if (isReceiverOn == true)
-            {
-                if (IsReceiverPlaying == false)
-                {
-                    Console.WriteLine("Play.");
-                    IsReceiverPlaying = true;
-                }
-                else
-                    Console.WriteLine("Your receiver is already playing.");
-            }
-            else
-                Console.WriteLine("Your receiver is not turned on yet.");
-            return IsReceiverPlaying;
-        }
-
-        public bool Stop()
-        {
-            if (isReceiverOn == true)
-            {
-                if (IsReceiverPlaying == true)
-                {
-                    Console.WriteLine("Stop.");
-                    IsReceiverPlaying = false;
-                }
-                else
-                    Console.WriteLine("Your receiver is not playing already.");
-            }
-            else
-                Console.WriteLine("Your receiver is not turned on yet.");
-            return IsReceiverPlaying;
-        }
+        
     }
 
     public class TV : Receiver
@@ -173,7 +175,8 @@ namespace HW17
         {
             Console.WriteLine("Press 1 to power on, 2 to power off, 3 to increase a volume, 4 to decrease a volume, 5 to play, 6 to stop, Esc to exit the program.");
         }
-
+        //This method verifies whether user has entered an int and whether it is 1 or 2 or 3 and if it's not - it asks him to enter a proper value
+        //Based on the entered value it creates a corresponding receiver's type
         static Receiver ChooseYourReceiver()
         {
             Console.WriteLine("Please choose your receiver:");
