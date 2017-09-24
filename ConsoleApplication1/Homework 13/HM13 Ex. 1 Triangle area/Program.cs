@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Drawing;
+
+namespace HM13_Ex._1_Triangle_area
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Triangle myTriangle = new Triangle();  // creating instance of "Triangle" class with name "myTriangle"
+            myTriangle.TriangleArea();             // invocing a method using the instance of Triangle class
+            Console.ReadLine();
+
+        }
+    }
+}
+
