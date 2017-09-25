@@ -13,7 +13,7 @@ namespace HM13_Ex._1_Triangle_area
         static void Main(string[] args)
         {
             Triangle myTriangle = new Triangle();  // creating instance of "Triangle" class with name "myTriangle"
-            myTriangle.TriangleArea();             // invocing a method using the instance of Triangle class
+            myTriangle.TriangleArea();             // invoking a method using the instance of Triangle class
             Console.ReadLine();
 
         }
