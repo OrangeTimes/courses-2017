@@ -109,6 +109,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 19 - Method members", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method_members_1", "NazarKSolution\HW19\Method_members_1\Method_members_1.csproj", "{E22319B3-AB19-4EF3-9467-0FD4AE0DC144}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HW 20 - Generics", "HW 20 - Generics", "{F446A44D-3CED-4678-A82C-9FC35C3B8F7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "NazarKSolution\HW20\Generics\Generics.csproj", "{2FB4CED1-108A-42CA-9D33-D70738D1D001}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -255,6 +259,10 @@ Global
 		{E22319B3-AB19-4EF3-9467-0FD4AE0DC144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E22319B3-AB19-4EF3-9467-0FD4AE0DC144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E22319B3-AB19-4EF3-9467-0FD4AE0DC144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB4CED1-108A-42CA-9D33-D70738D1D001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB4CED1-108A-42CA-9D33-D70738D1D001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB4CED1-108A-42CA-9D33-D70738D1D001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB4CED1-108A-42CA-9D33-D70738D1D001}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -295,6 +303,7 @@ Global
 		{701D22AB-4D1F-488C-A86D-0C89349ECC9F} = {76007CBD-212F-452F-8168-B9E6D9268743}
 		{6B2DB39A-609D-452D-9932-02842ACD2344} = {711406CA-8851-4A6C-9CA6-9E6D23DBE70D}
 		{E22319B3-AB19-4EF3-9467-0FD4AE0DC144} = {19C97AC7-D7ED-43AE-A58B-DEDD11E47014}
+		{2FB4CED1-108A-42CA-9D33-D70738D1D001} = {F446A44D-3CED-4678-A82C-9FC35C3B8F7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4FBD04F-8D26-459D-8313-77B1DDEFCDF6}
