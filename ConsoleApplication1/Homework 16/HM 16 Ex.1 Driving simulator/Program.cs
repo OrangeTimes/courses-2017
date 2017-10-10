@@ -58,7 +58,7 @@ namespace HM_16_Ex._1_Driving_simulator
             Console.WriteLine("Now you can drive" + '\n' + "Use W key to accelerate" + '\n' + "Use S key to decelerate" + '\n' + "Use I key to get current driving status" + '\n');
 
             int x = 1;
-            while (x ==1 )    // while loop  - for making possible continuous user input
+            while (x ==1)    // while loop  - for making possible continuous user input
             {
                 ConsoleKey pressedKey = Console.ReadKey().Key;
                 Console.WriteLine();
