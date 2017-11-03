@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
@@ -17,39 +15,40 @@ namespace WebAutomation
 	[TestFixture]
 	public class TestFixture
 	{
-		private IWebDriver driver;
+		//private IWebDriver driver;
 
 		[SetUp]
 		public void TestSetup()
 		{
-			driver = new InternetExplorerDriver();
+			//driver = new InternetExplorerDriver();
 		}
 
 		[Test]
 		public void GoogleSearch()
 		{
-			string[] expectedHeaders =
-				{"Booking.com - Готелі"};
-
-			driver.Navigate().GoToUrl("www.google.com");
+			//WebDriver.GetInstance().Navigate().GoToUrl("www.google.com");
 			//Assert.AreEqual("www.google.com", driver.Url);
-			StringAssert.Contains("www.google.com", driver.Url);
-			driver.FindElement(By.Name("q")).SendKeys("booking");
-			driver.FindElement(By.Name("q")).SendKeys(Keys.Escape);
-			driver.FindElement(By.Name("btnK")).Click();
-			var googleResultsHeaders = driver.FindElements(By.XPath("//div/h3/a"))
-				.Select(x => x.Text)
-				.Where(y => y.Any());
-			Assert.AreEqual(8, googleResultsHeaders.Count());
+			//StringAssert.Contains("www.google.com", WebDriver.GetInstance().Url);
+			//WebDriver.GetInstance().FindElement(By.Name("q")).SendKeys("booking");
+			//WebDriver.GetInstance().FindElement(By.Name("q")).SendKeys(Keys.Escape);
+			//WebDriver.GetInstance().FindElement(By.Name("btnK")).Click();
+			//var googleResultsHeaders = WebDriver.GetInstance().FindElements(By.XPath("//div/h3/a"))
+			//	.Select(x => x.Text)
+			//	.Where(y => y.Any());
+			
+			Pages.PageHome.GoTo();
+			Pages.PageHome.Search("booking");
+			var results = Pages.PageSearchResults.GetResults();
+			Assert.AreEqual(8, results.Count());
 			// this can fail since Google's  result can change over time
-			CollectionAssert.Contains(googleResultsHeaders, "Booking.com — Вікіпедія");
+			CollectionAssert.Contains(results, "Booking.com — Вікіпедія");
 		}
 
 		
 		[TearDown]
 		public void TestCleanUp()
 		{
-			driver.Quit();
+			WebDriver.GetInstance().Quit();
 		}
 	}
 }

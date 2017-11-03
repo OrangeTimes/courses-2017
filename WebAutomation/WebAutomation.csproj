@@ -51,8 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageRepository\PageHome.cs" />
+    <Compile Include="Pages.cs" />
+    <Compile Include="PageRepository\PageSearchResults.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
