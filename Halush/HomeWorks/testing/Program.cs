@@ -8,9 +8,8 @@ using System.Diagnostics;
 
 
 /*
-Create 2 generic interfaces one with covariance and another with contravariance for generic type. 
-Implement concrete classes that implement those interfaces. Create example of usage for covariance and contravariance in generic interfaces. 
-Remember class implementations of generic interfaces do not support variance
+Create 4 anonymous methods that perform add/subtract/multiply/divide operation and log the result to console, and have a void return type. 
+Create a delegate to store all the anonymous method and later invoke it with concrete numbers
 */
 
 
