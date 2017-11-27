@@ -15,6 +15,7 @@ Create a delegate to store all the anonymous method and later invoke it with con
 
 namespace testing
 {
+
     public class Program
     {
         public static void Main()
