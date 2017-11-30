@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace HW20
 {
-    public struct Oleg
+    public struct MyTestStruct
     {
         public int firstValue;
         public int secondValue;
