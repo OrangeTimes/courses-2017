@@ -23,8 +23,8 @@ namespace testing
         {
             List<double> myList = new List<double>() {5.777, 7, 1, 4, 10.101, 33.333};
             //Min and Max values of a collection
-            var minValueOfCollection = myList.Aggregate((start, end) => start - end);
-            var maxValueOfCollection = myList.Aggregate((start, end) => start + end);
+            var minValueOfCollection = myList.Aggregate((start, end) => start < end ? start : end);
+            var maxValueOfCollection = myList.Aggregate((start, end) => start > end ? start : end);
             //Numbers divisible by 2
             var divisibleBy2 = myList.Where(x => x % 2 == 0).ToList();
             //String representation with 2 numbers precision
