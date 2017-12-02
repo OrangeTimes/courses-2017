@@ -49,7 +49,7 @@ namespace HW15_1
             switch (usersInput)
             {
                 case "+":
-                    MathOperations.Addition();
+                    MathOperations.Addition(); // todo: you should 2 numbers to those methods as well
                     break;
                 case "-":
                     MathOperations.Subtraction();

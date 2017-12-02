@@ -67,8 +67,8 @@ namespace HW17
         {
             if (isReceiverOn == true)
             {
-                if (IsReceiverPlaying == false)
-                {
+                if (IsReceiverPlaying == false) // todo: you can combine mutiple if statements,
+				{
                     Console.WriteLine("Play.");
                     IsReceiverPlaying = true;
                 }
@@ -84,8 +84,8 @@ namespace HW17
         {
             if (isReceiverOn == true)
             {
-                if (IsReceiverPlaying == true)
-                {
+                if (IsReceiverPlaying == true) // todo: you can combine mutiple if statements, checking for true is redundant here
+				{
                     Console.WriteLine("Stop.");
                     IsReceiverPlaying = false;
                 }
@@ -101,8 +101,8 @@ namespace HW17
         {
             if (isReceiverOn == true)
             {
-                if (IsReceiverPlaying == true)
-                {
+                if (IsReceiverPlaying == true) // todo: you can combine mutiple if statements, checking for true is redundant here
+				{
                     if (volumePercent >= 0 & volumePercent < 100)
                     {
                         volumePercent += 10;
@@ -123,7 +123,7 @@ namespace HW17
         {
             if (isReceiverOn == true)
             {
-                if (IsReceiverPlaying == true)
+                if (IsReceiverPlaying == true) // todo: you can combine mutiple if statements, checking for true is redundant here
                 {
                     if (volumePercent > 0)
                     {
@@ -182,8 +182,8 @@ namespace HW17
             Console.WriteLine("Please choose your receiver:");
             Console.WriteLine("Press 1 for RV. Press 2 for BluRay. Press 3 for Stereo.");
             bool isUserInputValid = Int32.TryParse(Console.ReadLine(), out int usersInput);
-            while (!isUserInputValid || (usersInput !=1 && usersInput != 2 && usersInput != 3))
-            {
+            while (!isUserInputValid || (usersInput !=1 && usersInput != 2 && usersInput != 3))// todo check formatting '!=1'
+			{
                 Console.WriteLine("You have entered an incorrect value. Please try again.");
                 Console.WriteLine("Press 1 for RV. Press 2 for BluRay. Press 3 for Stereo.");
                 isUserInputValid = Int32.TryParse(Console.ReadLine(), out usersInput);

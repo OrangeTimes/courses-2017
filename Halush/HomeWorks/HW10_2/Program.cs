@@ -19,7 +19,7 @@ namespace HW10_2
         {
             Console.WriteLine("Please enter a number you want to increase the amount of books:");
             string usersInput =  Console.ReadLine();
-            bool IsUsersInputANumber = Int32.TryParse(usersInput, out int usersNumber);
+            bool IsUsersInputANumber = Int32.TryParse(usersInput, out int usersNumber); // todo variable names should be in camelCase
             while (!IsUsersInputANumber)
             {
                 Console.WriteLine("Please enter a number:");
@@ -63,8 +63,8 @@ namespace HW10_2
             Console.WriteLine("If you want to increase the amount of books please enter 1");
             Console.WriteLine("If you want to decrease the amount of books please enter 0");
             string usersInput = Console.ReadLine();
-            bool IsUsersInputANumber = Int32.TryParse(usersInput,out int usersNumber);
-            while (!IsUsersInputANumber)
+            bool IsUsersInputANumber = Int32.TryParse(usersInput,out int usersNumber); // todo fomrating of input arguments "usersInput, out int usersNumber"
+			while (!IsUsersInputANumber)
             {
                 Console.WriteLine("Please enter a number:");
                 usersInput = Console.ReadLine();

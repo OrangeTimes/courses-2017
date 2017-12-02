@@ -119,8 +119,8 @@ namespace HW19
     {
         public static void Main()
         {
-            Car newCar = new Truck();
-            Console.WriteLine(newCar.ToString());
+            Car newCar = new Truck(); // todo: you should pass stuff like Engine and YearOfManufacturer to constructor
+			Console.WriteLine(newCar.ToString());
             Console.ReadKey();
         }
     }

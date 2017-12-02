@@ -21,9 +21,8 @@ namespace HW23
             var minValueOfCollection = myList.Aggregate((start, end) => start < end ? start : end);
             var maxValueOfCollection = myList.Aggregate((start, end) => start > end ? start : end);
             //Numbers divisible by 2
-            var divisibleBy2 = myList.Where(x => x % 2 == 0).ToList();
-            //String representation with 2 numbers precision
-            var twoNumbersPrecision = myList.Select(x => x.ToString("F")).ToList();
+            var divisibleBy2 = myList.Where(x => x % 2 == 0).ToList(); // such  operation is okay for int x % 2 == 0 but  could not work properly with double values
+			var twoNumbersPrecision = myList.Select(x => x.ToString("F")).ToList();
             Console.WriteLine("Min value of collection: {0}", minValueOfCollection);
             Console.WriteLine("Max value of collection: {0}", maxValueOfCollection);
             Console.ReadKey();

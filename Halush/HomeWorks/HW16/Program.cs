@@ -32,7 +32,7 @@ namespace HW16
 {
     public class Car
     {
-        public string type;
+        public string type; // todo: Use properties instead. You should not expose fields as public they should be private
         public int maxSpeed;
         public int minSpeed;
         public int currentSpeed;

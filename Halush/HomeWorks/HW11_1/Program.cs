@@ -21,8 +21,14 @@ namespace HW11_1
     {
         public static void Main(string []args)
         {
-            //Write command line parameter into variable
-            int triangleHeight = 0;
+
+			// todo there is a more readable solution using more mathematical approach
+			// 1 row - 1 asterix (1*2 -1)
+			// 2 row - 3 asterixs (2*2 -1)
+			// 3 row - 5 asterixs (3*2 -1)
+			// so by knowing rows number you can predictably generate a single row using such approach.
+			//Write command line parameter into variable
+			int triangleHeight = 0;
             foreach (string a in args)
             {
                 triangleHeight = Convert.ToInt32(a);

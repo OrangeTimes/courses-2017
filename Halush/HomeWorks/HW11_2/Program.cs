@@ -17,7 +17,9 @@ namespace HW11_2
 {
     class Program
     {
-        static int GetBestProfit(int[] bookPricesWithinWeek)
+
+		// todo see https://codereview.stackexchange.com/questions/169178/calculating-the-most-profit-from-an-array-of-stock-prices for a simpler implementation
+		static int GetBestProfit(int[] bookPricesWithinWeek)
         {
             int startPrice = 0;
             int endPrice = 0;

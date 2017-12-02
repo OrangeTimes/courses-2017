@@ -32,8 +32,9 @@ namespace HW15_2
     {
         static void Main(string[] args)
         {
-            Car olegsCar = Car.CreateCar();
-            olegsCar.wheels = 3;
+            Car olegsCar = Car.CreateCar(); // todo: pass  wheels, maxSpeed to this method instead
+
+			olegsCar.wheels = 3;
             olegsCar.maxSpeed = 100;
             olegsCar.color = "Green";
             Console.WriteLine("You have created a car with {0}km/hr max speed, {1} wheels and {2} color.", olegsCar.maxSpeed, olegsCar.wheels, olegsCar.color);

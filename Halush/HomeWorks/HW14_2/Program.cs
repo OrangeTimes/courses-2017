@@ -138,7 +138,7 @@ namespace HW14_2
     {
         public static void Main()
         {
-            House myHouse = new House();
+            House myHouse = new House(); // you should pass stuff like wall, windows etc. to contructor here. Basically you will compose a house using such apporach like new House(Walls[], door, window)
         }
     }
 }

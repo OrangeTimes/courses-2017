@@ -20,7 +20,7 @@ namespace HW13_1
     //This class is for 3 points of a triangle
     public class Triangle
     {
-        public Point a;
+        public Point a; // todo: in general public field is a bad idea, you should use properties instead of such fields
         public Point b;
         public Point c;
         //This method calculates triangle's area
@@ -47,7 +47,7 @@ namespace HW13_1
         static void Main(string[] args)
         {
             //Create new object Trianlge and initialize 3 points of it
-            Triangle myTriangle = new Triangle();
+            Triangle myTriangle = new Triangle(); // todo: pass the 3 Points to contructor here
             myTriangle.a = new Point();
             myTriangle.b = new Point();
             myTriangle.c = new Point();
@@ -61,8 +61,8 @@ namespace HW13_1
             Console.WriteLine("Please enter coordinates of a third point:");
             myTriangle.c.x = Convert.ToInt32(Console.ReadLine());
             myTriangle.c.y = Convert.ToInt32(Console.ReadLine());
-            double area = myTriangle.GetTriangleArea(myTriangle.a, myTriangle.b, myTriangle.c);
-            Console.WriteLine("The area of your triangle is {0}", area);
+            double area = myTriangle.GetTriangleArea(myTriangle.a, myTriangle.b, myTriangle.c); // todo: if you will pass the  3 Points using contrctor there is no reason to apps them here
+			Console.WriteLine("The area of your triangle is {0}", area);
             Console.ReadKey();
         }
     }

@@ -35,8 +35,8 @@ namespace HW14_1
         public static void Main()
         {
             Console.WriteLine("Hello dear customer. Today we are going to create a car of your dream.");
-            Car firstCar = new Car();
-            Car secondCar = new Car();
+            Car firstCar = new Car(); // todo: you should be passing  (manufacturer, year of manufacture, price those are mandatory) to constructor here
+			Car secondCar = new Car();
             Car thirdCar = new Car();
             Console.WriteLine("Congratulations! You just created 3 new cars.");
             Console.WriteLine("Your first car was created with following conditions:");

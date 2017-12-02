@@ -18,7 +18,7 @@ namespace HW12_1
             try
             {
                 Console.WriteLine("Please enter 'double' type value:");
-                double usersInput = double.Parse(Console.ReadLine());
+                double usersInput = double.Parse(Console.ReadLine()); // todo: in general avoid calling one method from another
                 Console.WriteLine("You have entered {0}", usersInput);
             }
             catch (System.FormatException)

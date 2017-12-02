@@ -18,7 +18,7 @@ namespace HW5_2
             {
                 Console.WriteLine(i);
             }
-        Console.ReadKey();
+        Console.ReadKey(); // todo: align this statement with other code
         }
     }
 }

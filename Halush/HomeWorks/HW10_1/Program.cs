@@ -13,12 +13,15 @@ namespace HW10_1
 {
     class Program
     {
-        //Calculation of sum for 2 doubles
-        static void GetSumOf2Doubles(double a, double b)
+		//Calculation of sum for 2 doubles
+		// todo !!! add a space between // and comment text like "// Calculation"
+		// todo add a space between 2 methods or a method an coment to aonther method
+		static void GetSumOf2Doubles(double a, double b)
         {
             double sumOf2Doubles = a + b;
-            Console.WriteLine(sumOf2Doubles);
-            Console.ReadKey();
+            Console.WriteLine(sumOf2Doubles); // todo you should be doing operation in console in Main method, SumOf2Doubles just add 2 numbers, and return the result, 
+			//later on the caller of the method should output the result of this method
+			Console.ReadKey();
         }
         //Calculation of sum for 2 integers
         static void GetSumOf2Integers(int a, int b)
@@ -38,8 +41,8 @@ namespace HW10_1
             Console.WriteLine(sumOfParams);
             Console.ReadKey();
         }
-
-        static void Main(string[] args)
+		// todo Main in general should be on top
+		static void Main(string[] args)
         {
         }
     }
