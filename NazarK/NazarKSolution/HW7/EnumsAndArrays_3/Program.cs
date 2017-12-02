@@ -33,7 +33,7 @@ namespace EnumsAndArrays_3
 		public static void PrintCharsUsingIndex(string predefinedString)
 		{
 			// print string parts vertically
-			for (int i = 0; i < predefinedString.Length; i++)
+			for (int i = 0; i < predefinedString.Length; i++) // no need to use for loop here you can use foreach
 			{
 				Console.WriteLine(predefinedString[i]);
 			}

@@ -44,7 +44,7 @@ namespace Method_members_1
 				{
 					throw new Exception($"Name should not exceed 20 symbols. Length: {value.Length}");
 				}
-				else
+				else // this else is redundant here, since the exception will return from the method
 				{
 					_name = value;
 				}

@@ -14,7 +14,8 @@ namespace LINQ_3
 
 			// Using Select method transform numbers to string representation with 2 number precision e.g.
 			// “2.00” (check ToString() documentation to get more info)
-			IEnumerable<string> strings = numbers.Select(x => x.ToString("0.00"));
+			IEnumerable<string> strings = numbers.Select(x => x.ToString("0.00")); //often it is reasonoble to extract "0.00" to a separate variable 
+																				//called doublePrecisionStringFormat to avoid magic string (numbers) in your code
 			foreach (string line in strings)
 			{
 				Console.WriteLine(line);

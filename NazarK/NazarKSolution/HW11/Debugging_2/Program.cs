@@ -19,6 +19,8 @@ namespace Debugging_2
 
 		static void Main(string[] args)
 		{
+			// there is a more simpler solution to the problem see https://codereview.stackexchange.com/questions/169178/calculating-the-most-profit-from-an-array-of-stock-prices
+
 			// define book prices
 			int[] bookPricesLastWeek = { 1, 10, 2, 20, 3, 30, 60 };
 

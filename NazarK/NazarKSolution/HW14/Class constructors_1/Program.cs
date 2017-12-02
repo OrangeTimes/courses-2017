@@ -12,7 +12,7 @@ namespace Class_constructors_1
 		{
 			// Create 3 Cars using constructor with 3 fields
 			Car rollsRoycePhantop = new Car("Rolls Royce", 2017, 1000000.01);
-			Car BMWX6= new Car("BMW X6", 2016, 900000.02);
+			Car BMWX6= new Car("BMW X6", 2016, 900000.02); // bad formattign in assignment 
 			Car ferrariLaFerrari = new Car("Ferrari", 2015, 3000000.03);
 
 			// Print Cars to console

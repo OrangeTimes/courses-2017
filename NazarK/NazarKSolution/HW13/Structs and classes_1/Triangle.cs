@@ -44,7 +44,7 @@ namespace Structs_and_classes_1
 			edgeA = Edge(pointA, pointB);
 			edgeB = Edge(pointB, pointC);
 			edgeC = Edge(pointC, pointA);
-			area = Area();
+			area = Area(); // it's better to move this to a separate method, and perform it on demand and not during construction time
 		}
 	}
 }

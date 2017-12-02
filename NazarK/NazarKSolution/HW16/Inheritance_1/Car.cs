@@ -45,7 +45,7 @@ namespace Inheritance_1
 		{
 			if (fuel > 0)
 			{
-				return true;
+				return true; // in general avoid mutiple returns from single method
 			}
 			else
 			{

@@ -12,7 +12,7 @@ namespace Abstract_classes_1
 		{
 			// create random rank considering that rank is increasing after each 4th card
 			Random random = new Random();
-			int randomValue = random.Next(0, 52);
+			int randomValue = random.Next(0, 52); 
 			int rank = randomValue / 4;
 
 			// create random suit considering that each 4 cards have different suit

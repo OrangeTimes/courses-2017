@@ -12,7 +12,7 @@ namespace DelegatesAndAnnonymousMethods
 
 		static void Main(string[] args)
 		{
-			MathDelegate myMathDelegate;
+			MathDelegate myMathDelegate; // it is ok in examples but in real production code myMathDelegate is not the best name here
 			myMathDelegate = Add;
 			myMathDelegate += Subtract;
 			myMathDelegate += Multiply;
