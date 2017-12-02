@@ -32,7 +32,7 @@ namespace ConsoleApp5
                     Console.WriteLine("{0}", i);
             }
 
-
+			// todo: remove redundant space below
 
 
 
