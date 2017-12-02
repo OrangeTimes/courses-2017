@@ -16,8 +16,8 @@ namespace String_as_a_char_array_Part_3
 			char[] arrayStr;
 			arrayStr = definedString.ToCharArray();
 			// print out each char in separate string line
-			foreach (char i in arrayStr)
-			Console.WriteLine($"{i}");
+			foreach (char i in arrayStr) 
+			Console.WriteLine($"{i}"); // !!! it's better to put code inside the loop in in scope using {} brackets, even your implementation is a valid syntax
 			Console.ReadKey();
 		}
 	}

@@ -29,7 +29,8 @@ namespace Creating_isosceles_triangle_in_Console_Part_1
 			}
 			Draw_Isosceles_Triangle(input);
 		}
-		public static void Draw_Isosceles_Triangle(int num)
+
+		public static void Draw_Isosceles_Triangle(int num) // !!! You should avoid name with undescores in most method names
 		{
 			// Run all over the triangle
 
@@ -39,10 +40,17 @@ namespace Creating_isosceles_triangle_in_Console_Part_1
 					Console.Write(" ");
 				// Draw asterisks and one space to get an isosceles triangle
 				for (int j = 0; j <= i; j++)
-					Console.Write("*" + " ");
+					Console.Write("*" + " "); // no nned of string concatenation here just put it a single string 
 				Console.WriteLine();
 			}
 			Console.ReadKey();
+			// there is more mathematical solution to such problem
+			// 1 row - 1 (1*2 - 1)
+			// 2 row - 3 (2*2 - 1)
+			// 3 row - 5 (3*2 - 1)
+			// so knowing the row number we can predict number of asterix in it number of asterisks = (rowNumber * 2) - 1
+			// Create a mehod callded called CreateTrianleRow(int rowNumber, int rowLength) which will do the heavy lifting
+
 		}
 	}
 }

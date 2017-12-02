@@ -22,17 +22,17 @@ namespace Methods_Sum_of_multiple_params
 			double[] doubleArray = new double[] { 1.4344345, 4.45645656, 3.3534, 8.5734 };
 			double resultOfDoubleArraySum = sumValues(doubleArray);
 		}
-		static int sumValues(int param1, int param2)
+		static int sumValues(int param1, int param2) // !!!Method name should be in PascallCase
 		{
 			int sum = param1 + param2; //calculate sum of two int
 			return sum; 
 		}
-		static double sumValues(double param1, double param2)
+		static double sumValues(double param1, double param2) //!!! Method name should be in PascallCase
 		{
 			double sum = param1 + param2; // calculate sum of two double
 			return sum; 
 		}
-		static int sumValues(params int[] intArray)
+		static int sumValues(params int[] intArray) //!!! Method name should be in PascallCase
 		{
 			int sum = 0;
 			foreach (var number in intArray)
@@ -41,7 +41,7 @@ namespace Methods_Sum_of_multiple_params
 			}
 			return sum; 
 		}
-		static double sumValues(params double[] doubleArray)
+		static double sumValues(params double[] doubleArray) //!!! Method name should be in PascallCase
 		{
 			double sum = 0;
 			foreach (var number in doubleArray)

@@ -25,7 +25,7 @@ namespace Using_File.ReadAllText_and_Exception_Part_2
 			{
 				// if the file exist and path is correct - the text of the file will be displayed in console
 				// in other cases, one of the specified exception will be thrown
-				Console.WriteLine(File.ReadAllText(path));
+				Console.WriteLine(File.ReadAllText(path)); //!!! In general avoid nesting multiple methods
 			}
 			catch (ArgumentNullException e)
 			{

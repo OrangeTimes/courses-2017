@@ -20,7 +20,7 @@ namespace Create_house_with_parameters_Part_2
 			this.windowHight = windowHight;
 			this.windowWidth = windowWidth;
 		}
-		public static void outputWindow(Window Window)
+		public static void outputWindow(Window Window) // no need of this static method
 		{
 			Console.WriteLine($"Window Model: {Window.windowModel} / Window numbers of cameras: {Window.numbersOfCameras} / Window hight: {Window.windowHight} / Window width: {Window.windowWidth}.");
 		}

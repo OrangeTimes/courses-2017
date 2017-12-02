@@ -15,7 +15,7 @@ namespace Create_house_with_parameters_Part_2
 			this.roofMaterial = roofMaterial;
 			this.roofForm = roofForm;
 		}
-		public static void outputRoof(Roof Roof)
+		public static void outputRoof(Roof Roof) // no need of this static method
 		{
 			Console.WriteLine($"Roof material: {Roof.roofMaterial} / Roof form: {Roof.roofForm}.");
 		}

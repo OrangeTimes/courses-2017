@@ -15,7 +15,7 @@ namespace Create_house_with_parameters_Part_2
 			this.wallHeight = wallHeight;
 			this.wallWidth = wallWidth;
 		}
-		public static void outputWalls(Wall Wall)
+		public static void outputWalls(Wall Wall) // no nned of this static method
 		{
 			Console.WriteLine($"Wall height: {Wall.wallHeight} / Wall width: {Wall.wallWidth}.");
 		}

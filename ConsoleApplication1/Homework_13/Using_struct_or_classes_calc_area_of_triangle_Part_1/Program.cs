@@ -31,10 +31,11 @@ namespace Using_struct_or_classes_calc_area_of_triangle_Part_1
 			pointC.StringAsCoordinates(pointCcoordinates);
 
 			// create three sides of the triangle
-			TriangleSides sideAB = new TriangleSides();
+			TriangleSides sideAB = new TriangleSides(); 
 			sideAB.CalculateSideAB(pointA, pointB);
 
-			TriangleSides sideBC = new TriangleSides();
+			TriangleSides sideBC = new TriangleSides(); // You don't need to construct this object multiple times. You could pass all the 3 point to constructor. CalculateSideAB and other method can be private in Triangle class.
+			
 			sideBC.CalculateSideBC(pointB, pointC);
 
 			TriangleSides sideAC = new TriangleSides();
@@ -42,7 +43,8 @@ namespace Using_struct_or_classes_calc_area_of_triangle_Part_1
 
 			// create triangle and output the triangle area
 			Triangle myTriangle = new Triangle();
-			myTriangle.CalculateTriangleArea(sideAB, sideBC, sideAC);
+			
+			myTriangle.CalculateTriangleArea(sideAB, sideBC, sideAC); // it's bettter to ppass this information using constructor, andthe nuse parametrless method CalculateArea();
 
 			Console.WriteLine($"The area of the triangle is: {myTriangle.triangleArea}");
 			Console.ReadLine();

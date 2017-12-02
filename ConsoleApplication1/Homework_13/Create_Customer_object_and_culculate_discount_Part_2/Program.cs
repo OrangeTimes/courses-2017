@@ -12,8 +12,8 @@ namespace Create_Customer_object_and_culculate_discount_Part_2
 		{
 			// from console specify the customer age
 			Console.WriteLine("Please, specify your age: ");
-			int CustomerAge = Convert.ToInt32(Console.ReadLine());
-			//create new Customer class
+			int CustomerAge = Convert.ToInt32(Console.ReadLine()); // !!!variable names should be incamelCase
+			//create new Customer class --> !!! add a whitespace between // and comment text like "// create"
 			Customer myCustomer = new Customer();
 			//output the discount
 			Console.WriteLine($"For the user who is {CustomerAge} years old the discount is {myCustomer.calculateDiscount(CustomerAge)}");

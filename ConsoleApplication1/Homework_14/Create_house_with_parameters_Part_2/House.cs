@@ -32,6 +32,9 @@ namespace Create_house_with_parameters_Part_2
 			Roof.outputRoof(houseRoof);
 			Console.WriteLine("The house is created!");
 			Console.ReadLine();
+
+			// !!! you should pass all contrcuted componnest to house contructor like new House(Walls[] walls, door, window)
+			// and then use a separate method on the house object to output it's content
 		}
 	}
 }

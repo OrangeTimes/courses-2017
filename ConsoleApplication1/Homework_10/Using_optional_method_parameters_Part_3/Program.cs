@@ -24,7 +24,7 @@ namespace Using_optional_method_parameters_Part_3
 			// verification whether the extension is set 
 			bool extensionSpecified = String.IsNullOrEmpty(fileExtension);
 
-			if (extensionSpecified == true)
+			if (extensionSpecified == true) // !!! you already have a bool value no need to check for == true
 			{
 				CreateFileAndSetText(inputText, fileName);
 			}

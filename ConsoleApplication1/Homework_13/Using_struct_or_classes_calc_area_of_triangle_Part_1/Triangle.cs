@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Using_struct_or_classes_calc_area_of_triangle_Part_1
 {
+	// !!! This class is not very usefull. 
 	class TriangleSides
 	{
 		public double lengthAB;

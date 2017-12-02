@@ -12,7 +12,7 @@ namespace Static_method_Part_2
 	{
 		static void Main(string[] args)
 		{
-			Currency Price = Currency.Display(56780, "euro");
+			Currency Price = Currency.Display(56780, "euro"); // you are not diplaying anything, the method should be named Create or something
 			Currency.outputCurrency(Price);
 			Console.ReadLine();
 		}

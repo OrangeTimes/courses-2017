@@ -22,10 +22,10 @@ namespace Average_value_in_jagged_integer_array_Part_1
 			int numberOfJaggedArray = 0;
 			{
 			// find length of jagged arrays
-				for (int i = 0; i < jaggedArray.Length; i++)
+				for (int i = 0; i < jaggedArray.Length; i++) // !!! line should be aligned with previous statment
 					for (int j = 0; j < jaggedArray[i].Length; j++)
 					{
-			// find sum of jagged arrays
+			// find sum of jagged arrays --> !!! this commnet should be aligned with previous statement
 						sumOfJagggedArray += jaggedArray[i][j];
 						numberOfJaggedArray++;
 					}
