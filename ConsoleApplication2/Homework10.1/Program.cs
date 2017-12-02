@@ -45,7 +45,7 @@ namespace Homework10._1
             int intSum = CalculateSum(myIntArray);
             Console.WriteLine(intSum);
             Console.ReadLine();
-
+			// todo you need a total of 4 methods. 2 values and multiple values for double and for int
 
         }
 
@@ -68,6 +68,6 @@ namespace Homework10._1
             }
             return sum;
         }
-
+		// todo: redundant whitespace here
     }
 }

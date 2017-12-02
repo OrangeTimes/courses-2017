@@ -34,8 +34,8 @@ namespace Homework12._1
                 }
             //if input is valid - print 'Thanks'
             }
-            if (stringIsValid == true)
-            {
+            if (stringIsValid == true) // todo: check with  == true is redundant
+			{
                 Console.WriteLine("Thanks");
                 Console.ReadLine();
             }
@@ -49,8 +49,8 @@ namespace Homework12._1
                 {
                     throw new ArgumentException("Response is required.");
                 }
-                Convert.ToDouble(userInput);
-            }
+                Convert.ToDouble(userInput); // todo: you can use Double.TryParse()
+			}
             catch (ArgumentException responseRequiredException)
             {
                 Console.WriteLine(responseRequiredException.ToString());

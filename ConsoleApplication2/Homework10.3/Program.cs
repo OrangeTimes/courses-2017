@@ -33,7 +33,7 @@ namespace Homework10._3
             bool extensionSpecified = String.IsNullOrEmpty(fileExtension);
 
             //create file and write text to it
-            if (extensionSpecified == true)
+            if (extensionSpecified == true) // todo: check  ==true is redundant here
             {
                 CreateFileWithText(userInput, filePathAndName);
             }

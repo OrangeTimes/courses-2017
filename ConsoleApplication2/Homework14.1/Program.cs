@@ -35,7 +35,7 @@ namespace Homework14._1
             Console.ReadLine();
         }
 
-
+		// remove this redundant empty lines
 
 
     }

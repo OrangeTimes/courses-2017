@@ -22,7 +22,7 @@ namespace Homework11
            Console.Write("Please specify height of triangle: ");
            int height = Convert.ToInt32(Console.ReadLine());
  
-            //print rows
+            //print rows // todoadd whitespace between // and comment text
             for (int rowNumber = 1; rowNumber <= height; rowNumber++)
             {
                 Console.WriteLine(BuildTriangle(height, rowNumber));

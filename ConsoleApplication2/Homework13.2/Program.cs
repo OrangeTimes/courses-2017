@@ -19,7 +19,7 @@ namespace Homework13._2
             int age = Convert.ToInt32(Console.ReadLine());
 
             // create new object of class Customer
-            Customer Vita = new Customer();
+            Customer Vita = new Customer(); // todo: you shold pass entered age from console to contructor instead
             
             // print discount info
             Console.WriteLine($"Your discount = {Vita.CalculateDiscount(age)}%");

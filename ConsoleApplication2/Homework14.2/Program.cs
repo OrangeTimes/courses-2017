@@ -15,7 +15,7 @@ namespace Homework14._2
             //(for window – width, height, glass thickness etc.) and created house based on them.
 
             // create collection of walls
-            List<Wall> myWalls = new List<Wall>()
+            List<Wall> myWalls = new List<Wall>() // todo: use of array would be sufficient in current case since you are not perfomening any list specific operations
             {
                 new Wall("candy", 4),
                 new Wall("candy", 4),

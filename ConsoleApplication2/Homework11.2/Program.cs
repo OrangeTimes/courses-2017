@@ -33,9 +33,9 @@ namespace Homework11._2
             int profit;
             // declare and ititialize best profit (same as profit of 1st iteration)
             int bestProfit = bookPrices[bookPrices.Length - 1] - bookPrices[bookPrices.Length - 2];
-
-            // iterate through sell prices starting from the last day
-            for (int i = 6; i > 0; i--)
+			// todo: there is a little more simpler solution to this problem https://codereview.stackexchange.com/questions/169178/calculating-the-most-profit-from-an-array-of-stock-prices
+			// iterate through sell prices starting from the last day
+			for (int i = 6; i > 0; i--) // todo: use  of hardcoded value of 6
             {
 
                 // iterate through buy prices starting from the day before selling

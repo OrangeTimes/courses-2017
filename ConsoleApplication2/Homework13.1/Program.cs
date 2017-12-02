@@ -49,7 +49,7 @@ namespace Homework13._1
             sideC.CalculateSide(pointA, pointC);
 
             //create triangle
-            Triangle myTriangle = new Triangle();
+            Triangle myTriangle = new Triangle(); // todo pass the points to the Triangle, and doo all the claculations there. Expose a public parameterless method or property to get area
             myTriangle.CalculateAreaOfTriangle(sideA, sideB, sideC);
 
             Console.WriteLine($"Side A length = {sideA.length}, Side B length = {sideB.length}, Side C = {sideC.length}. The area of your triangle is: {myTriangle.area}");

@@ -35,15 +35,16 @@ namespace Homework_12._2
             string content = "";
             try
             {
-                // throw exception if one of parameters is blank
-                if (filePath == "" | fileName == "" | fileExtension == "")
+	            
+				// throw exception if one of parameters is blank
+				if (filePath == "" | fileName == "" | fileExtension == "") // todo: there is separate method string.IsNullOrEmpty since string can be empty and can be null as a reference type
                 {
                     throw new ArgumentException("Path, name cannot be blank.");
                 }
 
                 // build full file path with name and extension
-                string path = $"{filePath}" + $"{fileName}" + $"{fileExtension}";
-                content = File.ReadAllText(path);
+                string path = $"{filePath}{fileName}.{fileExtension}"; // you are not using the string format shortcut effectively. I would expect it to look like this $"{filePath}{fileName}.{fileExtension}"
+				content = File.ReadAllText(path);
             }
             #region catch block
             catch (ArgumentException ex)
@@ -70,10 +71,11 @@ namespace Homework_12._2
             return content;
 
         }
+		// todo: add empty line between method declarations
         // verify if file name or extension contains dot, if not - add dot
         static string ValidateDot(string fileName, string fileExtension)
         {
-            if (fileName.Contains(".") | fileExtension.Contains("."))
+            if (fileName.Contains(".") | fileExtension.Contains(".")) // todo: in most cases you should use the conditional or || instead of |. Also you could invert the logcal condition here using ! in order to avoid empty code block
             { }
             else
             {

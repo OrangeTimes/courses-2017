@@ -8,7 +8,7 @@ namespace Homework14._2
 {
     public class Door
     {
-        public string doorType;
+        public string doorType; // todo: in production code you should never exposes you fields as public, they should be private. Use public properties to expose them if needed
         public int numberOfLocks;
 
         public Door(string doorType, int numberOfLocks)

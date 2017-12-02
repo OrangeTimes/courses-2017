@@ -12,7 +12,7 @@ namespace Homework13._2
         public int discount;
 
         public int CalculateDiscount (int age)
-            {
+            { // todo: checkk formatting should be on the same line as public
                 if (age < 30)
                 {
                     discount = 10;
