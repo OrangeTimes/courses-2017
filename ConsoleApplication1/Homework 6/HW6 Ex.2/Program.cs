@@ -30,7 +30,7 @@ namespace HW6_Ex._2
                     {
                         case "byte":
                             try { Console.WriteLine(Convert.ToByte(userInput)); }  // Sorry for using Exception handling, couldn't resist - now it works smoothly though
-                            catch (OverflowException) { goto default; }
+                            catch (OverflowException) { goto default; } // todo: goto should be avoided
                             break;
 
                         case "short":
@@ -55,7 +55,7 @@ namespace HW6_Ex._2
                     Console.WriteLine("If you want to proceed press Enter");
                     Console.WriteLine("If you want to close the program type word \"exit\" and press Enter");
                 }
-            
+            // todo : redundant space here
         }
     }
 }

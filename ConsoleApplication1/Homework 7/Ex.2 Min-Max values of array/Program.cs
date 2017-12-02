@@ -22,6 +22,7 @@ namespace Ex._2_Min_Max_values_of_array
             {
                 for (int i = 0; i < myArray.Length; i++) // go through each element of the array
                 {
+					// todo put min = myArray[i] in separate scope by using curly braces {}
                     if (myArray[i] < min) min = myArray[i];  // check whether current element in a loop is lesser than min variable, and if so then assign this lesser value to min
                 }
                 Console.WriteLine($"Minimum value is {min}");  // prints out result
@@ -31,7 +32,7 @@ namespace Ex._2_Min_Max_values_of_array
             {
                 for (int i = 0; i < myArray.Length; i++) // go through each element of the array
                 {
-                    if (myArray[i] > max) max = myArray[i];  // check whether current element in a loop is greater than max variable, and if so then assign this greater value to max
+					if (myArray[i] > max) max = myArray[i];  // check whether current element in a loop is greater than max variable, and if so then assign this greater value to max
                 }
                 Console.WriteLine($"Maximum value is {max}"); // prints out result
             }

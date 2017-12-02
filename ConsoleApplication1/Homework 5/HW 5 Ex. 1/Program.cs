@@ -10,7 +10,7 @@ namespace HW_5_Ex._1
     {
         static void Main(string[] args)
         {
-                string exitKey = "exit";
+                string exitKey = "exit"; // todo: variable name is misleading it is a text not a key
 
                 while (Console.ReadLine() != exitKey)  // Although not needed, but added this to be able to check several numbers (and not just one), 
                                                        // and also added exitKey to exit from the application by typing "exit"
@@ -28,7 +28,7 @@ namespace HW_5_Ex._1
                     {
                         Console.WriteLine("Your number is ODD");
                     }
-                Console.WriteLine();
+                Console.WriteLine(); // todo this statement should be aligned with other statements in same code block
                 Console.WriteLine("If you want to proceed press Enter");
                 Console.WriteLine("If you want to close the program type word \"exit\" and press Enter");
 

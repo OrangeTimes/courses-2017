@@ -38,6 +38,7 @@ namespace HM11_Ex._2_Selling_books
         /// <param name="bookPricesLastWeek"> Use 7-item integer array </param>
         public static void BestProfit(int[] bookPricesLastWeek)
         {
+			// todo: there is a more simpler and readable solution to this problem https://codereview.stackexchange.com/questions/169178/calculating-the-most-profit-from-an-array-of-stock-prices
             int buyPrice = bookPricesLastWeek[0];
             int sellPrice = bookPricesLastWeek[1];
             int profit = bookPricesLastWeek[1] - bookPricesLastWeek[0];
@@ -46,7 +47,7 @@ namespace HM11_Ex._2_Selling_books
             for (int i = 0; i < bookPricesLastWeek.Length; i++) // itteration over buy prices
             {
                     for (int j = i + 1; j < bookPricesLastWeek.Length; j++) // itteration over sell prices, and making sure we don't sell the same day
-                {
+                { // todo incorrect formating here o  brace, should be aligned with for operator
                     if (bookPricesLastWeek[j] - bookPricesLastWeek[i] > profit)  
                     {
                         buyPrice = bookPricesLastWeek[i];

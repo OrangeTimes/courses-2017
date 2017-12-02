@@ -11,6 +11,7 @@ namespace HM14_Ex._1_Create_a_car
         static void Main(string[] args)
         {
             Car myCar = new Car("BMW", 1999, 23451.12, "sedan", 13);   // Creating an object of type Car   
+			// todo: instead of using next line you can create an override of ToString method in Car class which will perform converting Car class to a string
             Console.WriteLine("manufacturer = " + myCar.manufacturer + '\n'+ "year Of Manufacture = " + myCar.yearOfManufacture + '\n' + "price = " + myCar.price + '\n' + "fuel consumption = " + myCar.fuelConsumption + '\n' + "color = " + myCar.color);
             Console.ReadLine();
 

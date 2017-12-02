@@ -28,7 +28,11 @@ namespace Isosceles_triangle
         *******
         */
 
-
+	    // 1 row - 1 asterix (1*2 -1)
+	    // 2 row - 3 asterixs (2*2 -1)
+	    // 3 row - 5 asterixs (3*2 -1)
+	    // so by knowing rows number you can predictably generate a single row using such approach.
+		// create a seaparate method that will return generated row. You may also add to add single whistepase between asterixes for more cleaner look
         public static void IsoscelesTriangle(int height)
         {
 

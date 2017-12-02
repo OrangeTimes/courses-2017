@@ -40,7 +40,7 @@ namespace HM12_Ex._2_TXT_content_to_console
             }
 
             // The following catch blocks will catch exceptions in order from most to least specific and print out some textual information and actual error text.
-
+			// todo: avoid long statements, span them over few lines in needed
             catch (SecurityException e) { Console.WriteLine("\n The caller does not have the required permission.\n"); Console.WriteLine(e.ToString()); }
             catch (NotSupportedException e) { Console.WriteLine("\n Path is in an invalid format.\n"); Console.WriteLine(e.ToString()); }
             catch (FileNotFoundException e) { Console.WriteLine("\n The file specified in path was not found.\n"); Console.WriteLine(e.ToString()); }

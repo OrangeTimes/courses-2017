@@ -17,7 +17,7 @@ namespace HW4_Boolean_Ex._1
 
             Console.WriteLine("Please provide two numbers: Number1, Number 2 to check wether Number 1 is devisible by Number 2.");
             String[] numbers = Console.ReadLine().Split(',');
-            int number1 = Convert.ToInt32(numbers [0]);
+            int number1 = Convert.ToInt32(numbers [0]); // todo: check formatting
             int number2 = Convert.ToInt32(numbers[1]);
             bool isDivisible = number1 % number2 == 0;
             Console.WriteLine(isDivisible);

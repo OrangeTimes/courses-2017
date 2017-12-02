@@ -9,9 +9,10 @@ namespace HM13_Ex._2_Calculate_Discount
     class Customer
     {
             public int age;
-            public int discount;
+            public int discount; // todo: fields should be aligned with other members in single line
         public Customer(int age) // using custom constructor that takes age as a parameter
         {
+			// todo: this logic should be moved to a separate method GetDiscount(). Intitlize only age field in constructor
             if (age < 30)                         // discount logic
             {
                 discount = 10;
@@ -28,7 +29,7 @@ namespace HM13_Ex._2_Calculate_Discount
             this.age = age;    // referencing class variable "age" to a constructor parameter "age"
         }
            
-
+		// todo: redundant empty sapce
 
     }
 }

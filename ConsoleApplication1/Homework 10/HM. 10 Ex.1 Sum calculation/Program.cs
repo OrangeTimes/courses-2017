@@ -10,9 +10,9 @@ namespace HM._10_Ex._1_Sum_calculation
     {
         static void Main(string[] args)
         {
-            double result = CalculateSum(23, 444, 54, 67);
+            double result = CalculateSum(23, 444, 54, 67); // todo you are missing implementation for integers. You should have 4 separate methods in total
             Console.WriteLine(result);
-            Console.ReadLine();
+            Console.ReadLine(); // todo redundant whitespace below
 
         }
 

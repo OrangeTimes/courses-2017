@@ -31,6 +31,8 @@ namespace HM14_Ex2.Create_a_house
 
 
             Console.WriteLine("   Windows");                                                 // creating several windows using lists
+			// todo: Here arrays will be sufficient since you are not doing any list specific stuff
+			// todo: you should create an actuall house class by passing to it all the needed parts like: new House(Wall[] walls, Window[] windows)
             List<Window> myWindows = new List<Window>()
             {
                 new Window(120, 80, "brown", "medium", 2),

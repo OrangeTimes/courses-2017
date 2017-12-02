@@ -40,7 +40,7 @@ namespace HM12_Ex._1_Is_a_string_a_valid_number
                 {
                     Console.WriteLine("You have entered incorrect string to convert." + $"\n" + "Please try once more to enter VALID string for convertion: ");
                     myDouble = Double.Parse(Console.ReadLine(), System.Globalization.NumberStyles.AllowDecimalPoint);
-                    Console.WriteLine("Successfully converted to: " + $"{myDouble}");
+                    Console.WriteLine("Successfully converted to: " + $"{myDouble}"); // todo: code in both try blockes can be extracted to single new method to avoid code duplication
                     return myDouble;
                 }
                 catch (Exception ex)

@@ -50,7 +50,7 @@ namespace HM13_Ex._1_Triangle_area
 
        
         public class Point
-    {
+    { // todo: bad fomatting
         public int x = Coordinates.GetPointX();                      // getting X coordinate, and assigning it to the variable x
         public int y = Coordinates.GetPointY();                      // getting Y coordinate, and assigning it to the variable y
     }
@@ -64,7 +64,7 @@ namespace HM13_Ex._1_Triangle_area
             Console.Write("Enter coordinates of a point X = ");
             int x = Convert.ToInt32(Console.ReadLine());
             return x;
-        }
+        } // todo add space between methods declaration
         public static int GetPointY()                                 // method for getting Y coordinate
         {
             Console.Write("Enter coordinates of a point Y = ");

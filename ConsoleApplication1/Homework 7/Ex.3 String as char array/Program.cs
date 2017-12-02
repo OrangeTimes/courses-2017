@@ -15,7 +15,7 @@ namespace Ex._3_String_as_char_array
             foreach (char i in myStringArray) // loop through each char
             {
                 Console.WriteLine($"{i}");    // prints out char
-                
+                // redundant space here
             }
             Console.ReadLine();
         }

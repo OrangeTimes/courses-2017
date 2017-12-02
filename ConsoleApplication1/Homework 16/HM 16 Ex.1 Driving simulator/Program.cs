@@ -58,9 +58,9 @@ namespace HM_16_Ex._1_Driving_simulator
             Console.WriteLine("Now you can drive" + '\n' + "Use W key to accelerate" + '\n' + "Use S key to decelerate" + '\n' + "Use I key to get current driving status" + '\n');
 
             int x = 1;
-            while (x ==1)    // while loop  - for making possible continuous user input
+            while (x ==1)    // while loop  - for making possible continuous user input // todo: check formatting
             {
-                ConsoleKey pressedKey = Console.ReadKey().Key;
+                ConsoleKey pressedKey = Console.ReadKey().Key; // it is reasonoble to move this car control logic to separate method. It would be to have 1 method to conctruct a car, and next to control it
                 Console.WriteLine();
 
                 switch (pressedKey)   // switch for key binding to a method
